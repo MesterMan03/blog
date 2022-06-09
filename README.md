@@ -8,6 +8,6 @@ Enjoy!
 
 Special thanks to [Mozilla's MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/) for their incredible HTML and CSS documentation. Also thanks to [MkDocs](https://github.com/mkdocs/mkdocs/) for their static site generator, and [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) and [PrivacyGuides](https://github.com/privacyguides/privacyguides.org) for the theme and some CSS.
 
-All of the content in this repository is licensed under the Unlicense, unless otherwise noted. This does not include third-party code, such as:
-- the code from PrivacyGuides, which is licensed under the [CC0-1.0 License](https://github.com/privacyguides/privacyguides.org/blob/main/LICENSE)
-- mathjax.js, which is licensed under the [Apache-2.0 license](https://github.com/mathjax/MathJax/blob/master/LICENSE)
+All of the content in this repository is released under the Unlicense, unless otherwise noted. This does not include third-party code, such as:
+- the code from PrivacyGuides, which is released under the [CC0-1.0 License](https://github.com/privacyguides/privacyguides.org/blob/main/LICENSE)
+- mathjax.js, which is released under the [Apache-2.0 license](https://github.com/mathjax/MathJax/blob/master/LICENSE)
