@@ -1,0 +1,266 @@
+/* Credits to the PrivacyGuides team for some of the code */
+/* https://github.com/privacyguides/privacyguides.org */
+
+::moz-selection {
+  background-color: var(--md-typeset-a-color);
+  color: var(--md-primary-fg-color);
+}
+
+::selection {
+  background-color: var(--md-typeset-a-color);
+  color: var(--md-primary-fg-color);
+}
+
+/* Scrollbars */
+* {
+  scrollbar-color: var(--md-accent-fg-color) var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  background-color: var(--md-accent-fg-color);
+}
+
+/* Define brand */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #fefbff;
+  --md-primary-fg-color--light: #fff;
+  --md-primary-fg-color--dark: #e2e2ec;
+  --md-primary-bg-color: #1b1b1e;
+  --md-primary-bg-color--light: #44464e;
+  --md-default-bg-color: #fefbff;
+  --md-accent-fg-color: #0054d9;
+  --md-footer-bg-color--dark: #fefbff;
+  --md-footer-fg-color: #1b1b1e;
+  --md-footer-fg-color--lighter: #44464e;
+  --md-outline-color: #75767f;
+  --md-code-bg-color: #e2e2ec;
+
+  --md-downloads-fg-color: rgba(0, 161, 115, 1);
+  --md-downloads-bg-color: rgba(0, 161, 115, 0.1);
+}
+
+:root,
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1a1c19;
+  --md-primary-fg-color--light: #414940;
+  --md-primary-fg-color--dark: #000;
+  --md-primary-bg-color: #e2e3dd;
+  --md-primary-bg-color--light: #c2c9be;
+  --md-default-bg-color: #1a1c19;
+  --md-accent-fg-color: #00e55d;
+  --md-footer-bg-color--dark: #1a1c19;
+  --md-footer-fg-color: #e2e3dd;
+  --md-footer-fg-color--lighter: #c2c9be;
+  --md-outline-color: #8b9389;
+  --md-code-bg-color: #414940;
+
+  --md-downloads-fg-color: rgba(0, 161, 115, 1);
+  --md-downloads-bg-color: rgba(0, 161, 115, 0.1);
+}
+
+/* Better contrast link colors */
+[data-md-color-scheme="default"]>* {
+  --md-typeset-a-color: #2e73ff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #2eff73;
+}
+
+/* Colored buttons */
+.md-typeset .md-button {
+  color: var(--md-typeset-a-color);
+  margin-bottom: 5px;
+  border-radius: 0.5rem;
+}
+
+/* Recommendation cards */
+.md-typeset .admonition.recommendation,
+.md-typeset details.recommendation {
+  border: 1px solid var(--md-outline-color);
+  border-radius: 0.5rem !important;
+  font-size: inherit;
+}
+
+.md-typeset .recommendation>.admonition-title::before,
+.md-typeset .recommendation>.admonition-title,
+.md-typeset .recommendation>summary::before {
+  display: none;
+}
+
+.recommendation h3 {
+  margin-top: 0.8em;
+}
+
+.recommendation>p>.card-link {
+  transition: font-size 250ms !important;
+}
+
+.recommendation>p>.card-link:hover {
+  font-size: 1.625em;
+}
+
+/* Downloads */
+.md-typeset .admonition.downloads,
+.md-typeset details.downloads {
+  border: 1px solid var(--md-downloads-fg-color);
+  border-radius: 0.5rem;
+}
+
+.md-typeset .downloads>.admonition-title,
+.md-typeset .downloads>summary {
+  background-color: var(--md-downloads-bg-color);
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+  padding-left: 0.6rem;
+}
+
+.md-typeset .downloads>.admonition-title::before,
+.md-typeset .downloads>.admonition-title,
+.md-typeset .downloads>summary::before {
+  background-color: var(--md-downloads-fg-color);
+  -webkit-mask-image: url("/blog/assets/images/downloads.svg");
+  mask-image: url("/blog/assets/images/downloads.svg");
+}
+
+.md-typeset .downloads>summary::after {
+  right: auto;
+}
+
+.downloads:not([open])>summary {
+  border-radius: 0.5rem !important;
+}
+
+.downloads .card-link {
+  padding: 1rem 0 !important;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 250ms !important;
+}
+
+.downloads .card-link .twemoji {
+  color: var(--md-downloads-fg-color) !important;
+}
+
+.downloads .card-link:hover {
+  box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 20%);
+  color: var(--md-primary-bg-color) !important;
+  font-size: 1.25em;
+}
+
+.downloads p {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .downloads p {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Card links */
+.md-typeset .card-link {
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset .card-link:not(:first-child) {
+  padding-left: 0.5em;
+}
+
+.card-link {
+  font-size: 1.25em;
+}
+
+/* Buttons */
+.md-button:is(:focus, :hover),
+.md-top:is(:focus, :hover) {
+  color: var(--md-primary-fg-color) !important;
+}
+
+.md-top {
+  color: var(--md-accent-fg-color);
+}
+
+/* Text */
+.md-typeset h1,
+.md-copyright a,
+.md-social__link {
+  color: var(--md-default-fg-color) !important;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:focus {
+  color: var(--md-typeset-a-color) !important;
+}
+
+a:hover,
+.md-header__button:hover,
+.twemoji {
+  color: var(--md-accent-fg-color) !important;
+}
+
+p {
+  text-align: justify;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Search */
+.md-search__form {
+  border-radius: 0.5rem;
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__form {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.md-search__output {
+  border-bottom-right-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background-color: var(--md-primary-fg-color--dark);
+  }
+
+  .md-search__form:hover {
+    background-color: var(--md-primary-fg-color--light);
+  }
+}
+
+.md-search-result__link:hover {
+  background-color: var(--md-primary-fg-color--light);
+}
+
+/* Admonitions */
+.md-typeset :is(.admonition, details) {
+  border-radius: 0.5rem !important;
+  border: 1px solid;
+  border-left-width: 1px !important;
+}
+
+.md-typeset :is(.admonition-title, summary) {
+  margin-left: -0.6rem !important;
+}
+
+/* Checklist */
+.md-typeset [type=checkbox]:checked+.task-list-indicator:before {
+  background-color: var(--md-accent-fg-color);
+}
+
+/* Code */
+.highlight .filename {
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+}
