@@ -1,6 +1,6 @@
 # The Blog of Random
 
-This is the source code for [The Blog of Random](https://noClaps.github.io/).
+This is the source code for [The Blog of Random](https://noClaps.github.io/blog/).
 
 Have a look around. If you find any bugs, you can open an issue or PR and I'll probably have a look and update the pages with the correct information.
 
