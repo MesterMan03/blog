@@ -6,7 +6,7 @@ editLink: true
 head:
   - - link
     - rel: stylesheet
-      href: the-phalanx-formation.css
+      href: the-phalanx-formation/the-phalanx-formation.css
 ---
 
 # The Phalanx Formation

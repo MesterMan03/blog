@@ -121,9 +121,9 @@ Follow these few easy steps and you'll be on your way to solving this problem in
 
 3. Make a new Python program and type in the following code:
 
-<<< @/collatz-conjecture/CollatzConjecture.py
+<<< @/public/collatz-conjecture/collatz-conjecture.py
 
-Alternatively, you can [download the code here](/collatz-conjecture/CollatzConjecture.py "Right click and save as to download").
+Alternatively, you can [download the code here](collatz-conjecture/collatz-conjecture.py "Right click and save as to download").
 
 4. Hit save and double-click the .py file to run it.
 
