@@ -1,6 +1,7 @@
 ---
 editLink: true
 layout: home
+titleTemplate: false
 
 hero:
   name: The Blog of Random
