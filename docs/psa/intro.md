@@ -1,18 +1,14 @@
 ---
 title: Intro
 description: How to protect yourself from the internet, on the internet
-hide:
-    - footer
+editLink: true
+titleTemplate: Privacy, Security and Anonymity
 ---
 
 # Intro
 **How to protect yourself from the internet, on the internet**
 
-_:material-update: Updated: 2022-05-28_
-
-:material-calendar: 2022-04-06
-
----
+Last updated on: 2022-05-28
 
 ## Intro
 I've really gotten into this stuff over the last year or so. I probably shouldn't have, since I had a lot of (arguably) more important stuff going on during that time, and focusing on that might have been better for me and my future. But I digress.
@@ -20,8 +16,6 @@ I've really gotten into this stuff over the last year or so. I probably shouldn'
 A lot of the stuff I say here might end up sounding like I live in the woods with a tinfoil hat, but I promise you at least 90% of the things I say here are true as of posting this. I also want to make sure you know, a lot of the stuff mentioned here will probably change someday, whereas this post will probably not be updated often, if at all. So be sure that the information you're getting is up to date. I'll link a few good sources of information at the bottom that can help you stay up-to-date on your privacy and security knowledge.
 
 If you have any updates or changes you'd like to suggest, you can open an issue on the [Git repo for this blog](https://github.com/noClaps/blog).
-
----
 
 ## Why should I care?
 The online world is both a wonderful and terrible place. On one hand, you have [more information available in the blink of an eye](https://www.livescience.com/54094-how-big-is-the-internet.html) than any library or school would ever be able to provide. You have a way to connect with people instantaneously through mediums like instant messaging or e-mail, discuss topics with thousands or millions of people at once on online forums and communities. You can display your talents to an audience so large it's mind-boggling. There are many, many improvements to everyday life that the internet has brought with it. It's never been easier to be completely free and uncensored.
@@ -35,8 +29,6 @@ This is especially true when [Gmail scans all of your emails](https://www.thegua
 Don't expect the government to come and save you either. The unfortunate part of all of this is that laws aren't able to catch up with the rapid development of the internet. In many cases, it's hindered by power-hungry politicians or greedy companies lobbying and manipulating said power-hungry politicians, making a never-ending loop of power and corruption. That leaves people like you and I in a state of helplessness, constantly being controlled and profited on, without getting any returns out of it.
 
 I hope this explains why you should care about your own privacy. It's because **no one else does**.
-
----
 
 ## PSA - Privacy, Security and Anonymity
 People often confuse these 3 terms, and while they can be interchangeable in a few situations, they are very different things and should be treated as such.
@@ -56,16 +48,14 @@ In follow-up posts to this, I'll suggest some of the tools and services I've hea
 ## Open source everything
 Throughout my various posts on this topic, you may hear the term "open source" a lot. Other variations of this you may hear online are OSS (Open Source Software), FOSS (Free and Open Source Software) or FLOSS (Free/Libre and Open Source). They have some [slight differences](https://www.gnu.org/philosophy/floss-and-foss.en.html) in their definitions, but for the most part they can be interchangeable.
 
-Open source basically means you can see the source code of the app, program, service, etc., that you're using. An example of this is this blog, the Blog of Random. You can find the source HTML, CSS, etc., for this blog at my [Codeberg](https://codeberg.org/tcgmoo/pages), linked up at the top. Another famous example of open source software is the [Firefox](https://firefox-source-docs.mozilla.org/contributing/directory_structure.html) [browser](https://searchfox.org/mozilla-central/source).
+Open source basically means you can see the source code of the app, program, service, etc., that you're using. An example of this is this blog, the Blog of Random. You can find the source HTML, CSS, etc., for this blog at my [GitHub](https://github.com/noClaps/blog), linked up at the top. Another famous example of open source software is the [Firefox](https://firefox-source-docs.mozilla.org/contributing/directory_structure.html) [browser](https://searchfox.org/mozilla-central/source).
 
 Most of the apps and services I suggest will be mostly or fully open source, at least for the parts that actually matter. This is because open source is easier to "trust", since any [malicious behavior can be relatively easily spotted](https://appleinsider.com/articles/21/07/04/open-source-audacity-deemed-spyware-over-data-collection-changes). I put "trust" in quotes because that's kind of the opposite of what we want. The purpose of open source software is to remove the need for trust entirely, because everything is clearly visible. Theoretically, anyone can go through the code, find something they don't like, and remove it in their fork (version) of the app. Practically, this isn't always possible because not everyone can understand code or audit effectively. Even in cases like this, having the source code be available helps transparency on the developer's end, making them just a little easier to trust.
 
 Open source software can also have better privacy and security due to a theory called [Linus's law](https://en.wikipedia.org/wiki/Linus%27s_law). It states that open source software has many eyes on it, so bugs, vulnerabilities, or trackers are much easier to catch. It's important that I mention that this isn't always true, and there are many cases in which [closed source software is more secure than open source](https://madaidans-insecurities.github.io/firefox-chromium.html). The best way to ensure security, other than verifying it yourself by going through the source code, is to make sure the services you're using have been audited recently and have fixed any security vulnerabilities that have been found.
 
----
-
 ## Encryption
-This is one of those big fancy "security professional" words that most people tell themselves they understand to look smart in front of their friends. And that's exactly what I'm gonne do too, because I am by no means a security professional.
+This is one of those big fancy "security professional" words that most people tell themselves they understand to look smart in front of their friends. And that's exactly what I'm gonna do too, because I am by no means a security professional.
 
 Encryption is important. It's what protects your stuff from being openly available to anyone on the internet. But not all encryption is equal, some kinds of encryption are better than others for certain purposes.
 
@@ -94,35 +84,37 @@ As you can see, if there is e2ee, there is no need to trust the provider, whethe
 
 Obviously, e2ee is quite a bit more complicated than that, but that's about the gist of it.
 
----
-
 ## Metadata
 ### What is it?
 The simplest way to define metadata is "data about data".
 
-Imagine you take a photo of a tree on your phone. The data in this case would be the photo itself: the colors and positions of each pixel in the photo, basically what makes the photo a _photo_. The metadata would be additional information about the photo, like the location you took the photo at, the kind of lens you used, the date and time you took the photo, the ISO and focal length, etc. It's basically data about the photo.
+Imagine you take a photo of a tree on your phone. The data in this case would be the photo itself: the colors and positions of each pixel in the photo, basically what makes the photo a **photo**. The metadata would be additional information about the photo, like the location you took the photo at, the kind of lens you used, the date and time you took the photo, the ISO and focal length, etc. It's basically data about the photo.
 
 In the context of messaging, the message you send, whether that's text, images, files, videos, audio, whatever, is the data. Everything about the message, like who you're sending it to, when you're sending it, when it's received, what type of data is being sent, etc.
 
-!!! quote "[Berty](https://berty.tech/blog/metadata-mobile-messaging/)"
-    _if the data is a letter, the metadata is the envelope and its associated information (address, time, date, size…)_
+::: info <a href="https://berty.tech/blog/metadata-mobile-messaging/">Berty</a>
+if the data is a letter, the metadata is the envelope and its associated information (address, time, date, size…)
+:::
 
 ### Why should I care?
-!!! quote "Edward Snowden"
-    _Metadata is extraordinarily intrusive. As an analyst, I would prefer to be looking at metadata than looking at content, because it's quicker and easier, and it doesn't lie._
+::: info Edward Snowden
+Metadata is extraordinarily intrusive. As an analyst, I would prefer to be looking at metadata than looking at content, because it's quicker and easier, and it doesn't lie.
+:::
 
 Think of it like this: if you see someone having a conversation with a known drug dealer, even if the actual conversation wasn't heard, there can be some fairly accurate assumptions about what's going on. Similarly, even if the actual messages are encrypted, metadata about the messages can be incredibly revealing.
 
-!!! quote "[Examples from the EFF](https://www.eff.org/fr/deeplinks/2013/06/why-metadata-matters)"
-    - _They know you received a call from the local NRA office while it was having a campaign against gun legislation, and then called your senators and congressional representatives immediately after. But the content of those calls remains safe from government intrusion._
-    - _They know you called a gynecologist, spoke for a half hour, and then called the local Planned Parenthood's number later that day. But nobody knows what you spoke about._
-    - _They know you spoke with an HIV testing service, then your doctor, then your health insurance company in the same hour. But they don't know what was discussed._
-    - _They know you called the suicide prevention hotline from the Golden Gate Bridge. But the topic of the call remains a secret._
+::: info <a href="https://www.eff.org/fr/deeplinks/2013/06/why-metadata-matters">Examples from the EFF</a>
+- They know you received a call from the local NRA office while it was having a campaign against gun legislation, and then called your senators and congressional representatives immediately after. But the content of those calls remains safe from government intrusion.
+- They know you called a gynecologist, spoke for a half hour, and then called the local Planned Parenthood's number later that day. But nobody knows what you spoke about.
+- They know you spoke with an HIV testing service, then your doctor, then your health insurance company in the same hour. But they don't know what was discussed.
+- They know you called the suicide prevention hotline from the Golden Gate Bridge. But the topic of the call remains a secret.
+:::
 
 As you can see, it's pretty easy to figure out what's going on in someone's life, even if you don't know the exact words used in each phone call or conversation.
 
-!!! quote "[ex-NSA Chief Gen. Michael Hayden](https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata)"
-    _We kill people based on metadata._
+::: info <a href="https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata">ex-NSA Chief Gen. Michael Hayden</a>
+We kill people based on metadata.
+:::
 
 ### What can I do?
 In the case of messaging, the best thing you can do is use privacy-friendly services that either have little to no metadata or encrypt your metadata, like [Threema](https://threema.ch/en/blog/posts/metadata), [Signal](https://signal.org/blog/sealed-sender/), [Session](https://getsession.org/blog/metadata-zero-privacy), etc.
@@ -130,8 +122,6 @@ In the case of messaging, the best thing you can do is use privacy-friendly serv
 In the case of your files, there are [metadata removal tools](https://www.privacyguides.org/metadata-removal-tools/) you can use before you share them with someone or post them online.
 
 Whatever you do, minimize metadata.
-
----
 
 ## Get your info here
 [PrivacyGuides](https://privacyguides.org)

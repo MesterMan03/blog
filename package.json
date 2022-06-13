@@ -1,0 +1,27 @@
+{
+  "name": "blog-vitepress",
+  "version": "2.0.0",
+  "description": "The Blog of Random, now made with Vitepress!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [
+    "blog",
+    "random",
+    "vitepress"
+  ],
+  "author": "tcgmoo",
+  "license": "Unlicense",
+  "dependencies": {
+    "katex": "^0.16.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-texmath": "^1.0.0",
+    "vitepress": "^1.0.0-alpha.1"
+  }
+}

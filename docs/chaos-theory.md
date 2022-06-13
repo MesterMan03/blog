@@ -1,17 +1,14 @@
 ---
 title: Chaos Theory
 description: How the simplest things can go haywire
-hide:
-    - footer
+editLink: true
 ---
 
 # Chaos Theory
 
 **How the simplest things can go haywire**
 
-:material-calendar: 2021-12-02
-
----
+Last updated on: 2021-12-02
 
 ## The main stuff
 
@@ -30,8 +27,6 @@ The main thing about these chaotic systems is that they start out seemingly pred
 2. How accurately is its current state measured? If you're measuring chaotic motion of a double pendulum rounded to whole numbers of meters, again, your predictions aren't gonna last very long. So be accurate too, but not so much that it contradicts the first point.
 
 3. Lyapunov time. This is one of the more complex things that my brain couldn't comprehend, but I'll do my best to explain it. Due to the uncertainty in forecasts, there is always a (small) error in the prediction made from the actual state of the system after some time. And as we all know, that small error can get really big over time, hence why the system becomes unpredictable over time. Lyapunov time is the the time for the error to be multiplied by a certain factor, like 2 or 10. Basically it measures the rate at which things get chaotic. Now, this is necessary because if the Lyapunov time is big, then your predictions will be accurate for a longer period of time and everything will be calm. But if it's small, then things are gonna get crazy, quick.
-
----
 
 ## Chaos theory in action
 
@@ -55,8 +50,6 @@ I don't have any sources to back this up, so I might be completely wrong, but Co
 
 Chaos theory pops up in places you wouldn't expect it to be, like economics or chemistry. What does an advanced mathematical concept like chaos theory have to do with money or funny-smelling chemicals? I don't know, but what I do know is that chaos theory has helped robots walk. It has helped people keep stuff secure with cryptography. Chaos theory has thousands of different applications, in thousands of different fields. It has led to many many developments that make our lives better, in some way or another. In short, chaos theory is really useful.
 
----
-
 ## The end
 
 So what have we learned? Chaos theory lives by pretty simple rules. If you change the starting point a little, the outcome should change by a lot. Chaotic behavior starts out normal and becomes crazier over time. To predict chaotic behavior, just be sensible with your measurements and hope you have a long Lyapunov time, or else good luck keeping up with the chaos. And finally, chaos theory is used pretty much everywhere you don't expect it to be, along with all the places you do expect, of course.
@@ -65,18 +58,16 @@ This was a pretty short project because I don't understand the advanced stuff an
 
 Anyway, thanks for reading!
 
----
-
 ## Sources
 
 There's not a lot of sources because many websites were just repeating what Wikipedia said, or were too complicated for me to understand, or both. And I didn't bother going past the first page of search results, so it's possible I missed out on a *lot*.
 
-[https://www.britannica.com/science/chaos-theory](https://www.britannica.com/science/chaos-theory)
+https://www.britannica.com/science/chaos-theory
 
-[https://en.wikipedia.org/wiki/Chaos_theory](https://en.wikipedia.org/wiki/Chaos_theory)
+https://en.wikipedia.org/wiki/Chaos_theory
 
-[https://en.wikipedia.org/wiki/Lyapunov_time](https://en.wikipedia.org/wiki/Lyapunov_time)
+https://en.wikipedia.org/wiki/Lyapunov_time
 
-[https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/](https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/)
+https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/
 
-[https://en.wikipedia.org/wiki/Robert_L._Devaney](https://en.wikipedia.org/wiki/Robert_L._Devaney)
+https://en.wikipedia.org/wiki/Robert_L._Devaney

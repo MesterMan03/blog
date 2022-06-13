@@ -1,17 +1,14 @@
 ---
 title: "Google: A Misrepresented Evil"
 description: Don't be evil, sometimes.
-hide:
-    - footer
+editLink: true
 ---
 
 # Google: A Misrepresented Evil
 
 **Don't be evil, sometimes**
 
-:material-calendar: 2022-06-06
-
----
+Last updated on: 2022-06-06
 
 ## Humble beginnings 
 

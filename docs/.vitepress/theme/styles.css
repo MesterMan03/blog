@@ -1,0 +1,38 @@
+/* Checklists */
+.contains-task-list {
+    list-style: none !important;
+}
+
+/* Download boxes */
+.details ul {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .details ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.details ul li {
+    margin-top: 0.5rem;
+}
+
+.details ul li {
+    padding: 1rem 0 !important;
+    text-align: center;
+}
+
+/* Text */
+p {
+    text-align: justify;
+}
+
+.custom-block:not(.details) {
+    font-size: 1em;
+}

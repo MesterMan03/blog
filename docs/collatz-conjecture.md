@@ -1,33 +1,34 @@
 ---
 title: Collatz Conjecture
 description: The simplest hardest problem in math history
-hide:
-    - footer
+editLink: true
 ---
 
 # Collatz Conjecture
 
 **The simplest hardest problem in math history**
 
-:material-calendar: 2021-12-14
+Last updated on: 2021-12-14
 
 ---
 
-!!! quote "Jeffery Lagarias, expert on the Collatz conjecture, mathematician at the University of Michigan"
-    _This is a really dangerous problem. People become obsessed with it and it really is impossible._
+::: info Jeffery Lagarias, expert on the Collatz conjecture, mathematician at the University of Michigan
+This is a really dangerous problem. People become obsessed with it and it really is impossible.
+:::
 
-!!! quote "Paul Erdös, the man who only loved numbers"
-    _Mathematics is not ready for such problems yet._
+::: info Paul Erdös, the man who only loved numbers
+Mathematics is not ready for such problems yet.
+:::
 
-!!! quote "Master of alliteration, me"
-    _Many, many mathematicians over the months of meaningless moil have made minimal progress toward the solution of this stupidly simple yet stubbornly unsolvable problem._
+::: info Master of alliteration, me
+Many, many mathematicians over the months of meaningless moil have made minimal progress toward the solution of this stupidly simple yet stubbornly unsolvable problem.
+:::
 
-!!! quote "Pretty much every mathematician ever"
-    _Don't waste your time on this._
+::: info Pretty much every mathematician ever
+Don't waste your time on this.
+:::
 
 So, I wasted my time on this.
-
----
 
 ## The Problem
 
@@ -47,8 +48,6 @@ The problem here is, we need to find a number that doesn't eventually reach 1 wh
 
 The conjecture suggests that there is no positive whole number that doesn't eventually reach 1. But that hasn't been proved (and probably won't be for a long time), hence why it's still a conjecture and not a theory.
 
----
-
 ## The Person behind the Problem
 
 [Lothar Collatz](https://en.wikipedia.org/wiki/Lothar_Collatz) (1910-1990) was a German mathematician born in Arnsberg, Westphalia. He is most known for the Collatz conjecture, even though he did so much more.
@@ -67,7 +66,7 @@ Collatz studied at a total of 4 universities before he got his doctorate. Yes, f
 
      - This is where he studied for his doctorate under [Alfred Klose](https://de.wikipedia.org/wiki/Alfred_Klose_(Mathematiker)), a German mathematician who's Wikipedia page is only available in German.
 
-     - Collatz was awarded his doctorate in 1935 for his dissertation _Das Differenzenverfahren mit höherer Approximation für lineare Differentialgleichungen_ (The finite difference method with higher approximation for linear differential equations).
+     - Collatz was awarded his doctorate in 1935 for his dissertation **Das Differenzenverfahren mit höherer Approximation für lineare Differentialgleichungen** (The finite difference method with higher approximation for linear differential equations).
 
 After becoming a non-medical doctor, he worked as an assistant at the University of Berlin, and moved to the Technical University of Karlsruhe later that year.
 
@@ -90,8 +89,6 @@ Even after retirement, he was still very active on math conferences, and he died
 This guy wrote a lot of books. The names are all in German and I'm not gonna list them out here, but here's a list of a few if you want them. I'm sure you can find more online.
 
 [Lothar Collatz - Selected works (Wikipedia)](https://en.wikipedia.org/wiki/Lothar_Collatz#Selected_works)
-
----
 
 ## Solving the Problem
 
@@ -119,21 +116,9 @@ Follow these few easy steps and you'll be on your way to solving this problem in
 
 3. Make a new Python program and type in the following code:
 
-```python title="CollatzConjecture.py"
-def collatz(n): # making the collatz function
-    while n != 1: # this tells the code to keep running until it reaches 1
-        if n % 2: # if the number is odd, run code below
-            n = n*3 + 1
-        else: # else, if the number is even, run code below
-            n = n / 2
-        print(n) # output number onto screen
+<<< @/collatz-conjecture/CollatzConjecture.py
 
-num = int(input("Enter a number to test: ")) # this allows you to put in a different number while running the code instead of having to change the code each time
-collatz(num) # run the collatz function with the number you type in
-input() # this is there to let you read the output, but otherwise useless to the code
-```
-
-Alternatively, you can [download the code here](CollatzConjecture.py "Right click and save as to download").
+Alternatively, you can [download the code here](/collatz-conjecture/CollatzConjecture.py "Right click and save as to download").
 
 4. Hit save and double-click the .py file to run it.
 
@@ -141,7 +126,7 @@ Alternatively, you can [download the code here](CollatzConjecture.py "Right clic
 
 6. Wait until the output reaches 1.
 
-7. Realise you've wasted possibly hours of your day setting everything up, and writing and rewriting the code, trying to make everything work properly, only to realise that the program only goes up to 2^1024^ because there's something wrong with the code, since Python 3 isn't supposed to have an integer limit and even though everything had `#!python int()` around it, it was still working in floats for whatever reason, until you finally remove all the `#!python int()`s and succumb to the limit that the system has forced upon you.
+7. Realise you've wasted possibly hours of your day setting everything up, and writing and rewriting the code, trying to make everything work properly, only to realise that the program only goes up to 2^1024^ because there's something wrong with the code, since Python 3 isn't supposed to have an integer limit and even though everything had `int()` around it, it was still working in floats for whatever reason, until you finally remove all the `int()`s and succumb to the limit that the system has forced upon you.
 
 8. Question the choices you made that brought you to this point in your life.
 
@@ -157,27 +142,26 @@ But, if the idea of taking a year off to try every single number up to 2^1024^ m
 
 ### The "Solution"
 
-So far, there's been no solutions. That's not really a conclusion since it can't be proven that there's no solution. Just like how it can't be proven that there _is_ a solution.
+So far, there's been no solutions. That's not really a conclusion since it can't be proven that there's no solution. Just like how it can't be proven that there **is** a solution.
 
-[Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao), kid genius who's no longer a kid but still a genius, gave this problem a go. He found a "solution", which is that _almost_ all numbers reach 1, which gives us a pretty good estimate of the actual solution. You can read about it in his [blog post](https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/). I didn't understand any of it, but maybe you will.
+[Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao), kid genius who's no longer a kid but still a genius, gave this problem a go. He found a "solution", which is that **almost** all numbers reach 1, which gives us a pretty good estimate of the actual solution. You can read about it in his [blog post](https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/). I didn't understand any of it, but maybe you will.
 
-!!! quote "Terence Tao, genius, mathematician"
-    _It’s actually an occupational hazard when you’re a mathematician. You could get obsessed with these big famous problems that are way beyond anyone’s ability to touch, and you can waste a lot of time._
+::: info Terence Tao, genius, mathematician
+It’s actually an occupational hazard when you’re a mathematician. You could get obsessed with these big famous problems that are way beyond anyone’s ability to touch, and you can waste a lot of time.
+:::
 
 I found a thesis by Jose William Porras that claims to be the "Solution to Collatz's Conjecture". You can have a read [here](https://www.researchgate.net/publication/325389892_Solution_to_Collatz's_Conjecture). Again, I didn't understand it, but maybe you will.
 
----
-
 ## Sources and Links
 
-List of universities attended by Lothar Collatz: [https://www.wikidata.org/wiki/Property:P69](https://www.wikidata.org/wiki/Property:P69)
+List of universities attended by Lothar Collatz: https://www.wikidata.org/wiki/Property:P69
 
-Simpler explanation of Terence Tao's "solution": [https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211/](https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211/)
+Simpler explanation of Terence Tao's "solution": https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211/
 
-Collatz conjecture Wikipedia page: [https://en.wikipedia.org/wiki/Collatz_conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
+Collatz conjecture Wikipedia page: https://en.wikipedia.org/wiki/Collatz_conjecture
 
-Lother Collatz biography: [https://mathshistory.st-andrews.ac.uk/Biographies/Collatz/](https://mathshistory.st-andrews.ac.uk/Biographies/Collatz/)
+Lother Collatz biography: https://mathshistory.st-andrews.ac.uk/Biographies/Collatz/
 
-YouTube playlist about Collatz conjecture (includes Veritasium video): [https://www.youtube.com/playlist?list=PLPa2dwCo_Eqker6ktrUs7dC7FkKwa7Q2h](https://www.youtube.com/playlist?list=PLPa2dwCo_Eqker6ktrUs7dC7FkKwa7Q2h)
+YouTube playlist about Collatz conjecture (includes Veritasium video): https://www.youtube.com/playlist?list=PLPa2dwCo_Eqker6ktrUs7dC7FkKwa7Q2h
 
 **All other sources are linked in the main text**
