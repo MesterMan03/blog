@@ -2,6 +2,11 @@
 title: The Phalanx Formation
 description: My favorite ancient Greek battle formation
 editLink: true
+
+head:
+  - - link
+    - rel: stylesheet
+      href: the-phalanx-formation.css
 ---
 
 # The Phalanx Formation
@@ -9,15 +14,6 @@ editLink: true
 **My favorite ancient Greek battle formation**
 
 Last updated on: 2021-12-30
-
-<style>
-    img {
-    float: right;
-    border-radius: 0.5rem;
-    margin: 0 1em;
-    max-width: 84vw;
-    }
-</style>
 
 ## The origin story
 
