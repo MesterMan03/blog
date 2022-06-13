@@ -154,14 +154,14 @@ I found a thesis by Jose William Porras that claims to be the "Solution to Colla
 
 ## Sources and Links
 
-List of universities attended by Lothar Collatz: https://www.wikidata.org/wiki/Property:P69
+[List of universities attended by Lothar Collatz](https://www.wikidata.org/wiki/Property:P69)
 
-Simpler explanation of Terence Tao's "solution": https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211/
+[Simpler explanation of Terence Tao's "solution"](https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211/)
 
-Collatz conjecture Wikipedia page: https://en.wikipedia.org/wiki/Collatz_conjecture
+[Collatz conjecture Wikipedia page](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
-Lother Collatz biography: https://mathshistory.st-andrews.ac.uk/Biographies/Collatz/
+[Lother Collatz biography](https://mathshistory.st-andrews.ac.uk/Biographies/Collatz/)
 
-YouTube playlist about Collatz conjecture (includes Veritasium video): https://www.youtube.com/playlist?list=PLPa2dwCo_Eqker6ktrUs7dC7FkKwa7Q2h
+[YouTube playlist about Collatz conjecture (includes Veritasium video)](https://www.youtube.com/playlist?list=PLPa2dwCo_Eqker6ktrUs7dC7FkKwa7Q2h)
 
 **All other sources are linked in the main text**

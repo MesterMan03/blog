@@ -1,4 +1,5 @@
 export default {
+    base: '/blog/',
     lang: 'en-US',
     title: "The Blog of Random",
     description: "A blog about the most random things you've ever heard of",
