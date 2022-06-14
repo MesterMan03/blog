@@ -5,24 +5,19 @@ titleTemplate: false
 
 hero:
   name: The Blog of Random
-  text: Now on VitePress!
   tagline: A blog about the most random things you can think of, brought to you by the most interesting boring person you've ever met
+  actions:
+    - theme: brand
+      text: Homepage
+      link: https://noClaps.github.io
+    - theme: alt
+      text: Foto de la Fleur
+      link: https://noClaps.github.io/gallery/
   
 features:
-  - title: About me
-    details: I'm just a kid on the internet who's interested in the most unusual and bizarre things. I'll have a conversation about nearly any topic you bring up, even if I know absolutely nothing about it. I'm ambiverted, which means I'm somewhere between shy and social, so feel free to start up a conversation with me, and I'll be sure to respond (usually almost immediately)! I'm also a huge tech nerd and a privacy advocate, though I'm not the most knowledgeable at either. I do try my best though. I've done months of research on topics such as digital privacy and security, which doesn't seem like a lot, but it's more than most people have done.
+  - title: About this blog
+    details: This blog is about pretty much any topic I find interesting at the moment. I've written about historical topics, math stuff, tech, and more. I'd love ideas for things to write about. You can recommend them at my GitHub by opening an issue, or contact me on Matrix at @whatanerd:envs.net. I don't have a strict upload schedule, but on average I post about once a month, though don't quote me on that (I've gone like 3 months without posting before.). I try to write as frequently as I can, but I get distracted easily and I procrastinate a lot, so you might go a few weeks or sometimes months without any new posts, so sorry about that.
+
+  - title: How can I keep up with updates/new posts?
+    details: Eventually I plan to set up an RSS feed on a website completely designed by me, but for now I'm using VitePress and it doesn't support RSS/Atom feeds. Another option would be to set up a newsletter type thing, but I don't want to give out my real email address to the newsletter provider, and I don't want you to either, so that's not an option that's too attractive for me at the moment. One option is to subscribe to the GitHub Releases Atom feed for this, since I'll create a new release when I make a new post or a big change / set of changes to the website. 
 ---
-
-# The Blog of Random
-
-A blog about the most random things you can think of, brought to you by the most interesting boring person you've ever met
-
-## About me
-
-I'm just a kid on the internet who's interested in the most unusual and bizarre things. I'll have a conversation about nearly any topic you bring up, even if I know absolutely nothing about it. I'm ambiverted, which means I'm somewhere between shy and social, so feel free to start up a conversation with me, and I'll be sure to respond (usually almost immediately)!
-
-I'm also a huge tech nerd and a privacy advocate, though I'm not the most knowledgeable at either. I do try my best though. I've done months of research on topics such as digital privacy and security, which doesn't seem like a lot, but it's more than most people have done.
-
-Anyway, pleasant to make your acquaintance, enjoy the blog!
-
-:D
