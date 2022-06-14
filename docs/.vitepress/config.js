@@ -116,6 +116,7 @@ export default defineConfig({
 
     themeConfig: {
         siteTitle: "The Blog of Random",
+        lastUpdatedText: "Last updated on",
 
         nav: [
             {
@@ -148,7 +149,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/noClaps' }
+            { icon: 'github', link: 'https://github.com/noClaps/blog' }
         ],
 
         editLink: {
