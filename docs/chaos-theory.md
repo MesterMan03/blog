@@ -1,7 +1,6 @@
 ---
 title: Chaos Theory
 description: How the simplest things can go haywire
-editLink: true
 ---
 
 # Chaos Theory

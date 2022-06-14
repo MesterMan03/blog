@@ -1,7 +1,6 @@
 ---
 title: Messengers
 description: The right and wrong places to talk to people
-editLink: true
 titleTemplate: Privacy, Security and Anonymity
 ---
 
@@ -78,13 +77,13 @@ WhatsApp is the most used messaging app in the world, with over [2 billion users
 
 The main thing is, WhatsApp is closed-source. The reason this is an issue is that they _say_ they have end-to-end encryption, but there's no way to be sure of that. It's entirely possible that they're lying and can clearly see all of your messages. Is that actually happening? No, probably not. They state that they cannot read end-to-end encrypted content, which includes:
 
-::: info <a href="https://faq.whatsapp.com/general/security-and-privacy/end-to-end-encryption">WhatsApp FAQ</a>
+::: info [WhatsApp FAQ](https://faq.whatsapp.com/general/security-and-privacy/end-to-end-encryption)
 messages, photos, videos, voice messages, documents, status updates and calls
 :::
 
 Note that WhatsApp doesn't encrypt payments, metadata or,
 
-::: info <a href="https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf">WhatsApp encryption whitepaper</a>
+::: info [WhatsApp encryption whitepaper](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf)
 Communications with a recipient who elects to use a vendor to manage their API endpoint are not considered end-to-end encrypted.
 :::
 
