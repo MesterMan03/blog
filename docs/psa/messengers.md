@@ -23,8 +23,6 @@ I'm also gonna talk about a lot of messengers, but I'm also gonna miss out on a 
 
 Sit back and relax, because this is gonna be a long one.
 
----
-
 ## Unencrypted messaging
 No encryption is pretty easy to explain, there's just nothing there to protect you. Having no encryption means that your messages are freely accessible to the providers, the government, and pretty much anyone else who wants to see them. This has lead to data leaking from these platforms in the past, and they should not be used for extended communication. This is probably the worst-case scenario, and unfortunately _really_ common.
 
