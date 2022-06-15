@@ -1,5 +1,4 @@
 ---
-editLink: true
 layout: home
 titleTemplate: false
 

@@ -1,7 +1,6 @@
 ---
 title: History of Toilet Paper
 description: The long and quite strange history of toilet paper
-editLink: true
 ---
 
 # History of Toilet Paper
