@@ -156,10 +156,6 @@ export default defineConfig({
         editLink: {
             pattern: 'https://github.com/noClaps/blog/edit/main/docs/:path',
             text: 'Edit this page'
-        },
-
-        footer: {
-            message: 'Released under the Unlicense.'
         }
     },
 
