@@ -1,6 +1,13 @@
 /* Checklists */
-.contains-task-list {
-    list-style: none !important;
+.task-list-item {
+    position: relative;
+    list-style-type: none;
+}
+
+.task-list-item [type="checkbox"] {
+    position: absolute;
+    top: 0.45em;
+    inset-inline-start: -2em;
 }
 
 /* Download boxes */
