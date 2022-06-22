@@ -33,7 +33,7 @@ I hope this explains why you should care about your own privacy. It's because **
 People often confuse these 3 terms, and while they can be interchangeable in a few situations, they are very different things and should be treated as such.
 
 - [**Privacy**](https://en.wikipedia.org/wiki/Privacy) is when you have control over your personal information and who can see it.
-- [**Security**](https://en.wikipedia.org/wiki/Security) is when you have protection from unauthorized malicious actors.
+- [**Security**](https://en.wikipedia.org/wiki/Computer_security) is when you have protection from unauthorized malicious actors.
 - [**Anonymity**](https://en.wikipedia.org/wiki/Anonymity) is when you have a completely unknown/untraceable identity.
 
 It's possible to have one but not the others, and depending on what you're looking for, the tools you use will differ. For instance, [Tor](https://www.torproject.org/) is a much better tool for **anonymity**, whereas it's not as good as [Chromium](https://www.chromium.org/Home/) for **security**, which is not as good as [Firefox](https://www.mozilla.org/en-US/firefox/new/) for **privacy**.
