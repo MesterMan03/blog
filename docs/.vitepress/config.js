@@ -1,95 +1,8 @@
-import { defineConfig } from 'vitepress';
-import markdownItKatex from 'markdown-it-katex';
+import mathjax3 from 'markdown-it-mathjax3';
 
-const customElements = [
-    'math',
-    'maction',
-    'maligngroup',
-    'malignmark',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mi',
-    'mlongdiv',
-    'mmultiscripts',
-    'mn',
-    'mo',
-    'mover',
-    'mpadded',
-    'mphantom',
-    'mroot',
-    'mrow',
-    'ms',
-    'mscarries',
-    'mscarry',
-    'mscarries',
-    'msgroup',
-    'mstack',
-    'mlongdiv',
-    'msline',
-    'mstack',
-    'mspace',
-    'msqrt',
-    'msrow',
-    'mstack',
-    'mstack',
-    'mstyle',
-    'msub',
-    'msup',
-    'msubsup',
-    'mtable',
-    'mtd',
-    'mtext',
-    'mtr',
-    'munder',
-    'munderover',
-    'semantics',
-    'math',
-    'mi',
-    'mn',
-    'mo',
-    'ms',
-    'mspace',
-    'mtext',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mpadded',
-    'mphantom',
-    'mroot',
-    'mrow',
-    'msqrt',
-    'mstyle',
-    'mmultiscripts',
-    'mover',
-    'mprescripts',
-    'msub',
-    'msubsup',
-    'msup',
-    'munder',
-    'munderover',
-    'none',
-    'maligngroup',
-    'malignmark',
-    'mtable',
-    'mtd',
-    'mtr',
-    'mlongdiv',
-    'mscarries',
-    'mscarry',
-    'msgroup',
-    'msline',
-    'msrow',
-    'mstack',
-    'maction',
-    'semantics',
-    'annotation',
-    'annotation-xml'
-]
+const customElements = ['mjx-container'];
 
-export default defineConfig({
+export default {
     base: '/blog/',
     lang: 'en-US',
     title: "The Blog of Random",
@@ -102,7 +15,7 @@ export default defineConfig({
             md.use(require('markdown-it-sup'));
             md.use(require('markdown-it-abbr'));
             md.use(require('markdown-it-task-lists'));
-            md.use(markdownItKatex)
+            md.use(mathjax3)
         }
     },
 
@@ -169,4 +82,4 @@ export default defineConfig({
         ['meta', { name: 'theme-color', content: '#ffffff' }]
     ]
 
-})
+}

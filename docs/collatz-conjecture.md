@@ -1,11 +1,6 @@
 ---
 title: Collatz Conjecture
 description: The simplest hardest problem in math history
-
-head:
-  - - link
-    - rel: stylesheet
-      href: katex.min.css
 ---
 
 # Collatz Conjecture

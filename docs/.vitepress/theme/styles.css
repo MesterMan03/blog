@@ -40,3 +40,13 @@ p {
 .custom-block:not(.details) {
     font-size: 1em;
 }
+
+/* MathJax */
+mjx-container>svg {
+    display: block;
+    margin: auto;
+}
+
+mjx-container {
+    padding: 0.5rem 0;
+}
