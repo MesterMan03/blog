@@ -26,9 +26,9 @@ body:
     label: Where is the bug?
     description: Which page, section, or line can I find the bug in? The more accurate you are, the better.
     placeholder: |
-    Make sure your browser and OS are on the latest versions, and **provide screenshots**.
-    
-    If you've built the site yourself and are seeing the bug in the preview, make sure your NPM modules are up to date and you're using the correct version of NPM.
+      Make sure your browser and OS are on the latest versions, and **provide screenshots**.
+
+      If you've built the site yourself and are seeing the bug in the preview, make sure your NPM modules are up to date and you're using the correct version of NPM.
   validations:
     required: true
 
