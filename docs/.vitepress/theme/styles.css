@@ -50,3 +50,21 @@ mjx-container>svg {
 mjx-container {
     padding: 0.5rem 0;
 }
+
+/* Contributor logos */
+.contrib {
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contributors {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+    .contributors {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}

@@ -278,6 +278,12 @@ This post isn't about trying to get you to switch to another messenger (though i
 
 I've heard plenty of reasons that people don't want to move away from their respective messaging apps, and they're all perfectly valid, no matter how miniscule they may seem to me. At the end of the day, it's up to you what messenger you want to use, and for what purpose. Do your research, try stuff out, see what sticks, and go with that.
 
+---
+
+#### Contributors
+[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+{.contributors}
+
 *[SMS]: Short Message Service
 *[2FA]: 2 Factor Authentication
 *[SS7]: Signaling System 7

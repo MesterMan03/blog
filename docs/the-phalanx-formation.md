@@ -124,4 +124,10 @@ https://www.historyextra.com/period/ancient-greece/greek-warfare-battles-hoplite
 
 https://www.livius.org/articles/concept/phalanx/
 
+---
+
+#### Contributors
+[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+{.contributors}
+
 *[BCE]: Before Common Era

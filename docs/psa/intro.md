@@ -139,6 +139,12 @@ Whatever you do, minimize metadata.
 
 You can also join the [PrivacyGuides](https://www.privacyguides.org/#we-need-you-heres-how-to-get-involved), [Techlore](https://techlore.tech "You can find their socials in the top right corner") and [The New Oil](https://thenewoil.org/links.html) communities. They're super friendly and will help you with whatever privacy- or security-related questions you have.
 
+---
+
+#### Contributors
+[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+{.contributors}
+
 *[e2ee]: end-to-end encryption    
 *[NSA]: National Security Agency
 *[EFF]: Electronic Frontier Foundation

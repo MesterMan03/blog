@@ -170,5 +170,8 @@ https://en.wikipedia.org/wiki/Koan
 **Science and Civilisation in China: Volume 5, Chemistry and Chemical Technology; Part 1, Paper and Printing** by Tsien Tsuen-Hsuin
 
 **Wiped: The Curious History of Toilet Paper** by Ronald H. Blumer
+#### Contributors
+[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+{.contributors}
 
 *[BCE]: Before Common Era

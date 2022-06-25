@@ -70,3 +70,9 @@ https://en.wikipedia.org/wiki/Lyapunov_time
 https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/
 
 https://en.wikipedia.org/wiki/Robert_L._Devaney
+
+---
+
+#### Contributors
+[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+{.contributors}
