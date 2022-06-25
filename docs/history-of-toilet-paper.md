@@ -19,15 +19,15 @@ This is a normal topic of discussion, and I was not out of my mind when I though
 
 Back in the good old days of Ancient Greece and Rome, when the people used to believe in gods and Titans that slept with everyone and ate their children, is when the earliest documentation of the concept of cleaning yourself after using the restroom (which were public and had no stalls or any concept of privacy at all. Yeah, it's as weird as it sounds, but they loved it.) was found.
 
-They had these things called **tersoriums**, which are basically sticks with a sponge stuck on the end, soaked with salt water or vinegar. These things were really popular, and you can see that looking at Roman literature. For instance, there was a letter from the philosopher Seneca to an official, Lucilius, about a German gladiator who didn't want to die to a wild animal in the arena, so he sneaked into the bathroom and stuck one of the tersoriums down his throat and, well, died. However, despite the tersorium's popularity, it's actually not really clear whether it was used to clean bathroom facilities, or the butts of users of said facilities.
+They had these things called _tersoriums_, which are basically sticks with a sponge stuck on the end, soaked with salt water or vinegar. These things were really popular, and you can see that looking at Roman literature. For instance, there was a letter from the philosopher Seneca to an official, Lucilius, about a German gladiator who didn't want to die to a wild animal in the arena, so he sneaked into the bathroom and stuck one of the tersoriums down his throat and, well, died. However, despite the tersorium's popularity, it's actually not really clear whether it was used to clean bathroom facilities, or the butts of users of said facilities.
 
-Another invention from the Mediterranean men was the **pessoi**. This was basically just pieces of broken pots and ceramic, or oval or round pebbles. This probably originated as **ostraca**, which were broken bits of pottery that had the names of enemies engraved on them, which the people would egest on. Pessoi were found in the ruins of Roman and Greek toilets. There is also a 2700 year old drinking cup with an illustration of a man squatting and doing his business on his stone. Why anyone would want a cup like that, I could not tell you. In fact, even Greek comic playwright Aristophanes (known as "The Father of Comedy") wrote about the use of pessoi in his play **Peace** (5^th^ century BCE), which proves that butt jokes always have and always will be funny.
+Another invention from the Mediterranean men was the _pessoi_. This was basically just pieces of broken pots and ceramic, or oval or round pebbles. This probably originated as _ostraca_, which were broken bits of pottery that had the names of enemies engraved on them, which the people would egest on. Pessoi were found in the ruins of Roman and Greek toilets. There is also a 2700 year old drinking cup with an illustration of a man squatting and doing his business on his stone. Why anyone would want a cup like that, I could not tell you. In fact, even Greek comic playwright Aristophanes (known as "The Father of Comedy") wrote about the use of pessoi in his play _Peace_ (5^th^ century BCE), which proves that butt jokes always have and always will be funny.
 
 ### Pooping on the Orient Express
 
 On our journey through the history of toilet paper, we find ourselves in Asia, with its vast empires and a really long list of inventions that we use to this day. Believe it or not, toilet paper as we know it today was actually invented in China, but that's a story for later. Before that, many other tools were used to clean the bottoms of the Asian men and women of those times.
 
-In 1992, in the remains of an old Han Dynasty military base, an interesting object was found: a 2000 year old hygiene stick (also known as **salaka**, **cechou**, or **chugi/chuugi**, depending on where you're from). These were similar to the tersorium from Greece and Rome, but with less sponge and more cloth. Of course, the people who found these foul-smelling sticks didn't know whether they were used by humans, so they sent them to scientists to figure that out. The scientists studied the stuff on the smelly sticks and concluded that they contained the kinds of bacteria found in the bellies of humans. This proved that this sticks were indeed used by people for cleaning themselves down under, and was later supported by historical texts that talk about sticks and spatulas being used in ancient China and Japan for this very purpose. I don't know why they were writing about the cleaning of poop, but I'm doing the same thing so I guess I can't question it too much.
+In 1992, in the remains of an old Han Dynasty military base, an interesting object was found: a 2000 year old hygiene stick (also known as _salaka_, _cechou_, or _chugi_/_chuugi_, depending on where you're from). These were similar to the tersorium from Greece and Rome, but with less sponge and more cloth. Of course, the people who found these foul-smelling sticks didn't know whether they were used by humans, so they sent them to scientists to figure that out. The scientists studied the stuff on the smelly sticks and concluded that they contained the kinds of bacteria found in the bellies of humans. This proved that this sticks were indeed used by people for cleaning themselves down under, and was later supported by historical texts that talk about sticks and spatulas being used in ancient China and Japan for this very purpose. I don't know why they were writing about the cleaning of poop, but I'm doing the same thing so I guess I can't question it too much.
 
 ### Other cultures I didn't bother reading about
 
@@ -85,7 +85,7 @@ Originally, Americans used some creative methods to clean up after doing their b
 The 'legend' goes that people were using Sears catalogs in outhouses, but when the catalog began to be printed in glossy paper, people needed to find a replacement
 :::
    
-Americans also used the **Farmer's Almanac** so often, they would nail them to the outhouse walls for easy access to both reading material and toilet paper once they were done reading. That's why, in 1919, the company started pre-drilling holes into the corner of the books, which they continue to do to this day.
+Americans also used the _Farmer's Almanac_ so often, they would nail them to the outhouse walls for easy access to both reading material and toilet paper once they were done reading. That's why, in 1919, the company started pre-drilling holes into the corner of the books, which they continue to do to this day.
 
 The West got its first taste (not literally, that would be disgusting and weird) of toilet paper in 1857, thanks to a New Yorker names Joseph Gayetty. Mr Gayetty marketed his invention, the "Medicated Paper, for the Water-Closet", which sold in packages of 500 sheets for 50 cents, which converts to a standard roll of two-ply, or half of a standard roll of one-ply, for about $16 today. If that sounds overpriced, that's because it is.
 
@@ -101,15 +101,19 @@ Andrex continued to innovate, for in the 1990s, they are the ones who brought us
 
 That was the end of innovation for the world of toilet paper, at least for now.
 
+---
+
 ## Out of stock
 
 There have been no shortages of shortages of toilet paper in the past.
 
 For instance, in 1973, the Japanese middle-class were scared that their dreams and visions of peace and prosperity after the war would be drop-kicked by inflation and crises and a whole bunch of other problems that a country could have after a war. So they did what any normal, sane population should do. They bought huge amounts of toilet paper and stockpiled them, which caused a shortage in toilet paper in the Japanese market.
 
-In fact, this incident was so famous, it made its way over to the US. A congressman from Wisconsin, Harold V. Froelich, said that there was a possibility that there would be a shortage of toilet paper in the US too because of the stuff that was happening in Japan. So Johnny Carson made some jokes about it in his **Tonight Show** monologue, and people freaked out because of it. They started panic-buying toilet paper and ended up actually causing a shortage for many months. So I suppose by some weird and twisted Butterfly Effect, Mr Froelich was actually right.
+In fact, this incident was so famous, it made its way over to the US. A congressman from Wisconsin, Harold V. Froelich, said that there was a possibility that there would be a shortage of toilet paper in the US too because of the stuff that was happening in Japan. So Johnny Carson made some jokes about it in his _Tonight Show_ monologue, and people freaked out because of it. They started panic-buying toilet paper and ended up actually causing a shortage for many months. So I suppose by some weird and twisted Butterfly Effect, Mr Froelich was actually right.
 
 Speaking of panic-buying, remember the Great Toilet Paper Purchase of March 2020? Everyone and their mother decided to head to the nearest store that had a supply of toilet paper, and immediately bought all of it, and never gave it to anyone else ever. Now if you take a look at any one country, that's a lot of mothers and children. Now imagine pretty much all of the Western world doing this, and we reach levels of insanity only seen dozens of times in human history. Of course, the rest of the world had a solution: bidets. But why would you use a convenient reusable tool specifically made for washing, when you could hoard rolls of dead trees, am I right? Yeah, I'll show myself out.
+
+---
 
 ## Holy poop
 
@@ -117,9 +121,9 @@ I'm not sure I should put this in here, seeing as these religions have long and 
 
 ### Judaism
 
-- Pessoi (remember the stone that the Greeks used to do their business on?) was mentioned in the **Talmud**, which is the central text of Rabbinic Judaism.
+- _Pessoi_ (remember the stone that the Greeks used to do their business on?) was mentioned in the _Talmud_, which is the central text of Rabbinic Judaism.
 
-- All Orthodox Jewish dudes are expected to memorise and recite an ancient blessing, the Asher Yatzar, after going number two.  
+- All Orthodox Jewish dudes are expected to memorise and recite an ancient blessing, the _Asher Yatzar_, after going number two.  
 
 ### Buddhism
 
@@ -133,9 +137,11 @@ I'm not sure I should put this in here, seeing as these religions have long and 
     Kanshiketsu - A shiketsu, or “poop-stick” (kan, dry; shi, poop; ketsu, stick), was used in old times instead of toilet paper. It is at once both private and polluted. But in samadhi there is no private or public, no pure or polluted.
     :::
 
-- **Vinaya Pitaka** is a Buddhist scripture that lays out the rules of behavior for monks and nuns. It also mentions pooping and cleaning up, because apparently those also need discipline.
+- _Vinaya Pitaka_ is a Buddhist scripture that lays out the rules of behavior for monks and nuns. It also mentions pooping and cleaning up, because apparently those also need discipline.
 
 - People thought the feces of the Dalai Lama had magical healing properties.
+
+---
 
 ## Conclusion
 
@@ -144,6 +150,8 @@ I don't have much to say that hasn't already been said or implied in everything 
 I guess we have the Chinese, Joseph Gayetty, Seth Wheeler, the Scott Paper Company, St Andrew Mills and Andrex, and everyone else who was there for the ride, to thank for the bathroom commodity that we love, hoard, probably care very little for, and definitely take for granted today.
 
 Thanks for reading!
+
+---
 
 ## Sources
 
@@ -163,11 +171,14 @@ https://en.wikipedia.org/wiki/Aristophanes
 
 https://en.wikipedia.org/wiki/Koan
 
-**Two Zen Classics: The Gateless Gate and the Blue Cliff Records** by Katsuki Sekida
+_Two Zen Classics: The Gateless Gate and the Blue Cliff Records_ by Katsuki Sekida
 
-**Science and Civilisation in China: Volume 5, Chemistry and Chemical Technology; Part 1, Paper and Printing** by Tsien Tsuen-Hsuin
+_Science and Civilisation in China: Volume 5, Chemistry and Chemical Technology; Part 1, Paper and Printing_ by Tsien Tsuen-Hsuin
 
-**Wiped: The Curious History of Toilet Paper** by Ronald H. Blumer
+_Wiped: The Curious History of Toilet Paper_ by Ronald H. Blumer
+
+---
+
 #### Contributors
 [![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
 {.contributors}

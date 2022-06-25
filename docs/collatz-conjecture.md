@@ -63,7 +63,7 @@ Collatz studied at a total of 4 universities before he got his doctorate. Yes, f
 
      - This is where he studied for his doctorate under [Alfred Klose](https://de.wikipedia.org/wiki/Alfred_Klose_(Mathematiker)), a German mathematician who's Wikipedia page is only available in German.
 
-     - Collatz was awarded his doctorate in 1935 for his dissertation **Das Differenzenverfahren mit höherer Approximation für lineare Differentialgleichungen** (The finite difference method with higher approximation for linear differential equations).
+     - Collatz was awarded his doctorate in 1935 for his dissertation _Das Differenzenverfahren mit höherer Approximation für lineare Differentialgleichungen_ (The finite difference method with higher approximation for linear differential equations).
 
 After becoming a non-medical doctor, he worked as an assistant at the University of Berlin, and moved to the Technical University of Karlsruhe later that year.
 
@@ -73,7 +73,7 @@ Collatz proposed his conjecture in 1937, just 2 years after being awarded his do
 
 ### PC (Post conjecture)
 
-From 1938 to 1943 Collatz was a [Privatdozent](https://en.wikipedia.org/wiki/Privatdozent) at Karlsruhe. During the good old days of World War II, he worked with [Alwin Walther](https://en.wikipedia.org/wiki/Alwin_Walther) at the Institute for Practical Mathematics of the Technische Hochschule Darmstadt.
+From 1938 to 1943 Collatz was a [_Privatdozent_](https://en.wikipedia.org/wiki/Privatdozent) at Karlsruhe. During the good old days of World War II, he worked with [Alwin Walther](https://en.wikipedia.org/wiki/Alwin_Walther) at the Institute for Practical Mathematics of the Technische Hochschule Darmstadt.
 
 In 1943, he was appointed to professorship at the Technical University of Hanover.
 
@@ -139,9 +139,9 @@ But, if the idea of taking a year off to try every single number up to 2^1024^ m
 
 ### The "Solution"
 
-So far, there's been no solutions. That's not really a conclusion since it can't be proven that there's no solution. Just like how it can't be proven that there **is** a solution.
+So far, there's been no solutions. That's not really a conclusion since it can't be proven that there's no solution. Just like how it can't be proven that there _is_ a solution.
 
-[Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao), kid genius who's no longer a kid but still a genius, gave this problem a go. He found a "solution", which is that **almost** all numbers reach 1, which gives us a pretty good estimate of the actual solution. You can read about it in his [blog post](https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/). I didn't understand any of it, but maybe you will.
+[Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao), kid genius who's no longer a kid but still a genius, gave this problem a go. He found a "solution", which is that _almost_ all numbers reach 1, which gives us a pretty good estimate of the actual solution. You can read about it in his [blog post](https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/). I didn't understand any of it, but maybe you will.
 
 ::: info Terence Tao, genius, mathematician
 It’s actually an occupational hazard when you’re a mathematician. You could get obsessed with these big famous problems that are way beyond anyone’s ability to touch, and you can waste a lot of time.

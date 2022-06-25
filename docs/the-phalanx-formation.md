@@ -23,9 +23,9 @@ head:
 
 ## The origin story
 
-Even though the plalanx is probably most famous for being Greek, the earliest depicted phalanx formation actually comes from a Sumerian stele (a stone or wooden vertical slab, kind of like a totem) from the 25^th^ century BCE. The soldiers there appear to have spears, helmets, and large shields covering the body, similar to the phalanx.
+Even though the plalanx is probably most famous for being Greek, the earliest depicted phalanx formation actually comes from a Sumerian _stele_ (a stone or wooden vertical slab, kind of like a totem) from the 25^th^ century BCE. The soldiers there appear to have spears, helmets, and large shields covering the body, similar to the phalanx.
 
-That isn't the only time that the history people were wrong. They used to think that the hoplite phalanx (which is the Greek phalanx that everyone knows and loves) came from 8^th^ century BCE Sparta. Of course, we have no way of knowing for sure, but it's more likely that it came in the 7^th^ century BCE after the invention of the **aspis** (a type of shield that the **hoplon**, the shield carried by the Greek phalanx soldier dudes, is based on) by the city of Argos. Without the shield that the other shield is based on, you couldn't possibly have had a Greek phalanx. This can also be seen in the **Chigi vase**, which shows the Greek soldier dudes with the **aspis** shields, spears and a set of equipment called **panoply**.
+That isn't the only time that the history people were wrong. They used to think that the hoplite phalanx (which is the Greek phalanx that everyone knows and loves) came from 8^th^ century BCE Sparta. Of course, we have no way of knowing for sure, but it's more likely that it came in the 7^th^ century BCE after the invention of the _aspis_ (a type of shield that the _hoplon_, the shield carried by the Greek phalanx soldier dudes, is based on) by the city of Argos. Without the shield that the other shield is based on, you couldn't possibly have had a Greek phalanx. This can also be seen in the _Chigi vase_, which shows the Greek soldier dudes with the _aspis_ shields, spears and a set of equipment called _panoply_.
 
 The Greek phalanx used 2 of the most basic principles of warfare, at least by those times' standards: take a large number of people, and make them work together. Over the years, as technology and weaponry developed, so did the phalanx, becoming more and more complex and effective, and eventually reaching as close to perfection as it could. Until it was drop-kicked by the Roman legion, but that's a story for later.
 
@@ -39,9 +39,9 @@ Individually, hoplites were weak. After all, they were pretty much just normal g
 
 ### The equipment
 
-The equipment that the hoplites used was collectively called the **panoply**. It included:
+The equipment that the hoplites used was collectively called the _panoply_. It included:
 
-- A shield. But not just any shield, a special shield called a **hoplon**, which is what the hoplites were named after.
+- A shield. But not just any shield, a special shield called a _hoplon_, which is what the hoplites were named after.
 
 - A helmet. This was usually decorated with a horsehair crest, bronze animal horns or ears, or paint. Which means it was entirely possible that someone had cat ear helmets in ancient Greece.
 
@@ -49,11 +49,11 @@ The equipment that the hoplites used was collectively called the **panoply**. It
 
 - A pair of greaves, which are just plate armor that protects your lower legs. Like shin guards but heavier and more effective.
 
-- A double-edged, one-handed iron shortsword called a **xiphos**. Believe it or not, this was their secondary weapon, usually only used as a last resort if they had nothing else and needed to defend themselves.
+- A double-edged, one-handed iron shortsword called a _xiphos_. Believe it or not, this was their secondary weapon, usually only used as a last resort if they had nothing else and needed to defend themselves.
 
-- A spear. This was the main weapon. The spear used in the Greek phalanxes was called a **dory**, and it was an 8-foot-long killing machine. The dory had an iron spearhead at the top, as well as a bronze spike at the bottom, so that the weight of the spear was perfectly balanced, as all things should be. It could also be used as yet another way to stab other people, just in case the pointy spear and the iron sword weren't enough.
+- A spear. This was the main weapon. The spear used in the Greek phalanxes was called a _dory_, and it was an 8-foot-long killing machine. The _dory_ had an iron spearhead at the top, as well as a bronze spike at the bottom, so that the weight of the spear was perfectly balanced, as all things should be. It could also be used as yet another way to stab other people, just in case the pointy spear and the iron sword weren't enough.
 
-By the way, all the bronze armor (the helmet, cuirass, and greaves) was **really** heavy, so much so that the soldiers didn't even wear it until just before they had to actually go fight. The helmet was usually tilted back on the head when not actively murdering people. It's similar to how you may put your sunglasses on your head when you're not in the sun, except with probably a lot more neck problems.
+By the way, all the bronze armor (the helmet, cuirass, and greaves) was _really_ heavy, so much so that the soldiers didn't even wear it until just before they had to actually go fight. The helmet was usually tilted back on the head when not actively murdering people. It's similar to how you may put your sunglasses on your head when you're not in the sun, except with probably a lot more neck problems.
 
 ### Why not just make a real army?
 
@@ -61,7 +61,7 @@ That is an excellent question. You see, back in the glory days of Greece, it was
 
 Obviously, with that much war constantly going on, soldiers would run out quick, and they needed months or even years of training to be any good at the art of stabbing other people, so the kings decided to force the city-states' own citizens to fight, and so the hoplite was born.
 
-Hoplites were special, because they didn't need a lot of training or expertise to go into battle, and phalanxes battles were over super quickly, which meant that the people could go back to their regularly scheduled lives pretty much the next day. Also, because neither side usually had much training, almost no one got badly injured or killed, since the only open spots in the panoply were really small targets, like the neck, and hard to hit even for someone who's had months of training. Sure, they took their hits of the spear, but they could walk that off in a few days.
+Hoplites were special, because they didn't need a lot of training or expertise to go into battle, and phalanxes battles were over super quickly, which meant that the people could go back to their regularly scheduled lives pretty much the next day. Also, because neither side usually had much training, almost no one got badly injured or killed, since the only open spots in the _panoply_ were really small targets, like the neck, and hard to hit even for someone who's had months of training. Sure, they took their hits of the spear, but they could walk that off in a few days.
 
 In fact, the Greeks were so sure of their phalanxes, they didn't even make walls around their city-states until after the Persians rolled up, got obliterated by said phalanxes, and left.
 
@@ -71,7 +71,7 @@ As with any army, the true potential of the phalanxes lay in the strength and di
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Greek_Phalanx.jpg/465px-Greek_Phalanx.jpg)
 
-The hoplites would form the phalanx by standing in rows next to one another, covering the left parts of their bodies (and the right part of their left-side-neighbor's body) with their hoplons, and their spears sticking out from the gaps between the shields. Once in formation, the phalanx would move slowly toward the enemy, fighting them off slowly and blocking nearly all incoming hits with their shields, holding the formation as tightly as they possibly could in order to break through the ranks of the other side. 
+The hoplites would form the phalanx by standing in rows next to one another, covering the left parts of their bodies (and the right part of their left-side-neighbor's body) with their _hoplons_, and their spears sticking out from the gaps between the shields. Once in formation, the phalanx would move slowly toward the enemy, fighting them off slowly and blocking nearly all incoming hits with their shields, holding the formation as tightly as they possibly could in order to break through the ranks of the other side. 
 
 The phalanx was used on the front lines in a "pushing match" against the opposing side, quite literally since those in the front of the phalanx were often being pushed by the shields of those behind them. In later years, this strategy was used to make the phalanx as a sort of human battering ram to break into the enemy's front lines while the cavalry cleaned up the flanks.
 
@@ -89,13 +89,13 @@ This was the phalanx used by the Greeks at the famous Battle of Marathon against
 
 ![](https://www.livius.org/site/assets/files/6837/phalanx4.213x0-is-pid11824.gif)
 
-This phalanx was first seen in full force in the Battle of Leuctra in 371 BCE, when the commander Epaminondas of Thebes used it against Sparta, and wiped the floor with them. It works by placing the troops at an angle and focusing on one section of  the enemy's battle lines at a time, eventually breaking through and winning.
+This phalanx was first seen in full force in the Battle of Leuctra in 371 BCE, when the commander Epaminondas of Thebes used it against Sparta, and wiped the floor with them. It works by placing the troops at an angle and focusing on one section of the enemy's battle lines at a time, eventually breaking through and winning.
 
 ### Phillip's phalanx
 
 ![](https://www.livius.org/site/assets/files/11834/phalanx5.213x0-is-pid11824.gif)
 
-This was the phalanx used by King Phillip II of Macedonia (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called **sarissa** (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
+This was the phalanx used by King Phillip II of Macedonia (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called _sarissa_ (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
 
 ### Hellenistic phalanx
 
