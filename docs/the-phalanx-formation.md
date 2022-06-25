@@ -8,6 +8,15 @@ head:
       href: the-phalanx-formation/the-phalanx-formation.css
 ---
 
+<style>
+  img:not(.contrib) {
+      float: right;
+      border-radius: 0.5rem;
+      margin: 0 1em;
+      max-width: 84vw;
+  }
+</style>
+
 # The Phalanx Formation
 
 **My favorite ancient Greek battle formation**
