@@ -7,8 +7,6 @@ description: The simplest hardest problem in math history
 
 **The simplest hardest problem in math history**
 
-Last updated on: 2021-12-14
-
 ---
 
 ::: info Jeffery Lagarias, expert on the Collatz conjecture, mathematician at the University of Michigan

@@ -7,8 +7,6 @@ description: The long and quite strange history of toilet paper
 
 **The long and quite strange history of toilet paper**
 
-Last updated on: 2021-12-26
-
 ---
 
 Toilet paper, and the methods and tools used to clean your bum after going number 2, have been through a lot of changes, mostly for the better, until we finally reached the simple rolls that we take for granted today.

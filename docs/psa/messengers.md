@@ -8,8 +8,6 @@ titleTemplate: Privacy, Security and Anonymity
 
 **The right and wrong places to talk to people**
 
-Last updated on: 2022-06-04
-
 ## Intro
 This post of the Privacy and Security series will talk about different messengers, their pros and cons, and what makes a good messenger good and a bad messenger bad. Turns out its not as simple as "I send message, person get message", there's a lot that goes into making a properly private and secure messaging service.
 

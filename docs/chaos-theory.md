@@ -7,8 +7,6 @@ description: How the simplest things can go haywire
 
 **How the simplest things can go haywire**
 
-Last updated on: 2021-12-02
-
 ## The main stuff
 
 So chaos theory is a pretty interesting topic (to a nerd like me) to talk about, especially since it pops up in so many places that most people don't know or care about. But if you're reading this, I have either forced it upon you, or you have a genuine interest in this stuff.

@@ -12,8 +12,6 @@ head:
 
 **My favorite ancient Greek battle formation**
 
-Last updated on: 2021-12-30
-
 ## The origin story
 
 Even though the plalanx is probably most famous for being Greek, the earliest depicted phalanx formation actually comes from a Sumerian stele (a stone or wooden vertical slab, kind of like a totem) from the 25^th^ century BCE. The soldiers there appear to have spears, helmets, and large shields covering the body, similar to the phalanx.

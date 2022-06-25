@@ -5,9 +5,8 @@ titleTemplate: Privacy, Security and Anonymity
 ---
 
 # Intro
-**How to protect yourself from the internet, on the internet**
 
-Last updated on: 2022-05-28
+**How to protect yourself from the internet, on the internet**
 
 ## Intro
 I've really gotten into this stuff over the last year or so. I probably shouldn't have, since I had a lot of (arguably) more important stuff going on during that time, and focusing on that might have been better for me and my future. But I digress.
