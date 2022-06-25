@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "The Blog of Random",
   "main": "index.js",
   "scripts": {
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/noClaps/blog#readme",
   "dependencies": {
-    "katex": "^0.16.0",
     "markdown-it-abbr": "^1.0.4",
-    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mathjax3": "^4.3.1",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "vitepress": "^1.0.0-alpha.1"
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
   }
 }

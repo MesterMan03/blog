@@ -1,7 +1,6 @@
 ---
 title: Intro
 description: How to protect yourself from the internet, on the internet
-editLink: true
 titleTemplate: Privacy, Security and Anonymity
 ---
 
@@ -34,7 +33,7 @@ I hope this explains why you should care about your own privacy. It's because **
 People often confuse these 3 terms, and while they can be interchangeable in a few situations, they are very different things and should be treated as such.
 
 - [**Privacy**](https://en.wikipedia.org/wiki/Privacy) is when you have control over your personal information and who can see it.
-- [**Security**](https://en.wikipedia.org/wiki/Security) is when you have protection from unauthorized malicious actors.
+- [**Security**](https://en.wikipedia.org/wiki/Computer_security) is when you have protection from unauthorized malicious actors.
 - [**Anonymity**](https://en.wikipedia.org/wiki/Anonymity) is when you have a completely unknown/untraceable identity.
 
 It's possible to have one but not the others, and depending on what you're looking for, the tools you use will differ. For instance, [Tor](https://www.torproject.org/) is a much better tool for **anonymity**, whereas it's not as good as [Chromium](https://www.chromium.org/Home/) for **security**, which is not as good as [Firefox](https://www.mozilla.org/en-US/firefox/new/) for **privacy**.
@@ -42,8 +41,6 @@ It's possible to have one but not the others, and depending on what you're looki
 There aren't many tools that'll give you privacy, security as well as anonymity, so make sure you know the difference between these 3 concepts, because it will really help you choose the right tools and services for the job. Also, whatever you choose, make sure it actually works for you, and you aren't just picking it because some nerd on the internet told you to. A lot of the time, people get frustrated with trying to achieve privacy because the things that internet strangers "force" them to use doesn't work for them, and they give up entirely.
 
 In follow-up posts to this, I'll suggest some of the tools and services I've heard of / used before, and how good or bad they are (according to me) for privacy and/or security. You don't have to listen to anything I say, and I encourage you to do your own research before making a decision. Try out different tools and services and see what works for you, before making a firm decision to use one.
-
----
 
 ## Open source everything
 Throughout my various posts on this topic, you may hear the term "open source" a lot. Other variations of this you may hear online are OSS (Open Source Software), FOSS (Free and Open Source Software) or FLOSS (Free/Libre and Open Source). They have some [slight differences](https://www.gnu.org/philosophy/floss-and-foss.en.html) in their definitions, but for the most part they can be interchangeable.
@@ -92,7 +89,7 @@ Imagine you take a photo of a tree on your phone. The data in this case would be
 
 In the context of messaging, the message you send, whether that's text, images, files, videos, audio, whatever, is the data. Everything about the message, like who you're sending it to, when you're sending it, when it's received, what type of data is being sent, etc.
 
-::: info <a href="https://berty.tech/blog/metadata-mobile-messaging/">Berty</a>
+::: info [Berty](https://berty.tech/blog/metadata-mobile-messaging/)
 if the data is a letter, the metadata is the envelope and its associated information (address, time, date, size…)
 :::
 
@@ -103,7 +100,7 @@ Metadata is extraordinarily intrusive. As an analyst, I would prefer to be looki
 
 Think of it like this: if you see someone having a conversation with a known drug dealer, even if the actual conversation wasn't heard, there can be some fairly accurate assumptions about what's going on. Similarly, even if the actual messages are encrypted, metadata about the messages can be incredibly revealing.
 
-::: info <a href="https://www.eff.org/fr/deeplinks/2013/06/why-metadata-matters">Examples from the EFF</a>
+::: info [Examples from the EFF](https://www.eff.org/fr/deeplinks/2013/06/why-metadata-matters)
 - They know you received a call from the local NRA office while it was having a campaign against gun legislation, and then called your senators and congressional representatives immediately after. But the content of those calls remains safe from government intrusion.
 - They know you called a gynecologist, spoke for a half hour, and then called the local Planned Parenthood's number later that day. But nobody knows what you spoke about.
 - They know you spoke with an HIV testing service, then your doctor, then your health insurance company in the same hour. But they don't know what was discussed.
@@ -112,7 +109,7 @@ Think of it like this: if you see someone having a conversation with a known dru
 
 As you can see, it's pretty easy to figure out what's going on in someone's life, even if you don't know the exact words used in each phone call or conversation.
 
-::: info <a href="https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata">ex-NSA Chief Gen. Michael Hayden</a>
+::: info [ex-NSA Chief Gen. Michael Hayden](https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata)
 We kill people based on metadata.
 :::
 

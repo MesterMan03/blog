@@ -1,7 +1,6 @@
 ---
 title: The Phalanx Formation
 description: My favorite ancient Greek battle formation
-editLink: true
 
 head:
   - - link

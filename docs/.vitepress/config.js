@@ -1,95 +1,8 @@
-import { defineConfig } from 'vitepress';
-import markdownItKatex from 'markdown-it-katex';
+import mathjax3 from 'markdown-it-mathjax3';
 
-const customElements = [
-    'math',
-    'maction',
-    'maligngroup',
-    'malignmark',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mi',
-    'mlongdiv',
-    'mmultiscripts',
-    'mn',
-    'mo',
-    'mover',
-    'mpadded',
-    'mphantom',
-    'mroot',
-    'mrow',
-    'ms',
-    'mscarries',
-    'mscarry',
-    'mscarries',
-    'msgroup',
-    'mstack',
-    'mlongdiv',
-    'msline',
-    'mstack',
-    'mspace',
-    'msqrt',
-    'msrow',
-    'mstack',
-    'mstack',
-    'mstyle',
-    'msub',
-    'msup',
-    'msubsup',
-    'mtable',
-    'mtd',
-    'mtext',
-    'mtr',
-    'munder',
-    'munderover',
-    'semantics',
-    'math',
-    'mi',
-    'mn',
-    'mo',
-    'ms',
-    'mspace',
-    'mtext',
-    'menclose',
-    'merror',
-    'mfenced',
-    'mfrac',
-    'mpadded',
-    'mphantom',
-    'mroot',
-    'mrow',
-    'msqrt',
-    'mstyle',
-    'mmultiscripts',
-    'mover',
-    'mprescripts',
-    'msub',
-    'msubsup',
-    'msup',
-    'munder',
-    'munderover',
-    'none',
-    'maligngroup',
-    'malignmark',
-    'mtable',
-    'mtd',
-    'mtr',
-    'mlongdiv',
-    'mscarries',
-    'mscarry',
-    'msgroup',
-    'msline',
-    'msrow',
-    'mstack',
-    'maction',
-    'semantics',
-    'annotation',
-    'annotation-xml'
-]
+const customElements = ['mjx-container'];
 
-export default defineConfig({
+export default {
     base: '/blog/',
     lang: 'en-US',
     title: "The Blog of Random",
@@ -102,7 +15,7 @@ export default defineConfig({
             md.use(require('markdown-it-sup'));
             md.use(require('markdown-it-abbr'));
             md.use(require('markdown-it-task-lists'));
-            md.use(markdownItKatex)
+            md.use(mathjax3)
         }
     },
 
@@ -116,6 +29,8 @@ export default defineConfig({
 
     themeConfig: {
         siteTitle: "The Blog of Random",
+        lastUpdatedText: "Last updated on",
+        logo: '/favicon/favicon.ico',
 
         nav: [
             {
@@ -148,16 +63,23 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/noClaps' }
+            { icon: 'github', link: 'https://github.com/noClaps/blog' }
         ],
 
         editLink: {
             pattern: 'https://github.com/noClaps/blog/edit/main/docs/:path',
             text: 'Edit this page'
-        },
-
-        footer: {
-            message: 'Released under the Unlicense.'
         }
-    }
-})
+    },
+
+    head: [
+        ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' }],
+        ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' }],
+        ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' }],
+        ['link', { rel: 'manifest', href: '/site.webmanifest'}],
+        ['link', { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: '#000000' }],
+        ['meta', { name: 'msapplication-TileColor', content: '#42b883' }],
+        ['meta', { name: 'theme-color', content: '#ffffff' }]
+    ]
+
+}
