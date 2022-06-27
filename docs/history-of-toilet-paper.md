@@ -101,8 +101,6 @@ Andrex continued to innovate, for in the 1990s, they are the ones who brought us
 
 That was the end of innovation for the world of toilet paper, at least for now.
 
----
-
 ## Out of stock
 
 There have been no shortages of shortages of toilet paper in the past.
@@ -112,8 +110,6 @@ For instance, in 1973, the Japanese middle-class were scared that their dreams a
 In fact, this incident was so famous, it made its way over to the US. A congressman from Wisconsin, Harold V. Froelich, said that there was a possibility that there would be a shortage of toilet paper in the US too because of the stuff that was happening in Japan. So Johnny Carson made some jokes about it in his _Tonight Show_ monologue, and people freaked out because of it. They started panic-buying toilet paper and ended up actually causing a shortage for many months. So I suppose by some weird and twisted Butterfly Effect, Mr Froelich was actually right.
 
 Speaking of panic-buying, remember the Great Toilet Paper Purchase of March 2020? Everyone and their mother decided to head to the nearest store that had a supply of toilet paper, and immediately bought all of it, and never gave it to anyone else ever. Now if you take a look at any one country, that's a lot of mothers and children. Now imagine pretty much all of the Western world doing this, and we reach levels of insanity only seen dozens of times in human history. Of course, the rest of the world had a solution: bidets. But why would you use a convenient reusable tool specifically made for washing, when you could hoard rolls of dead trees, am I right? Yeah, I'll show myself out.
-
----
 
 ## Holy poop
 
@@ -141,8 +137,6 @@ I'm not sure I should put this in here, seeing as these religions have long and 
 
 - People thought the feces of the Dalai Lama had magical healing properties.
 
----
-
 ## Conclusion
 
 I don't have much to say that hasn't already been said or implied in everything above. Toilet paper had really strange beginnings, as well as simply the act of cleaning up after using the toilet. They used a lot of sticks and stones back in the day, and it took centuries before they realised they could be using something better and softer. The Chinese were, are, and probably will be for a long time, the largest producers of toilet paper. To be fair, they're the ones who invented it in the first place.
@@ -150,8 +144,6 @@ I don't have much to say that hasn't already been said or implied in everything 
 I guess we have the Chinese, Joseph Gayetty, Seth Wheeler, the Scott Paper Company, St Andrew Mills and Andrex, and everyone else who was there for the ride, to thank for the bathroom commodity that we love, hoard, probably care very little for, and definitely take for granted today.
 
 Thanks for reading!
-
----
 
 ## Sources
 
