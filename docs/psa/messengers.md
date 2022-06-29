@@ -4,6 +4,24 @@ description: The right and wrong places to talk to people
 titleTemplate: Privacy, Security and Anonymity
 ---
 
+<style>
+    .vp-doc ul:not(.contains-task-list) {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .task-list-item {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .task-list-item [type="checkbox"] {
+        position: absolute;
+        top: 0.45em;
+        inset-inline-start: -2em;
+    }
+</style>
+
 # Messengers
 
 **The right and wrong places to talk to people**

@@ -9,11 +9,19 @@ head:
 ---
 
 <style>
-  img:not(.contrib) {
+  img:not(.contrib, .VPImage.logo) {
       float: right;
       border-radius: 0.5rem;
       margin: 0 1em;
       max-width: 84vw;
+  }
+
+  .formation {
+    width: 37.5%;
+  }
+
+  .phalanx {
+    width: 62.5%;
   }
 </style>
 

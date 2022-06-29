@@ -3,6 +3,17 @@ title: Collatz Conjecture
 description: The simplest hardest problem in math history
 ---
 
+<style>
+     mjx-container svg {
+          display: block;
+          margin: auto;
+     }
+
+     mjx-container {
+        padding: 0.5rem 0;
+     }
+</style>
+
 # Collatz Conjecture
 
 **The simplest hardest problem in math history**
