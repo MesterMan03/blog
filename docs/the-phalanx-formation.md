@@ -99,17 +99,17 @@ This was the phalanx used by the Greeks at the famous Battle of Marathon against
 
 This phalanx was first seen in full force in the Battle of Leuctra in 371 BCE, when the commander Epaminondas of Thebes used it against Sparta, and wiped the floor with them. It works by placing the troops at an angle and focusing on one section of the enemy's battle lines at a time, eventually breaking through and winning.
 
-### Phillip's phalanx
+### Philip's phalanx
 
 ![](the-phalanx-formation/phalanx5.gif){.formation}
 
-This was the phalanx used by King Phillip II of Macedonia (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called _sarissa_ (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
+This was the phalanx used by King Philip II of Macedon (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called _sarissa_ (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
 
 ### Hellenistic phalanx
 
 ![](the-phalanx-formation/phalanx6.gif){.formation}
 
-This phalanx is a modification of Phillip's phalanx, and it was used by Alexander the Great. This was arguably the most powerful of all the phalanxes that came before it, considering Alexander the Great was able to win most of his battles and conquer hundreds of kingdoms from the Mediterranean to Egypt and the northern coast of Africa and even as far as India using this formation.
+This phalanx is a modification of Philip's phalanx, and it was used by Alexander the Great. This was arguably the most powerful of all the phalanxes that came before it, considering Alexander the Great was able to win most of his battles and conquer hundreds of kingdoms from the Mediterranean to Egypt and the northern coast of Africa and even as far as India using this formation.
 
 ## The end of an era
 
@@ -117,7 +117,7 @@ Nothing lasts forever, and soon even the mighty phalanx was defeated. It began d
 
 The main weakness of the phalanx was that its right side was almost completely open, because all the hoplites had their shields on their left arms. This apparently even caused them to drift toward the right, according to the historian Thucydides. Another important weakness was that phalanxes were only effective in a plain, since hills would break the line of battle, allowing enemies to enter and defeat the army. And finally, since hoplites never had any proper training, if the battle lasted too long, the frontmost line of soldiers would just collapse from being too tired, leaving the rest of the phalanx open and undefended.
 
-This caused the phalanx to eventually lose out to the Roman legion. Their first battle was the Battle of Heraclea in 280 BCE, in which Pyrrhus of Epirus defeated the Romans, but lost a lot of soldiers because the Roman army was more flexible and could keep replacing the soldiers in the front line, which allowed them to keep fighting for much longer. The loss of King Phillip V of Macedonia at Cynoscephalae to Roman commander Titus Quinctus Flamininus in June 197 BCE is considered the best example of how legions are superior to the phalanx.
+This caused the phalanx to eventually lose out to the Roman legion. Their first battle was the Battle of Heraclea in 280 BCE, in which Pyrrhus of Epirus defeated the Romans, but lost a lot of soldiers because the Roman army was more flexible and could keep replacing the soldiers in the front line, which allowed them to keep fighting for much longer. The loss of King Philip V of Macedon at Cynoscephalae to Roman commander Titus Quinctus Flamininus in June 197 BCE is considered the best example of how legions are superior to the phalanx.
 
 And so ended the glorious days of the phalanx.
 
