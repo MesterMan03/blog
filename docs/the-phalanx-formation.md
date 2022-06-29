@@ -39,7 +39,7 @@ The Greek phalanx used 2 of the most basic principles of warfare, at least by th
 
 ## The Greek soldier dudes
 
-![](https://qa.perl.org/images/kwalitee-hoplite-red.jpg)
+![](the-phalanx-formation/kwalitee-hoplite-red.jpg)
 
 These were hoplites, and they were what made up the phalanxes of ancient Greece. Hoplites weren't exactly a proper army, instead they were more like a militia, made up of common folk, with war as a part-time job. They weren't even provided with their armor or equipment, they had to buy and maintain it themselves, which caused a clear divide between who could afford to be in the hoplite army and who couldn't.
 
@@ -77,7 +77,7 @@ In fact, the Greeks were so sure of their phalanxes, they didn't even make walls
 
 As with any army, the true potential of the phalanxes lay in the strength and discipline of the hoplites in them. The problem back then was that calling for backup didn't exist, and it wouldn't exist until the 5^th^ century BCE, so a the outcome of a battle was decided solely on the people on the battlefield at that instance. And once the battle began, it wouldn't stop until one of the sides broke formation, and hence lost.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Greek_Phalanx.jpg/465px-Greek_Phalanx.jpg)
+![](the-phalanx-formation/Greek_Phalanx.jpg){.phalanx}
 
 The hoplites would form the phalanx by standing in rows next to one another, covering the left parts of their bodies (and the right part of their left-side-neighbor's body) with their _hoplons_, and their spears sticking out from the gaps between the shields. Once in formation, the phalanx would move slowly toward the enemy, fighting them off slowly and blocking nearly all incoming hits with their shields, holding the formation as tightly as they possibly could in order to break through the ranks of the other side. 
 
@@ -89,25 +89,25 @@ Over the years, there have been many different formations of phalanxes, each hav
 
 ### The phalanx at Marathon
 
-![](https://www.livius.org/site/assets/files/11832/phalanx2.213x0-is-pid11824.gif)
+![](the-phalanx-formation/phalanx2.gif){.formation}
 
 This was the phalanx used by the Greeks at the famous Battle of Marathon against the Persians. This is the battle where the messenger ran for 26.2 miles from Marathon to tell the general that they had won against the Persians, and immediately collapsed afterwards from exhaustion and died on the spot. That story is the reason why running for 26.2 miles is called running a marathon. 
 
 ### The oblique phalanx
 
-![](https://www.livius.org/site/assets/files/6837/phalanx4.213x0-is-pid11824.gif)
+![](the-phalanx-formation/phalanx4.gif){.formation}
 
 This phalanx was first seen in full force in the Battle of Leuctra in 371 BCE, when the commander Epaminondas of Thebes used it against Sparta, and wiped the floor with them. It works by placing the troops at an angle and focusing on one section of the enemy's battle lines at a time, eventually breaking through and winning.
 
 ### Phillip's phalanx
 
-![](https://www.livius.org/site/assets/files/11834/phalanx5.213x0-is-pid11824.gif)
+![](the-phalanx-formation/phalanx5.gif){.formation}
 
 This was the phalanx used by King Phillip II of Macedonia (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called _sarissa_ (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
 
 ### Hellenistic phalanx
 
-![](https://www.livius.org/site/assets/files/11835/phalanx6.213x0-is-pid11824.gif)
+![](the-phalanx-formation/phalanx6.gif){.formation}
 
 This phalanx is a modification of Phillip's phalanx, and it was used by Alexander the Great. This was arguably the most powerful of all the phalanxes that came before it, considering Alexander the Great was able to win most of his battles and conquer hundreds of kingdoms from the Mediterranean to Egypt and the northern coast of Africa and even as far as India using this formation.
 

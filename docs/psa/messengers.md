@@ -53,9 +53,9 @@ Until of course, [someone did](https://thehackernews.com/2017/05/ss7-vulnerabili
 And that's why you **don't use SMS for anything** even remotely important. Use encrypted platforms like [**Signal**](#signal), [**Threema**](#threema), [**Session**](#session), [**Element**](#elementmatrix) or any other end-to-end encrypted messenger.
 
 ### Twitter DMs and Reddit Chat
-[![](https://shields.tosdr.org/en_195.svg)](https://tosdr.org/en/service/195 "Twitter")
+[![](messengers/twitter.svg)](https://tosdr.org/en/service/195 "Twitter")
 
-[![](https://shields.tosdr.org/en_194.svg)](https://tosdr.org/en/service/194 "Reddit")
+[![](messengers/reddit.svg)](https://tosdr.org/en/service/194 "Reddit")
 
 These are encrypted with your standard [HTTPS encryption](./intro#the-green-lock) that comes with most websites and web-based apps. However, they don't have any dedicated encryption protocols, which is why they're in this section. This has lead to [data leaking](https://arstechnica.com/information-technology/2020/07/hackers-obtained-twitter-dms-for-36-high-profile-account-holders/) from these platforms in the past.
 
@@ -65,7 +65,7 @@ I would recommend using other platforms like [**Session**](#session), [**Element
 This is the section with the most well-known messaging apps. A lot of the trust comes down to the apps and/or servers being closed-source. Closed-source essentially means that a service, like WhatsApp, could _say_ that your messages aren't being looked at, but there's no real way to verify that, since you can't see the source code. The importance of open source was highlighted in my [Intro post](./intro#open-source-everything).
 
 ### Discord
-[![](https://shields.tosdr.org/en_536.svg)](https://tosdr.org/en/service/536 "Discord")
+[![](messengers/discord.svg)](https://tosdr.org/en/service/536 "Discord")
 
 Discord is one of the most popular communication platforms, especially for large communities in the gaming world.
 
@@ -85,7 +85,7 @@ I want to list some pros of Discord, just to balance the argument, but from a pr
 In conclusion, not a good service, do not recommend. Use [**Element**](#elementmatrix) or [**Revolt**](https://revolt.chat/) instead. If you _must_ use Discord, try [**Fosscord**](https://fosscord.com/).
 
 ### WhatsApp
-[![](https://shields.tosdr.org/en_198.svg)](https://tosdr.org/en/service/198 "WhatsApp")
+[![](messengers/whatsapp.svg)](https://tosdr.org/en/service/198 "WhatsApp")
 
 WhatsApp is the most used messaging app in the world, with over [2 billion users worldwide](https://blog.whatsapp.com/two-billion-users-connecting-the-world-privately). There are quite a few problems with WhatsApp, but it's a relatively safer platform than most of the options in this section.
 
@@ -113,7 +113,7 @@ I keep saying "Meta/Facebook" because so many people think of them as separate c
 :::
 
 ### Telegram
-[![](https://shields.tosdr.org/en_1946.svg)](https://tosdr.org/en/service/1946 "Telegram")
+[![](messengers/telegram.svg)](https://tosdr.org/en/service/1946 "Telegram")
 
 This is one of those ones that's heavily debated both in and outside the privacy community, and for good reason too.
 
@@ -128,7 +128,7 @@ One of the main reasons that people choose to trust Telegram is their [refusal t
 In conclusion, I would not recommend this app unless you're willing to use **only secret chats**. Using normal or group chats in Telegram places a lot of trust in them, and trust can be dangerous. For most people, you're better off using [**Signal**](#signal), [**Threema**](#threema) or [**Session**](#session) for small groups and 1-on-1 chats, and [**Element**](#elementmatrix) or [**Revolt**](https://revolt.chat/) for the larger communities. Honestly, I believe even WhatsApp is better than using Telegram for most people, especially if you have group chats or aren't willing to set up secret chats for every contact you have.
 
 ### iMessage
-[![](https://shields.tosdr.org/en_158.svg)](https://tosdr.org/en/service/158 "Apple Services")
+[![](messengers/apple-services.svg)](https://tosdr.org/en/service/158 "Apple Services")
 
 iMessage is [end-to-end encrypted](https://www.apple.com/privacy/features/#imessage) **only** if you're in blue-bubble mode. Green-bubble mode is SMS, which is completely unencrypted. You do have to trust that Apple really is encrypting your messages on your device, and they aren't able to see them without your knowledge or permission.
 
@@ -137,9 +137,9 @@ However, if you happen to have iCloud backups turned on, [all of your messages a
 Sure, Apple's security is probably strong enough that most hackers won't be able to easily break in and see your messages. However, nothing is 100% secure, and there is a good chance that someone, with enough effort and determination and luck, will find a way in. Plus, why even let Apple see what you talk to your friends about? That should be something that stays between you and your friends. The simple solution to this is to [turn off iCloud backups](https://www.howtogeek.com/662872/how-to-disable-and-delete-icloud-backup-on-iphone-and-ipad/), which you should do anyway since Apple [isn't a](https://www.washingtonpost.com/technology/2019/05/28/its-middle-night-do-you-know-who-your-iphone-is-talking/) [very](https://www.eff.org/deeplinks/2021/08/apples-plan-think-different-about-encryption-opens-backdoor-your-private-life) [trustworthy](https://www.reuters.com/article/us-apple-fbi-icloud-exclusive/exclusive-apple-dropped-plan-for-encrypting-backups-after-fbi-complained-sources-idUSKBN1ZK1CT?feedType=RSS&feedName=technologyNews) [company](https://tosdr.org/en/service/158). If you need a cloud storage solution to replace iCloud, there's other better options I'll talk about in a future post, and you can find some on [PrivacyGuides](https://www.privacyguides.org/cloud/).
 
 ### Facebook Messenger and Instagram DMs
-[![](https://shields.tosdr.org/en_182.svg)](https://tosdr.org/en/service/182 "Facebook")
+[![](messengers/facebook.svg)](https://tosdr.org/en/service/182 "Facebook")
 
-[![](https://shields.tosdr.org/en_219.svg)](https://tosdr.org/en/service/219 "Instagram")
+[![](messengers/instagram.svg)](https://tosdr.org/en/service/219 "Instagram")
 
 Facebook Messenger has an option to enable end-to-end encrypted [chats, voice and video calls](https://messengernews.fb.com/2021/08/13/messenger-updates-end-to-end-encrypted-chats-with-new-features/) . Meta/Facebook are also testing [end-to-end encryption in Instagram DMs](https://about.fb.com/news/2021/12/metas-approach-to-safer-private-messaging/). However, since these aren't enabled by default, most people don't use them, because such is the power of defaults.
 
@@ -149,7 +149,7 @@ Again, use other platforms like [**Signal**](#signal), [**Threema**](#threema) o
 This section has end-to-end encrypted open-source apps with reproducible builds, so you can see for yourself what goes on in the app, and there is very little trust you have to place in the developers. I can recommend all of the apps in this section, and have personally used / am currently using them. The apps serve different purposes, though, so keep that in mind if you do want to switch.
 
 ### Signal
-[![](https://shields.tosdr.org/en_528.svg)](https://tosdr.org/en/service/528 "Signal")
+[![](messengers/signal.svg)](https://tosdr.org/en/service/528 "Signal")
 
 **Signal** is an open source messenger (and a [nonprofit foundation](https://en.wikipedia.org/wiki/Signal_Foundation)) that uses their own [Signal Protocol](https://en.wikipedia.org/wiki/Signal_Protocol) for end-to-end encryption. This protocol is used by a whole bunch of other messengers, like [WhatsApp](https://signal.org/blog/whatsapp-complete/), [Google's RCS Chat](https://www.theverge.com/2020/11/19/21574451/android-rcs-encryption-message-end-to-end-beta), [Facebook Messenger's Secret Conversations](https://signal.org/blog/facebook-messenger/) and [Skype's Private Conversations](https://signal.org/blog/skype-partnership/).
 
@@ -181,7 +181,7 @@ In conclusion, an excellent app for most use cases with world-class privacy and 
 
 
 ### Session
-[![](https://shields.tosdr.org/en_3015.svg)](https://tosdr.org/en/service/3015 "Session")
+[![](messengers/session.svg)](https://tosdr.org/en/service/3015 "Session")
 
 **Session** is a fork of Signal that's meant to provide you with complete anonymity. Just like Signal, it's open source. That's about where the similarities end, though.
 
@@ -214,7 +214,7 @@ In conclusion, Session isn't for most people. It's not a very effective replacem
 :::
         
 ### Element/Matrix
-[![](https://shields.tosdr.org/en_2498.svg)](https://tosdr.org/en/service/2498 "Element")
+[![](messengers/element.svg)](https://tosdr.org/en/service/2498 "Element")
 
 **Element** is an open source decentralised messenger that uses the **Matrix** protocol to work. You can use [other Matrix clients](https://matrix.org/clients/) that may provide different UIs and features. I recommend Element since it provides the most complete Matrix experience, having been [founded by the team behind Matrix](https://element.io/#matrix-card).
 
