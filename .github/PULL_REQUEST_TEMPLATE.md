@@ -1,8 +1,8 @@
 <!-- Use a descriptive title for your PR, it will be used in the changelog -->
 
-- [ ] I have tested my PR on my device and it is working
-- [ ] I am not using insecure packages in my PR
-- [ ] I am not adding malicious code
+- [ ] I have tested my changes on my device and it is working
+- [ ] I am not using insecure packages
+- [ ] I am not adding malicious code that may harm the privacy or security of the reader
 
 <!-- Make a list of changes you've made so far here. If you add on more changes later, you can edit the list later. -->
 **Changes**:
