@@ -1,4 +1,3 @@
-![](the-phalanx-formation/kwalitee-hoplite-red.jpg)
 ---
 title: The Phalanx Formation
 description: My favorite ancient Greek battle formation
