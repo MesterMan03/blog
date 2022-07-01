@@ -1,0 +1,19 @@
+* text=auto
+
+docs/** linguist-documentation
+.git* text
+*.json text
+*.{yml,yaml} text
+*.py text
+*.xml text
+*.svg text
+*.webmanifest text
+
+*.js text linguist-detectable
+*.md text linguist-detectable
+*.css text linguist-detectable
+
+*.png binary
+*.{jpg,jpeg} binary
+*.ico binary
+*.gif binary
