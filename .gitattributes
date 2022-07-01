@@ -1,6 +1,5 @@
 * text=auto
 
-docs/** linguist-documentation
 .git* text
 *.json text
 *.{yml,yaml} text
@@ -9,6 +8,7 @@ docs/** linguist-documentation
 *.svg text
 *.webmanifest text
 
+docs/** linguist-detectable
 *.js text linguist-detectable
 *.md text linguist-detectable
 *.css text linguist-detectable
