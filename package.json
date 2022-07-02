@@ -26,6 +26,7 @@
   "homepage": "https://github.com/noClaps/blog#readme",
   "dependencies": {
     "markdown-it-abbr": "^1.0.4",
+    "markdown-it-image-figures": "^2.1.0",
     "markdown-it-mathjax3": "^4.3.1",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",

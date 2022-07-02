@@ -10,18 +10,54 @@ head:
 
 <style>
   img:not(.contrib, .VPImage.logo) {
-      float: right;
-      border-radius: 0.5rem;
-      margin: 0 1em;
-      max-width: 84vw;
+      border-radius: 0.5em;
   }
 
-  .formation {
+  figcaption {
+    text-align: center;
+    font-size: 0.875em;
+    color: var(--vp-c-text-2);
+  }
+
+  /* phalanx */
+  figure.phalanx {
+    margin: 0.375em 0;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 62.5%;
+    padding: 0 1em;
+    row-gap: 0.5em;
+  }
+
+  img.phalanx {
+    width: 100%;
+    align-self: center;
+  }
+
+  /* formation */
+  figure.formation {
+    margin: 1.375em 0;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    row-gap: 0.5em;
     width: 37.5%;
   }
 
-  .phalanx {
-    width: 62.5%;
+  img.formation {
+    width: 100%;
+    align-self: end;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    figure.phalanx,
+    figure.formation {
+      width: 100%;
+      float: none;
+    }
   }
 </style>
 
@@ -75,7 +111,7 @@ In fact, the Greeks were so sure of their phalanxes, they didn't even make walls
 
 As with any army, the true potential of the phalanxes lay in the strength and discipline of the hoplites in them. The problem back then was that calling for backup didn't exist, and it wouldn't exist until the 5^th^ century BCE, so a the outcome of a battle was decided solely on the people on the battlefield at that instance. And once the battle began, it wouldn't stop until one of the sides broke formation, and hence lost.
 
-![](the-phalanx-formation/Greek_Phalanx.jpg "This image is in the public domain"){.phalanx}
+[![Roman soldiers phalanx](the-phalanx-formation/Greek_Phalanx.jpg){.phalanx}](https://commons.wikimedia.org/wiki/File:Greek_Phalanx.jpg "This image is in the public domain")
 
 The hoplites would form the phalanx by standing in rows next to one another, covering the left parts of their bodies (and the right part of their left-side-neighbor's body) with their _hoplons_, and their spears sticking out from the gaps between the shields. Once in formation, the phalanx would move slowly toward the enemy, fighting them off slowly and blocking nearly all incoming hits with their shields, holding the formation as tightly as they possibly could in order to break through the ranks of the other side. 
 
@@ -87,25 +123,25 @@ Over the years, there have been many different formations of phalanxes, each hav
 
 ### The phalanx at Marathon
 
-![](the-phalanx-formation/phalanx2.gif "Licensed under CC0 1.0 Universal"){.formation}
+[![The phalanx at Marathon](the-phalanx-formation/phalanx2.gif){.formation}](https://www.livius.org/pictures/a/other-pictures/phalanx-2-marathon/ "Licensed under CC0 1.0 Universal")
 
 This was the phalanx used by the Greeks at the famous Battle of Marathon against the Persians. This is the battle where the messenger ran for 26.2 miles from Marathon to tell the general that they had won against the Persians, and immediately collapsed afterwards from exhaustion and died on the spot. That story is the reason why running for 26.2 miles is called running a marathon. 
 
 ### The oblique phalanx
 
-![](the-phalanx-formation/phalanx4.gif "Licensed under CC0 1.0 Universal"){.formation}
+[![Oblique Phalanx](the-phalanx-formation/phalanx4.gif){.formation}](https://www.livius.org/pictures/a/other-pictures/phalanx-4-epaminondas/ "Licensed under CC0 1.0 Universal")
 
 This phalanx was first seen in full force in the Battle of Leuctra in 371 BCE, when the commander Epaminondas of Thebes used it against Sparta, and wiped the floor with them. It works by placing the troops at an angle and focusing on one section of the enemy's battle lines at a time, eventually breaking through and winning.
 
 ### Philip's phalanx
 
-![](the-phalanx-formation/phalanx5.gif "Licensed under CC0 1.0 Universal"){.formation}
+[![Philip's phalanx](the-phalanx-formation/phalanx5.gif){.formation}](https://www.livius.org/pictures/a/other-pictures/phalanx-5-philip/ "Licensed under CC0 1.0 Universal")
 
 This was the phalanx used by King Philip II of Macedon (the father of Alexander the Great). In this phalanx, the hoplites had some change of equipment. They used longer spears, called _sarissa_ (13-21 feet long) and smaller shields to help grip the spears more easily. Also, the phalanxes had a square formation of 256 hoplites, as compared to the rectangular formations of the phalanxes before them.
 
 ### Hellenistic phalanx
 
-![](the-phalanx-formation/phalanx6.gif "Licensed under CC0 1.0 Universal"){.formation}
+[![Hellenistic phalanx](the-phalanx-formation/phalanx6.gif){.formation}](https://www.livius.org/pictures/a/other-pictures/phalanx-6-hellenistic/ "Licensed under CC0 1.0 Universal")
 
 This phalanx is a modification of Philip's phalanx, and it was used by Alexander the Great. This was arguably the most powerful of all the phalanxes that came before it, considering Alexander the Great was able to win most of his battles and conquer hundreds of kingdoms from the Mediterranean to Egypt and the northern coast of Africa and even as far as India using this formation.
 
