@@ -1,6 +1,6 @@
 name: New post idea
 description: I have a fun and exciting new idea for a post I want you to write about!
-title: "[IDEA] <title>"
+title: "[IDEA] "
 labels: [idea]
 assignees:
   - noClaps

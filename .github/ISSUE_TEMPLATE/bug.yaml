@@ -1,6 +1,6 @@
 name: Bug Report
 description: I found a bug in your website!
-title: "[BUG] <title>"
+title: "[BUG] "
 labels: [bug]
 assignees:
   - noClaps

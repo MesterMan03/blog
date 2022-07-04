@@ -1,6 +1,6 @@
 name: Error
 description: I'm reporting misinformation or improving your content, please update ASAP!
-title: "[ERROR] <title>"
+title: "[ERROR] "
 labels: [error]
 assignees:
   - noClaps
