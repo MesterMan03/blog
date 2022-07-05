@@ -1,5 +1,4 @@
 import mathjax3 from 'markdown-it-mathjax3';
-import imageFigures from 'markdown-it-image-figures';
 
 const customElements = ['mjx-container'];
 
@@ -17,12 +16,6 @@ export default {
             md.use(require('markdown-it-abbr'));
             md.use(require('markdown-it-task-lists'));
             md.use(mathjax3);
-            md.use(imageFigures, {
-                figcaption: 'alt',
-                copyAttrs: '^class$',
-                lazy: true,
-                async: true,
-            });
         }
     },
 

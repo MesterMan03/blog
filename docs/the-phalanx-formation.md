@@ -11,53 +11,17 @@ head:
 <style>
   img:not(.contrib, .VPImage.logo) {
       border-radius: 0.5em;
+      float: right;
+      margin: 0.375rem 1rem;
+      max-width: 84vw;
   }
 
-  figcaption {
-    text-align: center;
-    font-size: 0.875em;
-    color: var(--vp-c-text-2);
-  }
-
-  /* phalanx */
-  figure.phalanx {
-    margin: 0.375em 0;
-    float: right;
-    display: flex;
-    flex-direction: column;
+  .phalanx {
     width: 62.5%;
-    padding: 0 1em;
-    row-gap: 0.5em;
   }
 
-  img.phalanx {
-    width: 100%;
-    align-self: center;
-  }
-
-  /* formation */
-  figure.formation {
-    margin: 1.375em 0;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    padding: 0 1em;
-    row-gap: 0.5em;
-    width: 37.5%;
-  }
-
-  img.formation {
-    width: 100%;
-    align-self: end;
-  }
-
-  /* Responsive */
-  @media (max-width: 640px) {
-    figure.phalanx,
-    figure.formation {
-      width: 100%;
-      float: none;
-    }
+  .formation {
+    width: 37.5%
   }
 </style>
 
