@@ -7,10 +7,6 @@ p {
     font-size: 1em;
 }
 
-.vp-doc a:hover {
-    text-decoration: underline;
-}
-
 /* Contributor logos */
 .contrib {
     border-radius: 1rem;
@@ -34,4 +30,22 @@ p {
     .contributors {
         grid-template-columns: repeat(16, 1fr);
     }
+}
+
+/* Animated hyperlink underline */
+/* Thanks to https://www.dannyguo.com/blog/animated-multiline-link-underlines-with-css/ for demonstrating how to do this */
+.vp-doc a:not(.contributors a, .header-anchor) {
+    color: var(--vp-c-brand);
+    text-decoration: none;
+    background-image: linear-gradient(var(--vp-c-brand), var(--vp-c-brand));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .25s ease-in-out;
+}
+
+.vp-doc a:not(.contributors a, .header-anchor):hover,
+.vp-doc a:not(.contributors a, .header-anchor):focus {
+    background-size: 100% 2px;
+}
 }
