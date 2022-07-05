@@ -5,13 +5,6 @@ titleTemplate: false
 hero:
   name: The Blog of Random
   tagline: A blog about the most random things you can think of, brought to you by the most interesting boring person you've ever met
-  actions:
-    - theme: brand
-      text: Homepage
-      link: https://noClaps.github.io
-    - theme: alt
-      text: Foto de la Fleur
-      link: https://noClaps.github.io/gallery/
   
 features:
   - title: About this blog
