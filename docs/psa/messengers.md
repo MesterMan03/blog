@@ -207,6 +207,10 @@ Matrix isn't fully trustless since you have to trust the owner of your homeserve
 
 In conclusion, Matrix can work great for a whole variety of use cases. It's mostly used for Slack- or Discord-style communities/groups, and it's a great alternative for those. There's some features that you might miss from Discord or other platforms, but it's there for the most part. Plus, you can always bridge to Discord or Slack so you don't have to interrupt your workflow. Element even has a UI option to make chats look similar to Discord, rather than the chat bubbles you have in most messenger apps. You can use Matrix for your day-to-day conversations with end-to-end encryption, and ignore rooms and spaces entirely. The only con of Matrix that I can think of is that it's slightly more difficult to set up than other messengers, and the amount of settings in Element can be overwhelming for some.
 
+::: warning
+I've used Element for a while on Android, and I haven't had the best experience on it. There wasn't anything too severe that would prevent me from using the app, but there were small bugs that kept annoying me until I eventually deleted it. Your experience may be different, and this isn't meant to discourage you from using Matrix. I'm just talking about my experience with the app. Keep in mind that this is only about Element on Android. I haven't used it on other platforms enough to be able to provide a proper review. If you'd like to try them, there are [other clients](https://matrix.org/clients/) that you can use instead.
+:::
+
 #### Element
 - [Element Website](https://element.io/)
 - [GitHub](https://github.com/vector-im)
