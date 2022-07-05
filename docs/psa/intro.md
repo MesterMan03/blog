@@ -134,8 +134,6 @@ Whatever you do, minimize metadata.
 
 [Plexus](https://plexus.techlore.tech)
 
-[Contra Chrome](https://contrachrome.com) - explains everything wrong with Google Chrome
-
 You can also join the [Privacy Guides](https://www.privacyguides.org/#we-need-you-heres-how-to-get-involved), [Techlore](https://techlore.tech "You can find their socials in the top right corner") and [The New Oil](https://thenewoil.org/links.html) communities. They're super friendly and will help you with whatever privacy- or security-related questions you have.
 
 ---
