@@ -141,7 +141,7 @@ You can also join the [Privacy Guides](https://www.privacyguides.org/#we-need-yo
 ---
 
 #### Contributors
-[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+[![](https://github.com/noClaps.png?size=32 "noClaps"){.contrib}](https://github.com/noClaps)
 {.contributors}
 
 *[e2ee]: end-to-end encryption    

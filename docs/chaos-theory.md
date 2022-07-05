@@ -72,5 +72,5 @@ https://en.wikipedia.org/wiki/Robert_L._Devaney
 ---
 
 #### Contributors
-[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+[![](https://github.com/noClaps.png?size=32 "noClaps"){.contrib}](https://github.com/noClaps)
 {.contributors}

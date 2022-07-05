@@ -172,7 +172,7 @@ _Wiped: The Curious History of Toilet Paper_ by Ronald H. Blumer
 ---
 
 #### Contributors
-[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+[![](https://github.com/noClaps.png?size=32 "noClaps"){.contrib}](https://github.com/noClaps)
 {.contributors}
 
 *[BCE]: Before Common Era

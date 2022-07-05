@@ -274,7 +274,7 @@ I've heard plenty of reasons that people don't want to move away from their resp
 ---
 
 #### Contributors
-[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+[![](https://github.com/noClaps.png?size=32 "noClaps"){.contrib}](https://github.com/noClaps)
 {.contributors}
 
 *[SMS]: Short Message Service

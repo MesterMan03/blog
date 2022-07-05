@@ -177,5 +177,5 @@ I found a thesis by Jose William Porras that claims to be the "Solution to Colla
 ---
 
 #### Contributors
-[![](https://github.com/noClaps.png?size=32){.contrib}](https://github.com/noClaps)
+[![](https://github.com/noClaps.png?size=32 "noClaps"){.contrib}](https://github.com/noClaps)
 {.contributors}
