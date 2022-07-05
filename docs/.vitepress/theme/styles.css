@@ -15,6 +15,7 @@ p {
 .contrib {
     border-radius: 1rem;
     margin-bottom: 0.5rem;
+    width: 2rem;
 }
 
 .contributors {
