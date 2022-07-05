@@ -48,4 +48,15 @@ p {
 .vp-doc a:not(.contributors a, .header-anchor):focus {
     background-size: 100% 2px;
 }
+
+/* Text selection color */
+/* Thanks to https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ for demonstrating how to do this */
+::selection {
+    background: var(--vp-c-brand);
+    color: var(--vp-c-bg);
+}
+
+::-moz-selection {
+    background: var(--vp-c-brand);
+    color: var(--vp-c-bg);
 }
