@@ -5,6 +5,10 @@ titleTemplate: false
 hero:
   name: The Blog of Random
   tagline: A blog about the most random things you can think of, brought to you by the most interesting boring person you've ever met
+  actions:
+    - theme: alt
+      text: Also check out my photos!
+      link: https://noClaps.github.io/gallery
   
 features:
   - title: About this blog
