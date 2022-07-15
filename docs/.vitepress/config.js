@@ -56,8 +56,7 @@ export default {
                             { text: 'Intro', link: '/psa/intro' },
                             { text: 'Messengers', link: '/psa/messengers' }
                         ]
-                    },
-                    { text: 'Google: A Misrepresented Evil', link: '/google' }
+                    }
                 ]
             }
         ],
