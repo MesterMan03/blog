@@ -10,7 +10,7 @@ body:
     label: Have you read the code of conduct?
     description: Please read the code of conduct before submitting an issue.
     options:
-    - label: I have read the code of conduct
+    - label: I have read the code of conduct.
       required: true
 
 - type: checkboxes
@@ -18,7 +18,7 @@ body:
     label: Has this bug already been reported?
     description: Check both open and closed issues to see if this bug has already been reported.
     options:
-    - label: This bug has not been reported yet
+    - label: This bug has not been reported yet.
       required: true
 
 - type: textarea

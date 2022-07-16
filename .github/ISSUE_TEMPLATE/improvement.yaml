@@ -10,7 +10,7 @@ body:
     label: Have you read the code of conduct?
     description: Please read the code of conduct before submitting an issue.
     options:
-    - label: I have read the code of conduct
+    - label: I have read the code of conduct.
       required: true
 
 - type: checkboxes
@@ -18,7 +18,7 @@ body:
     label: Has this improvement already been suggested?
     description: Check both open and closed issues to see if this improvement has already been suggested.
     options:
-    - label: My improvement has not been suggested yet
+    - label: My improvement has not been suggested yet.
       required: true
 
 - type: textarea
