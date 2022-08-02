@@ -38,11 +38,11 @@ body:
       If you're suggesting improvements to the content, such as clearer wording or adding sources, then you can also write that here.
 
       You can use a format such as:
-      **Correction**: <your correction here>, eg. Lorem ipsum
+      **Correction**: <your correction here>
       **Sources**:
-      - <link to source 1>, eg. https://example.com
-      - <link to source 2>, eg. https://example.org
-      - <link to source 3>, eg. https://vitepress.vuejs.org
+      - <link to source 1>
+      - <link to source 2>
+      - <link to source 3>
       - ...
 
       A minimum of one source is required, but 2 or more are encouraged. Also, clean your links before sharing them here, please. I don't wanna be tracked. 

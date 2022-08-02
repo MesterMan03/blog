@@ -28,15 +28,12 @@ This type of issue is meant for you to provide new ideas for me to write about i
 If I do choose to write about your topic, you should keep in mind that it may take a while to get to it. I'm not always online, and this blog isn't my main priority at the moment. And yes, sometimes I'm procrastinating. I might also ask you for help or links and sources to make it easier for me to understand your topic, and hence write about it. You don't _have_ to respond, and I (probably) won't stop writing about your idea if you don't, but I hope you do. It makes my work a lot easier, and you'll get your post quicker. It's a win-win!
 
 #### Improvement
-This type of issue is meant for improvements outside the content of the blog. You can suggest anything you want, just make sure that it's actually possible while using VitePress. If you're able to provide examples for the feature you want implemented, do so. Tutorials and guides of how to implement certain features are also massively helpful and will speed up implementation of your suggestion by a lot.
+This type of issue is meant for improvements outside the content of the blog. You can suggest anything you want, just make sure that it's actually possible while using Hugo. If you're able to provide examples for the feature you want implemented, do so. Tutorials and guides of how to implement certain features are also massively helpful and will speed up implementation of your suggestion by a lot.
 
 ## Pull Requests (PRs)
 
 ### Getting started
-There are build instructions in the [README](../README.md) for this repository so that you can get started working on the website. The blog is made using [VitePress](https://github.com/vuejs/vitepress), and I recommend you go through their [documentation](https://vitepress.vuejs.org) to see its features and limitations. Keep in mind that VitePress is in alpha at the moment, and report any bugs you find in their site generator to their [issue tracker](https://github.com/vuejs/vitepress/issues).
-
-### Adding plugins
-You can add [Markdown-it](https://github.com/markdown-it/markdown-it) plugins from NPM, but let me know that you've added them in your PR comments. I'll review your PR and see what changes you've made, and we can discuss the plugins you've added, and if they're really necessary. Also, make sure that `package.json` and `package-lock.json` reflect your changes. They should update automatically if you've used `--save` in your `npm install` command, but it doesn't hurt to check.
+There are build instructions in the [README](../README.md) for this repository so that you can get started working on the website. The blog is made using [Hugo](https://github.com/gohugoio/hugo), and I recommend you go through their [documentation](https://gohugo.io) to see its features and limitations. Report any bugs you find in their site generator to their [issue tracker](https://github.com/gohugoio/hugo/issues).
 
 ### Testing
 Before you open a PR, make sure that the changes you make actually work and don't cause errors in the site. I've provided instructions on how to run the website locally for testing, and I hope you will follow them. I will test your changes too, just as a final check before merging with the actual website.

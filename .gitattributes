@@ -1,20 +1,16 @@
 * text=auto
 
-docs/** -linguist-documentation
-
 .git* text
-*.json text
-*.{yml,yaml} text
-*.py text
-*.xml text
+*.txt text
 *.svg text
-*.webmanifest text
+*.py text
+*.{yml,yaml} text
 
-*.js text linguist-detectable
 *.md text linguist-detectable
+*.html text linguist-detectable
 *.css text linguist-detectable
+*.js text linguist-detectable
 
+*.ttf binary
 *.png binary
-*.{jpg,jpeg} binary
 *.ico binary
-*.gif binary

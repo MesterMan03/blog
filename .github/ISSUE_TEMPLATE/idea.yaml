@@ -33,7 +33,7 @@ body:
   attributes:
     label: Links
     description: You can provide links related to your topic here.
-    placeholder: This can help me understand the topic better, so it's not required but highly encouraged! (Preferably English only, but all languages are welcome!)
+    placeholder: This can help me understand the topic better, so it's not required but highly encouraged! (Preferably in English, but all languages are welcome!)
   validations:
     required: false
 

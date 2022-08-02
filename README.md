@@ -1,37 +1,36 @@
 # The Blog of Random
 
-This is the source code for [The Blog of Random](https://noClaps.github.io/blog/).
+This is the source code for [The Blog of Random](https://blog.zerolimits.dev).
 
 Have a look around. If you find any bugs, you can open an issue or PR and I'll probably have a look and update the pages with the correct information.
 
 Enjoy!
 
----
-
-## Credits
-
-- [Mozilla's MDN Web Docs](https://developer.mozilla.org/en-US/) for some of the best documentation I have ever seen. I've learned so much about web development simply from going through their docs.
-
-- [W3Schools](https://www.w3schools.com/) for their awesome tutorials. Their explanations of how different aspects of HTML and CSS work are so clear, it's really great.
-
-- [VitePress](https://vitepress.vuejs.org) for their beautiful static site generator. My entire blog is pretty much built on this, so there's no way I'm not mentioning them. Plus, the whole project is [open source](https://github.com/vuejs/vitepress), which makes it even cooler!
-
-- all of the other projects that I've mentioned somewhere in my blog or used in the making of this blog. There's so many, it's hard to keep count!
-
----
-
-## Build instructions (for testing or whatever)
+## Build instructions
 
 1.  ```bash
     git clone https://github.com/noClaps/blog.git && cd blog
     ```
 
 2.  ```bash
-    npm install
+    hugo server -D
     ```
-    **Make sure your NPM version is 8.11.0 or later.** You can check this using `npm -v`. Ideally, use the latest version and stay up-to-date on all modules and changes this repo.
+    Run this in the root directory (`blog/` if you followed the instructions above), and open `localhost:1313` in your desired browser to see the preview. You'll have to refresh the page every time to see updates, though you can change that if you set `disableLiveReload` to `false` in `config.yaml`. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
 
-3.  ```bash
-    npm run docs:dev
-    ```
-    Run this in the root directory (`blog/` if you followed the instructions above), and open `localhost:3000/blog/` in your desired browser to see the preview.
+3. ```bash
+   hugo
+   ```
+   This builds the site (excluding any draft posts, to include them add `-D` to the end of the command) and places the files in the `public/` directory.
+    
+
+## Licenses
+
+[Hugo](https://gohugo.io), the static site generator used to generate this website, is licensed under the [Apache-2.0 license](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+
+The icons and favicon come from [Material Symbols and Icons](https://fonts.google.com/icons) and are licensed under the [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+
+[Mathjax](https://mathjax.org) is licensed under the [Apache-2.0 license](https://github.com/mathjax/MathJax-src/blob/master/LICENSE).
+
+The fonts come from Google Fonts, and their licenses are in their [respective folders](static/fonts).
+
+All of the remaining content in this repository is licensed under [the Unlicense](LICENSE).
