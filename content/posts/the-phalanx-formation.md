@@ -84,18 +84,18 @@ And so ended the glorious days of the phalanx.
 
 ## Sources
 
-https://en.wikipedia.org/wiki/Phalanx
+[Phalanx - Wikipedia](https://en.wikipedia.org/wiki/Phalanx)
 
-https://en.wikipedia.org/wiki/Stele
+[Stele - Wikipedia](https://en.wikipedia.org/wiki/Stele)
 
-https://qa.perl.org/phalanx/history.html
+[History of the hoplite phalanx - qa.perl.org](https://qa.perl.org/phalanx/history.html)
 
-https://historyofyesterday.com/what-was-it-like-to-fight-in-a-greek-phalanx-b1a2fce3b612
+[What Was It Like To Fight In A Greek Phalanx? | by Erik Brown | History of Yesterday](https://historyofyesterday.com/what-was-it-like-to-fight-in-a-greek-phalanx-b1a2fce3b612)
 
-https://www.worldhistory.org/article/110/the-greek-phalanx/ 
+[The Greek Phalanx - World History Encyclopedia](https://www.worldhistory.org/article/110/the-greek-phalanx/ )
 
-https://en.wikipedia.org/wiki/Xiphos
+[Xiphos - Wikipedia](https://en.wikipedia.org/wiki/Xiphos)
 
-https://www.historyextra.com/period/ancient-greece/greek-warfare-battles-hoplites/
+[Greek Battles: How They Fought, Hoplites & The Phalanx | HistoryExtra](https://www.historyextra.com/period/ancient-greece/greek-warfare-battles-hoplites/)
 
-https://www.livius.org/articles/concept/phalanx/
+[Phalanx - Livius](https://www.livius.org/articles/concept/phalanx/)

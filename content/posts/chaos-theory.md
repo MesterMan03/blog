@@ -58,12 +58,12 @@ Anyway, thanks for reading!
 
 There's not a lot of sources because many websites were just repeating what Wikipedia said, or were too complicated for me to understand, or both. And I didn't bother going past the first page of search results, so it's possible I missed out on a *lot*.
 
-https://www.britannica.com/science/chaos-theory
+[chaos theory | Definition, Examples, & Facts | Britannica](https://www.britannica.com/science/chaos-theory)
 
-https://en.wikipedia.org/wiki/Chaos_theory
+[Chaos theory - Wikipedia](https://en.wikipedia.org/wiki/Chaos_theory)
 
-https://en.wikipedia.org/wiki/Lyapunov_time
+[Lyapunov time - Wikipedia](https://en.wikipedia.org/wiki/Lyapunov_time)
 
-https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/
+[ELI5: What exactly is Chaos Theory? How does it apply to everyday life? : explainlikeimfive](https://www.reddit.com/r/explainlikeimfive/comments/pm727k/comment/hcg0w5x/)
 
-https://en.wikipedia.org/wiki/Robert_L._Devaney
+[Robert L. Devaney - Wikipedia](https://en.wikipedia.org/wiki/Robert_L._Devaney)

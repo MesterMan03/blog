@@ -148,19 +148,19 @@ Thanks for reading!
 
 I may have lifted some sentences and phrases from the sources themselves, simply because I could not think of a better way to say them.
 
-https://www.history.com/news/toilet-paper-hygiene-ancient-rome-china
+[Who Invented Toilet Paper—and What Came Before - HISTORY](https://www.history.com/news/toilet-paper-hygiene-ancient-rome-china)
 
-https://en.wikipedia.org/wiki/Toilet_paper
+[Toilet paper - Wikipedia](https://en.wikipedia.org/wiki/Toilet_paper)
 
-https://www.nationalgeographic.com/history/article/what-people-do-before-toilet-paper
+[What did people do before toilet paper?](https://www.nationalgeographic.com/history/article/what-people-do-before-toilet-paper)
 
-https://www.livescience.com/toilet-paper-history.html
+[What did people use before toilet paper was invented? | Live Science](https://www.livescience.com/toilet-paper-history.html)
 
-https://www.bmj.com/content/345/bmj.e8287.long
+[Toilet hygiene in the classical era | The BMJ](https://www.bmj.com/content/345/bmj.e8287.long)
 
-https://en.wikipedia.org/wiki/Aristophanes
+[Aristophanes - Wikipedia](https://en.wikipedia.org/wiki/Aristophanes)
 
-https://en.wikipedia.org/wiki/Koan
+[Koan - Wikipedia](https://en.wikipedia.org/wiki/Koan)
 
 _Two Zen Classics: The Gateless Gate and the Blue Cliff Records_ by Katsuki Sekida
 
