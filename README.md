@@ -31,6 +31,6 @@ The icons and favicon come from [Material Symbols and Icons](https://fonts.googl
 
 [Mathjax](https://mathjax.org) is licensed under the [Apache-2.0 license](https://github.com/mathjax/MathJax-src/blob/master/LICENSE).
 
-The fonts come from Google Fonts, and their licenses are in their [respective folders](static/fonts).
+The fonts come from [Google Fonts](https://fonts.google.com), and their licenses are in their [respective folders](static/fonts).
 
 All of the remaining content in this repository is licensed under [the Unlicense](LICENSE).
