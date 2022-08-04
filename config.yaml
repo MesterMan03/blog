@@ -18,7 +18,7 @@ imaging:
     disableLatLong: true
 
 # Meta
-title: The Blog of Random
+title: Infinitely Random
 author:
   name: noClaps
 baseURL: https://blog.zerolimits.dev

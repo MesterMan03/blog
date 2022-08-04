@@ -2,7 +2,7 @@
 title: Intro
 description: How to protect yourself from the internet, on the internet
 date: 2022-04-06
-lastmod: 2022-07-05
+lastmod: 2022-08-05
 url: /tech/psa/intro/
 tags: ['tech', 'privacy/security/anonymity']
 ---
@@ -43,7 +43,7 @@ In follow-up posts to this, I'll suggest some of the tools and services I've hea
 ## Open source everything
 Throughout my various posts on this topic, you may hear the term "open source" a lot. Other variations of this you may hear online are OSS (Open Source Software), FOSS (Free and Open Source Software) or FLOSS (Free/Libre and Open Source). They have some [slight differences](https://www.gnu.org/philosophy/floss-and-foss.en.html) in their definitions, but for the most part they can be interchangeable.
 
-Open source basically means you can see the source code of the app, program, service, etc., that you're using. An example of this is this blog, the Blog of Random. You can find the source HTML, CSS, etc., for this blog at my [GitHub](https://github.com/noClaps/blog), linked up at the top. Another famous example of open source software is the [Firefox](https://firefox-source-docs.mozilla.org/contributing/directory_structure.html) [browser](https://searchfox.org/mozilla-central/source).
+Open source basically means you can see the source code of the app, program, service, etc., that you're using. An example of this is this blog. You can find the source HTML, CSS, etc., for this blog at my [GitHub](https://github.com/noClaps/blog), linked below. Another famous example of open source software is the [Firefox](https://firefox-source-docs.mozilla.org/contributing/directory_structure.html) [browser](https://searchfox.org/mozilla-central/source).
 
 Most of the apps and services I suggest will be mostly or fully open source, at least for the parts that actually matter. This is because open source is easier to "trust", since any [malicious behavior can be relatively easily spotted](https://appleinsider.com/articles/21/07/04/open-source-audacity-deemed-spyware-over-data-collection-changes). I put "trust" in quotes because that's kind of the opposite of what we want. The purpose of open source software is to remove the need for trust entirely, because everything is clearly visible. Theoretically, anyone can go through the code, find something they don't like, and remove it in their fork (version) of the app. Practically, this isn't always possible because not everyone can understand code or audit effectively. Even in cases like this, having the source code be available helps transparency on the developer's end, making them just a little easier to trust.
 

@@ -1,6 +1,6 @@
-# The Blog of Random
+# Infinitely Random
 
-This is the source code for [The Blog of Random](https://blog.zerolimits.dev).
+This is the source code for [Infinitely Random](https://blog.zerolimits.dev).
 
 Have a look around. If you find any bugs, you can open an issue or PR and I'll probably have a look and update the pages with the correct information.
 
@@ -27,9 +27,7 @@ Enjoy!
 
 [Hugo](https://gohugo.io), the static site generator used to generate this website, is licensed under the [Apache-2.0 license](https://github.com/gohugoio/hugo/blob/master/LICENSE).
 
-The favicon comes from [Material Symbols and Icons](https://fonts.google.com/icons) and is licensed under the [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
-
-The icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT License](static/svg/LICENSE).
+The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT License](static/svg/LICENSE).
 
 [Mathjax](https://mathjax.org) is licensed under the [Apache-2.0 license](https://github.com/mathjax/MathJax-src/blob/master/LICENSE).
 

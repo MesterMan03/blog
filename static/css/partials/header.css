@@ -54,8 +54,8 @@ header a:hover {
 
 .title::before {
     content: '';
-    mask: url('/svg/article.svg') no-repeat 50% 50%;
-    -webkit-mask: url('/svg/article.svg') no-repeat 50% 50%;
+    mask: url('/svg/favicon.svg') no-repeat 50% 50%;
+    -webkit-mask: url('/svg/favicon.svg') no-repeat 50% 50%;
     mask-size: cover;
     -webkit-mask-size: cover;
     background-color: var(--text);
