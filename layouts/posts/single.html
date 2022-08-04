@@ -15,6 +15,7 @@
         <h1 class="posttitle">{{.Title}}</h1>
         <p class="postdesc">{{.Description}}</p>
         {{ partial "tags.html" . }}
+        <p class="readingtime">{{.ReadingTime}} min read</p>
       </div>
       {{.Content}}
     </article>

@@ -58,6 +58,12 @@ article h2 {
     font-size: 0.9375rem;
 }
 
+.readingtime {
+    font-style: italic;
+    margin: 1rem 0;
+    text-align: center;
+}
+
 /* Task list */
 /* Thanks to https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/extensions/pymdownx/_tasklist.scss */
 .task-list {
