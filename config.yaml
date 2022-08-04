@@ -1,5 +1,5 @@
 # Technical stuff
-relativeURLS: true
+canonifyURLS: true
 enableRobotsTXT: true
 frontmatter:
   date:
