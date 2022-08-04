@@ -27,7 +27,9 @@ Enjoy!
 
 [Hugo](https://gohugo.io), the static site generator used to generate this website, is licensed under the [Apache-2.0 license](https://github.com/gohugoio/hugo/blob/master/LICENSE).
 
-The icons and favicon come from [Material Symbols and Icons](https://fonts.google.com/icons) and are licensed under the [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+The favicon comes from [Material Symbols and Icons](https://fonts.google.com/icons) and is licensed under the [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+
+The icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT License](static/svg/LICENSE).
 
 [Mathjax](https://mathjax.org) is licensed under the [Apache-2.0 license](https://github.com/mathjax/MathJax-src/blob/master/LICENSE).
 

@@ -96,8 +96,8 @@ a.brand .title:hover::before {
 /* Nav.Gallery */
 .gallery::before {
     content: '';
-    mask: url('/svg/launch.svg') no-repeat 50% 50%;
-    -webkit-mask: url('/svg/launch.svg') no-repeat 50% 50%;
+    mask: url('/svg/link.svg') no-repeat 50% 50%;
+    -webkit-mask: url('/svg/link.svg') no-repeat 50% 50%;
     mask-size: cover;
     -webkit-mask-size: cover;
     background-color: var(--text);

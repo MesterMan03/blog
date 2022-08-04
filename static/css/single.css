@@ -81,15 +81,15 @@ article h2 {
     height: 1rem;
     width: 1rem;
     content: '';
-    mask: url('/svg/unchecked-box.svg');
-    -webkit-mask: url('/svg/unchecked-box.svg');
+    mask: url('/svg/unchecked.svg');
+    -webkit-mask: url('/svg/unchecked.svg');
     background-color: var(--text);
     visibility: visible;
 }
 
 [type=checkbox][checked]::before {
-    mask: url('/svg/checked-box.svg');
-    -webkit-mask: url('/svg/checked-box.svg');
+    mask: url('/svg/checked.svg');
+    -webkit-mask: url('/svg/checked.svg');
     height: 1rem;
     width: 1rem;
 }
