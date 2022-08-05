@@ -48,7 +48,6 @@ header a:hover {
     color: var(--text);
     padding: 0.5rem 0;
     position: relative;
-    font-family: "Outfit", sans-serif;
     font-size: 1.125rem;
 }
 

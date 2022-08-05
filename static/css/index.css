@@ -1,7 +1,6 @@
 /* Site Meta */
 .sitetitle,
 .sitedesc {
-    font-family: "Roboto Slab", serif;
     word-spacing: 0.2rem;
 }
 
@@ -23,10 +22,6 @@
     color: var(--primary-text);
     border-radius: 0.5rem;
     padding: 1rem;
-}
-
-.info b {
-    font-family: "Roboto Slab", serif;
 }
 
 .info a {

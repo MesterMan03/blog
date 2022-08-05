@@ -1,31 +1,17 @@
 @font-face {
-    font-family: "Outfit";
-    src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf");
-    font-display: swap;
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter.ttf");
 }
 
 @font-face {
-    font-family: "Roboto Slab";
-    src: url("/fonts/RobotoSlab/RobotoSlab-VariableFont_wght.ttf");
-    font-display: swap;
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode/FiraCode-VF.woff2");
 }
 
-@font-face {
-    font-family: "Source Code Pro";
-    src: url("/fonts/SourceCodePro/SourceCodePro-VariableFont_wght.ttf");
-    font-display: swap;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Slab", serif;
-}
-
-p, a:not(.brand), button, b, li, summary {
-    font-family: "Outfit", sans-serif;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 0.01rem;
+h1, h2, h3, h4, h5, h6, p, a, button, b, li, summary {
+    font-family: "Inter", system-ui, -apple-system;
 }
 
 code {
-    font-family: "Source Code Pro", monospace;
+    font-family: "Fira Code", ui-monospace;
 }

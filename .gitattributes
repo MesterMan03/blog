@@ -3,8 +3,9 @@
 .git* text
 *.txt text
 *.svg text
-*.py text
 *.{yml,yaml} text
+
+*.py text -linguist-detectable
 
 *.md text linguist-detectable
 *.html text linguist-detectable
@@ -12,5 +13,6 @@
 *.js text linguist-detectable
 
 *.ttf binary
+*.woff2 binary
 *.png binary
 *.ico binary
