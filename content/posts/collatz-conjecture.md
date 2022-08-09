@@ -4,7 +4,7 @@ description: The simplest hardest problem in math history
 date: 2021-12-14
 url: /science/collatz-conjecture/
 tags: ['science']
-mathjax: true
+math: true
 ---
 
 ---

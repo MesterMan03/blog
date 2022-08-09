@@ -29,7 +29,7 @@ Enjoy!
 
 The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT License](static/svg/LICENSE).
 
-[Mathjax](https://mathjax.org) is licensed under the [Apache-2.0 license](js/mathjax/LICENSE).
+[KaTeX](https://katex.org) is licensed under the [MIT license](assets/js/katex/LICENSE).
 
 The fonts' licenses are in their [respective folders](static/fonts).
 

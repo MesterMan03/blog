@@ -3,7 +3,6 @@
 
 <head>
   {{ partial "head.html" . }}
-  <link rel="stylesheet" href="/css/single.css">
   {{$tags := resources.Get "css/partials/tags.css"}}
   {{$details := resources.Get "css/shortcodes/details.css"}}
   {{$warning := resources.Get "css/shortcodes/warning.css"}}
@@ -12,6 +11,15 @@
   {{$single := resources.Get "css/single.css"}}
   {{$post := slice $tags $details $warning $note $quote $single | resources.Concat "post.css" | toCSS | minify | fingerprint}}
   <link rel="stylesheet" href="{{$post.Permalink}}" integrity="{{$post.Data.Integrity}}">
+
+  {{if .Params.math}}
+    {{$katexcss := resources.Get "js/katex/katex.css" | toCSS | minify | fingerprint}}
+    <link rel="stylesheet" href="{{$katexcss.Permalink}}" integrity="{{$katexcss.Data.Integrity}}">
+    {{$katexjs := resources.Get "js/katex/katex.js" | minify | fingerprint}}
+    <script defer src="{{$katexjs.Permalink}}" integrity="{{$katexjs.Data.Integrity}}"></script>
+    {{$autorender := resources.Get "js/katex/auto-render.js" | minify | fingerprint}}
+    <script defer src="{{$autorender.Permalink}}" integrity="{{$autorender.Data.Integrity}}" onload="renderMathInElement(document.body);"></script>
+  {{end}}
 </head>
 
 <body>
@@ -29,17 +37,6 @@
     </article>
   </main>
   {{ partial "footer.html" . }}
-
-  {{if .Params.mathjax}}
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-  </script>
-  <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js" defer></script>
-  {{end}}
 </body>
 
 </html>
