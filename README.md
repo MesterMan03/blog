@@ -27,10 +27,10 @@ Enjoy!
 
 [Hugo](https://gohugo.io), the static site generator used to generate this website, is licensed under the [Apache-2.0 license](https://github.com/gohugoio/hugo/blob/master/LICENSE).
 
-The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT License](static/svg/LICENSE).
+The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT license](static/svg/LICENSE).
 
 [KaTeX](https://katex.org) is licensed under the [MIT license](assets/js/katex/LICENSE).
 
 The fonts' licenses are in their [respective folders](static/fonts).
 
-All of the remaining content in this repository is licensed under [the Unlicense](LICENSE).
+All of the remaining content in this repository is licensed under the [Unlicense](UNLICENSE).
