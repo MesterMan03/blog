@@ -4,6 +4,14 @@
 <head>
   {{ partial "head.html" . }}
   <link rel="stylesheet" href="/css/single.css">
+  {{$tags := resources.Get "css/partials/tags.css"}}
+  {{$details := resources.Get "css/shortcodes/details.css"}}
+  {{$warning := resources.Get "css/shortcodes/warning.css"}}
+  {{$note := resources.Get "css/shortcodes/note.css"}}
+  {{$quote := resources.Get "css/shortcodes/quote.css"}}
+  {{$single := resources.Get "css/single.css"}}
+  {{$post := slice $tags $details $warning $note $quote $single | resources.Concat "post.css" | toCSS | minify | fingerprint}}
+  <link rel="stylesheet" href="{{$post.Permalink}}" integrity="{{$post.Data.Integrity}}">
 </head>
 
 <body>

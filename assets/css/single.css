@@ -1,9 +1,3 @@
-/* Imports */
-@import url(partials/tags.css);
-@import url(shortcodes/details.css);
-@import url(shortcodes/warning.css);
-@import url(shortcodes/note.css);
-
 /* Main */
 hr {
     border: none;

@@ -13,6 +13,6 @@
 *.js text linguist-detectable
 
 *.ttf binary
+*.woff binary
 *.woff2 binary
-*.png binary
 *.ico binary

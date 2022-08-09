@@ -3,7 +3,8 @@
 
 <head>
     {{ partial "head.html" . }}
-    <link rel="stylesheet" href="/css/index.css">
+    {{ $index := resources.Get "css/index.css" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{$index.Permalink}}" integrity="{{$index.Data.Integrity}}">
 </head>
 
 <body>

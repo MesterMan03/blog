@@ -3,7 +3,8 @@
 
 <head>
     {{ partial "head.html" . }}
-    <link rel="stylesheet" href="/css/404.css">
+    {{ $404 := resources.Get "css/404.css" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{$404.Permalink}}" integrity="{{$404.Data.Integrity}}">
 </head>
 
 <body>

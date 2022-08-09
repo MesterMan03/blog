@@ -9,5 +9,12 @@
 {{end}}
 <link rel="icon" href="/icon/favicon.ico" sizes="any">
 <link rel="icon" href="/icon/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/global.css">
 <link rel="alternate" href="/index.xml" type="application/atom+xml" title="Atom">
+
+{{$colors := resources.Get "css/partials/colors.css"}}
+{{$header := resources.Get "css/partials/header.css"}}
+{{$footer := resources.Get "css/partials/footer.css"}}
+{{$fonts := resources.Get "css/partials/fonts.css"}}
+{{$global := resources.Get "css/global.css"}}
+{{$style := slice $global $colors $header $fonts $footer | resources.Concat "style.css" | toCSS | minify | fingerprint}}
+<link rel="stylesheet" href="{{$style.Permalink}}" integrity="{{$style.Data.Integrity}}">
