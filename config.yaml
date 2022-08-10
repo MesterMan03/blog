@@ -9,6 +9,7 @@ languageCode: en-US
 removePathAccents: true
 summaryLength: 64
 disableKinds: [taxonomy, term, section]
+disableHugoGeneratorInject: true
 
 # Images
 imaging:
