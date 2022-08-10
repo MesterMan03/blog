@@ -3,7 +3,6 @@ footer {
     position: relative;
     display: flex;
     bottom: 0;
-    width: 100vw;
     padding: 1rem;
     justify-content: center;
     align-items: center;
