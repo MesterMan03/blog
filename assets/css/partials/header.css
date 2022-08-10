@@ -53,10 +53,10 @@ header a:hover {
 
 .title::before {
     content: '';
-    mask: url('/svg/favicon.svg') no-repeat 50% 50%;
     -webkit-mask: url('/svg/favicon.svg') no-repeat 50% 50%;
-    mask-size: cover;
+    mask: url('/svg/favicon.svg') no-repeat 50% 50%;
     -webkit-mask-size: cover;
+    mask-size: cover;
     background-color: var(--text);
     height: 1.25rem;
     width: 1.25rem;
@@ -95,10 +95,10 @@ a.brand .title:hover::before {
 /* Nav.Gallery */
 .gallery::before {
     content: '';
-    mask: url('/svg/link.svg') no-repeat 50% 50%;
     -webkit-mask: url('/svg/link.svg') no-repeat 50% 50%;
-    mask-size: cover;
+    mask: url('/svg/link.svg') no-repeat 50% 50%;
     -webkit-mask-size: cover;
+    mask-size: cover;
     background-color: var(--text);
     height: 1rem;
     width: 1rem;
@@ -129,10 +129,10 @@ a.brand .title:hover::before {
 
 .header-linktitle::after {
     content: '';
-    mask: url('/svg/dropdown-arrow.svg');
     -webkit-mask: url('/svg/dropdown-arrow.svg');
-    mask-size: cover;
+    mask: url('/svg/dropdown-arrow.svg');
     -webkit-mask-size: cover;
+    mask-size: cover;
     background-color: var(--text);
     height: 1rem;
     width: 1rem;
