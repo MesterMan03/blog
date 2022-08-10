@@ -4,11 +4,16 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-bg);
-    -webkit-backdrop-filter: blur(0.75rem);
-    backdrop-filter: blur(0.75rem);
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+@supports (-webkit-backdrop-filter: blur(0.75rem)) or (backdrop-filter: blur(0.75rem)) {
+    header {
+        -webkit-backdrop-filter: blur(0.75rem);
+        backdrop-filter: blur(0.75rem);
+    }
 }
 
 header a,
