@@ -35,7 +35,8 @@ article h2 {
 }
 
 article li {
-    line-height: 2rem;
+    margin: 1.25rem 0;
+    line-height: 1.5rem;
 }
 
 /* Post Header */
