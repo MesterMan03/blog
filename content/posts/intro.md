@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: Intro to Privacy, Security and Anonymity
 description: How to protect yourself from the internet, on the internet
 date: 2022-04-06
 lastmod: 2022-08-05
