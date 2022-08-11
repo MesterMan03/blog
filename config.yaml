@@ -11,13 +11,6 @@ summaryLength: 64
 disableKinds: [taxonomy, term, section]
 disableHugoGeneratorInject: true
 
-# Images
-imaging:
-  quality: 90
-  exif:
-    disableDate: true
-    disableLatLong: true
-
 # Meta
 title: Infinitely Random
 author:
