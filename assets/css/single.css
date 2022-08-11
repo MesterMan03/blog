@@ -1,7 +1,7 @@
 /* Main */
 hr {
     border: none;
-    border-top: solid 0.125rem var(--hr);
+    border-top: solid 0.125rem var(--variant);
     width: 100%;
 }
 
@@ -30,7 +30,7 @@ article h1 {
 }
 
 article h2 {
-    border-top: solid 0.125rem var(--hr);
+    border-top: solid 0.125rem var(--variant);
     padding-top: 1rem;
 }
 
