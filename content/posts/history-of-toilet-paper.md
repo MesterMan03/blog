@@ -127,7 +127,7 @@ I'm not sure I should put this in here, seeing as these religions have long and 
   {{<quote "An excerpt from a Buddhist koan">}}
   A monk asked Ummon, “What is Buddha?” Ummon replied, “Kanshiketsu!”
 
-  ...
+  [...]
   
   Kanshiketsu - A shiketsu, or “poop-stick” (kan, dry; shi, poop; ketsu, stick), was used in old times instead of toilet paper. It is at once both private and polluted. But in samadhi there is no private or public, no pure or polluted.
   {{</quote>}}
