@@ -20,3 +20,13 @@
 .quote ul {
     margin: 0;
 }
+
+.quote *::selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.quote *::-moz-selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}

@@ -12,3 +12,13 @@
     color: var(--primary-text);
     border-radius: 0.5rem;
 }
+
+.tags p::selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.tags p::-moz-selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}

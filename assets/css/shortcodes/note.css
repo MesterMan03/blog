@@ -20,3 +20,13 @@
 .note ul {
     margin: 0;
 }
+
+.note *::selection {
+    background-color: var(--note-text);
+    color: var(--note-bg);
+}
+
+.note *::-moz-selection {
+    background-color: var(--note-text);
+    color: var(--note-bg);
+}

@@ -38,3 +38,13 @@
         width: 100%;
     }
 }
+
+.info *::selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.info *::-moz-selection {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}

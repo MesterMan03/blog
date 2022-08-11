@@ -32,3 +32,13 @@ details summary {
     font-weight: bold;
     cursor: pointer;
 }
+
+details *::selection {
+    background-color: var(--details-text);
+    color: var(--details-bg);
+}
+
+details *::-moz-selection {
+    background-color: var(--details-text);
+    color: var(--details-bg);
+}

@@ -20,3 +20,13 @@
 .warning ul {
     margin: 0;
 }
+
+.warning *::selection {
+    background-color: var(--warning-text);
+    color: var(--warning-bg);
+}
+
+.warning *::-moz-selection {
+    background-color: var(--warning-text);
+    color: var(--warning-bg);
+}
