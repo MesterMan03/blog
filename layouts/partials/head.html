@@ -6,8 +6,8 @@
 {{else}}
 <title>{{.Title}} - {{.Site.Title}}</title>
 {{end}}
-<link rel="icon" href="/icon/favicon.ico" sizes="any">
-<link rel="icon" href="/icon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{(resources.Get "icon/favicon.ico").RelPermalink}}" sizes="any">
+<link rel="icon" href="{{(resources.Get "icon/favicon.svg").RelPermalink}}" type="image/svg+xml">
 <link rel="alternate" href="/index.xml" type="application/atom+xml" title="Atom">
 
 {{$colors := resources.Get "css/partials/colors.css"}}
