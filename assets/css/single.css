@@ -80,15 +80,15 @@ article h2 {
     height: 1rem;
     width: 1rem;
     content: '';
-    mask: url('/svg/unchecked.svg');
     -webkit-mask: url('/svg/unchecked.svg');
+    mask: url('/svg/unchecked.svg');
     background-color: var(--text);
     visibility: visible;
 }
 
 [type=checkbox][checked]::before {
-    mask: url('/svg/checked.svg');
     -webkit-mask: url('/svg/checked.svg');
+    mask: url('/svg/checked.svg');
     height: 1rem;
     width: 1rem;
 }
