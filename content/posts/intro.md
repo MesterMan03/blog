@@ -2,7 +2,7 @@
 title: Intro to Privacy, Security and Anonymity
 description: How to protect yourself from the internet, on the internet
 date: 2022-04-06
-lastmod: 2022-08-05
+lastmod: 2022-08-12
 url: /tech/psa/intro/
 tags: ['tech', 'privacy/security/anonymity']
 ---
@@ -132,5 +132,7 @@ Whatever you do, minimize metadata.
 [Surveillance Report](https://surveillancereport.tech) - presented by Techlore and The New Oil, also has a [YouTube channel](https://www.youtube.com/c/SurveillanceReport)
 
 [Plexus](https://plexus.techlore.tech)
+
+[PrivSec.dev](https://privsec.dev)
 
 You can also join the [Privacy Guides](https://www.privacyguides.org/#we-need-you-heres-how-to-get-involved), [Techlore](https://techlore.tech "You can find their socials in the top right corner") and [The New Oil](https://thenewoil.org/links.html) communities. They're super friendly and will help you with whatever privacy- or security-related questions you have.
