@@ -55,7 +55,7 @@ This is by far the most profitable business for Google, earning over [$200 billi
 [This is actually false.](https://www.quora.com/Is-it-true-that-Google-sell-the-personal-data-to-some-agency) Considering how valuable data is, especially in this day and age, it wouldn't make sense for Google to simply give it away for a (relatively) small amount of money. Instead, Google employs a far more complex and intelligent strategy, which is the reason they're the advertising kings.
 
 ### Ad spots and RTB
-Let's say you have a website that you own, grandmascooking.com, and you want to earn money from the website. There are a few ways you can do this. Your first option is to create a paywall to enter and use the site, including one-time payments, a subscription model, etc. However, this would significantly limit the number of users your your site gets, and there are services like [12ft](https://12ft.io/) that are made specifically to bypass subscriptions.
+Let's say you have a website that you own, grandmascooking.com, and you want to earn money from the website. There are a few ways you can do this. Your first option is to create a paywall to enter and use the site, including one-time payments, a subscription model, etc. However, this would significantly limit the number of users your site gets, and there are services like [12ft](https://12ft.io/) that are made specifically to bypass subscriptions.
 
 Your other option is to have ads on your website, and earn revenue from that. This is generally a much more profitable option, since you'll get more users and most people are generally used to seeing ads on the internet, even if they're not happy about it. Most websites, both big and small, usually opt for this.
 
