@@ -8,17 +8,14 @@ tags: ['tech']
 ---
 
 ## Humble beginnings 
-
 Google had its [humble beginnings](https://about.google/our-story/) in 1995 as a research project by Stanford University students Larry Page, Sergey Brin, and Scott Hassan. While Hassan left before the company was officially founded, the other two remained, and went on to become owners of one of the [largest companies](https://www.gobankingrates.com/money/business/how-much-is-google-worth/) in the world.
 
 Now, the company that started out as a simple search engine controls the daily lives of millions of people around the world, with their [largest product](https://sg.oberlo.com/statistics/search-engine-market-share) being Google Search. It's so popular that "Googling" has become [synonymous](https://www.merriam-webster.com/dictionary/google) with searching the web. Other than the search engine, Google's other products are also widely used, such as [Google Drive](https://enlyft.com/tech/products/google-drive), [Gmail](https://techjury.net/blog/gmail-statistics/), [Google Maps](https://webtribunal.net/blog/google-map-statistics/), etc. However, Google's most popular products are [Android](https://gs.statcounter.com/os-market-share) and [Chrome](https://gs.statcounter.com/browser-market-share).
 
 ## Billionaires
-
 [Alphabet](https://en.wikipedia.org/wiki/Alphabet_Inc.) is the current parent company of Google and its former subsidiaries, and fills the position that Google used to fill until [October 2015](https://techcrunch.com/2015/10/02/google-becomes-alphabet/). Alphabet was the [3<sup>rd</sup>-largest](https://en.wikipedia.org/wiki/List_of_largest_technology_companies_by_revenue#2021_list) tech company (by revenue) in the world in 2021, only behind Apple and Samsung, beating out other huge companies like Microsoft and Facebook/Meta. That's impressive, but where do they get so much money, when most of Google's products are free for people to use?
 
 ### Subsidiaries
-
 Alphabet and Google own [a _lot_ of companies](https://www.kamilfranek.com/what-companies-alphabet-google-owns/). Here's a small list of companies that they own:
 
 #### Alphabet
