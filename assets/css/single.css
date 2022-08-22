@@ -48,14 +48,6 @@ article li {
     font-weight: bold;
 }
 
-.postdate {
-    font-size: 0.875rem;
-}
-
-.postdesc {
-    font-size: 0.9375rem;
-}
-
 .readingtime {
     font-style: italic;
     margin: 1rem 0;
