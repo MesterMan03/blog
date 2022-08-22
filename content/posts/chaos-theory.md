@@ -4,6 +4,7 @@ description: How the simplest things can go haywire
 date: 2021-12-02
 url: /science/chaos-theory/
 tags: ['science']
+author: noClaps
 ---
 
 ## The main stuff

@@ -5,6 +5,7 @@ date: 2022-08-12
 lastmod: 2022-08-13
 url: /tech/google/
 tags: ['tech']
+author: noClaps
 ---
 
 ## Humble beginnings 

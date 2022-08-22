@@ -5,6 +5,7 @@ date: 2021-12-14
 url: /science/collatz-conjecture/
 tags: ['science']
 math: true
+author: noClaps
 ---
 
 ---

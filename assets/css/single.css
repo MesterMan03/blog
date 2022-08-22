@@ -112,3 +112,9 @@ code:not(.highlight code) {
     border-radius: 0.5rem;
     padding: 0.125rem;
 }
+
+/* Author */
+.author {
+    text-align: right;
+    font-style: italic;
+}

@@ -30,6 +30,7 @@
         <p class="postdesc">{{.Description}}</p>
         {{ partial "tags.html" . }}
         <p class="readingtime">{{.ReadingTime}} min read</p>
+        <p class="author">Written by {{.Params.Author}}</p>
       </div>
       {{.Content}}
     </article>

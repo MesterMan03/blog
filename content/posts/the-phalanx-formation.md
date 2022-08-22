@@ -5,6 +5,7 @@ date: 2021-12-30
 lastmod: 2022-07-31
 url: /history/the-phalanx-formation/
 tags: ['history']
+author: noClaps
 ---
 
 ## The origin story
