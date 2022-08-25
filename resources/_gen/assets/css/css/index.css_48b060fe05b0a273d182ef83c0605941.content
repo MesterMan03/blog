@@ -1,1 +1,1 @@
-main{display:flex;flex-direction:column;justify-content:center;align-items:center}.sitetitle,.sitedesc{word-spacing:.2rem}.sitetitle{font-size:7.5vh;text-align:center}.sitedesc{font-size:5vh;font-weight:400;text-align:justify}.siteicon{height:25vh}
+main{display:flex;flex-direction:column;justify-content:center;align-items:center}.sitetitle,.sitedesc{word-spacing:.2rem}.sitetitle{font-size:6.25vh;text-align:center}.sitedesc{font-size:3.5vh;font-weight:400;text-align:justify}.siteicon{height:15vh}
