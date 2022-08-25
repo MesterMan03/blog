@@ -1,12 +1,10 @@
 ---
-title: About
-date: 2022-08-25
+title: About this blog
 url: /about/
-author: noClaps
-type: posts
+type: about
 ---
 
-## About this blog
+---
 This blog is about pretty much any topic I find interesting at the moment. I've written about historical topics, math stuff, tech, and more. I'd love ideas for things to write about. You can recommend them at my GitHub by opening an issue.
 
 I don't have a strict upload schedule, but on average I post about once a month, though don't quote me on that (I've gone like 3 months without posting before.). I try to write as frequently as I can, but I get distracted easily and I procrastinate a lot, so you might go a few weeks or sometimes months without any new posts, so sorry about that.
