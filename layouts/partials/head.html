@@ -13,6 +13,7 @@
 {{$colors := resources.Get "css/partials/colors.css"}}
 {{$header := resources.Get "css/partials/header.css"}}
 {{$footer := resources.Get "css/partials/footer.css"}}
+{{$sidebar := resources.Get "css/partials/sidebar.css"}}
 {{$global := resources.Get "css/global.css"}}
-{{$style := slice $global $colors $header $footer | resources.Concat "style.css" | toCSS | minify | fingerprint}}
+{{$style := slice $global $colors $header $footer $sidebar | resources.Concat "style.css" | toCSS | minify | fingerprint}}
 <link rel="stylesheet" href="{{$style.Permalink}}" integrity="{{$style.Data.Integrity}}">

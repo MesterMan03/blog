@@ -1,0 +1,156 @@
+@media (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar-button {
+    color: var(--text);
+    margin: 1vh 1vw;
+}
+
+.sidebar {
+    z-index: 999;
+    position: relative;
+}
+
+/* Sidebar */
+#sidebar {
+    display: flex;
+    position: absolute;
+    right: 0;
+    scroll-margin-top: 5rem;
+    background-color: var(--bg);
+    box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    transform: translateY(-10%);
+    transition: all 0.25s;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar:hover #sidebar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Nav.Gallery */
+.gallery::before {
+    content: '';
+    -webkit-mask: url('/svg/link.svg') no-repeat 50% 50%;
+    mask: url('/svg/link.svg') no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: var(--text);
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    vertical-align: -15%;
+    transition: all 0.25s;
+    margin-right: 0.25rem;
+}
+
+.gallery:hover::before {
+    background-color: var(--link);
+}
+
+/* Nav.Menu */
+.sidebar-nav-menu {
+    background-color: transparent;
+    position: relative;
+    padding: 0.5rem 0.1rem;
+}
+
+/* Nav.Menu.Title */
+.sidebar-linktitle {
+    color: var(--text);
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-linktitle::after {
+    content: '';
+    -webkit-mask: url('/svg/dropdown-arrow.svg');
+    mask: url('/svg/dropdown-arrow.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: var(--text);
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    vertical-align: -15%;
+    transition: all 0.25s;
+}
+
+.sidebar-linktitle:hover::after {
+    background-color: var(--link);
+}
+
+.sidebar-linktitle:hover {
+    color: var(--link);
+}
+
+/* Nav.Menu.Menu */
+.sidebar-nav-menu menu {
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--bg);
+    color: var(--text);
+    box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.25s;
+    z-index: 9999;
+}
+
+.sidebar-nav-menu:hover menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width: 768px) {
+    .sidebar-nav-menu menu {
+        transform: translate(-17.5%, -10%);
+    }
+
+    .sidebar-nav-menu:hover menu {
+        transform: translate(-17.5%, 0);
+    }
+}
+
+/* Nav.Menu.Menu.Link */
+.sidebar-nav-menu menu a {
+    display: block;
+    white-space: nowrap;
+}
+
+.sidebar-nav-menu menu a:hover {
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+}
+
+.sidebar-nav a,
+.sidebar-nav b {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.25s;
+    color: var(--text);
+}
+
+.sidebar-nav hr {
+    margin: 0;
+}

@@ -1,10 +1,4 @@
 /* Main */
-hr {
-    border: none;
-    border-top: solid 0.125rem var(--variant);
-    width: 100%;
-}
-
 blockquote {
     border-left: 0.125 solid var(--outline);
     padding: 0.25rem 1rem;

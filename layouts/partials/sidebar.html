@@ -1,33 +1,29 @@
-<header>
-    {{ if .IsHome }}
-    <div class="brand">
-        <p class="title">{{.Site.Title}}</p>
-    </div>
-    {{ else }}
-    <a href="{{.Site.BaseURL}}" class="brand">
-        <p class="title">{{.Site.Title}}</p>
+<div class="sidebar">
+    <a href="#sidebar" class="sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+        </svg>
     </a>
-    {{ end }}
 
-    <nav class="header-nav">
+    <nav id="sidebar" class="sidebar-nav">
         <a href="/about">About</a>
-        <div class="vl"></div>
-        <div class="header-nav-menu">
-            <button class="header-linktitle" type="button">History</button>
+        <hr>
+        <div class="sidebar-nav-menu">
+            <button class="sidebar-linktitle" type="button">History</button>
             <menu>
                 <a href="/history/history-of-toilet-paper/">History of Toilet Paper</a>
                 <a href="/history/the-phalanx-formation/">The Phalanx Formation</a>
             </menu>
         </div>
-        <div class="header-nav-menu">
-            <button class="header-linktitle" type="button">Science</button>
+        <div class="sidebar-nav-menu">
+            <button class="sidebar-linktitle" type="button">Science</button>
             <menu>
                 <a href="/science/chaos-theory/">Chaos Theory</a>
                 <a href="/science/collatz-conjecture/">Collatz Conjecture</a>
             </menu>
         </div>
-        <div class="header-nav-menu">
-            <button class="header-linktitle" type="button">Tech</button>
+        <div class="sidebar-nav-menu">
+            <button class="sidebar-linktitle" type="button">Tech</button>
             <menu>
                 <b>Priv/Sec/Anon</b>
                 <a href="/tech/psa/intro/">Intro</a>
@@ -36,9 +32,7 @@
                 <a href="/tech/google/">Google</a>
             </menu>
         </div>
-        <div class="vl"></div>
+        <hr>
         <a href="https://gallery.zerolimits.dev" class="gallery" target="_blank">Aperturic Focus</a>
     </nav>
-
-    {{partial "sidebar"}}
-</header>
+</div>
