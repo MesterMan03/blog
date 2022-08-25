@@ -196,3 +196,9 @@ a.brand .title:hover::before {
     color: var(--primary-text);
     background-color: var(--primary-bg);
 }
+
+/* Vertical line */
+.vl {
+    border-left: 1px solid var(--variant);
+    height: 1.5rem;
+}
