@@ -142,6 +142,10 @@
     background-color: var(--primary-bg);
 }
 
+.sidebar-nav-menu menu hr {
+    margin: 0.5rem 0;
+}
+
 .sidebar-nav a,
 .sidebar-nav b {
     text-decoration: none;
