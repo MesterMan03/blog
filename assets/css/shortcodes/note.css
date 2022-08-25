@@ -5,6 +5,7 @@
     background-color: var(--note-bg);
     color: var(--note-text);
     margin: 0.5rem 0;
+    box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
 }
 
 .note a {
