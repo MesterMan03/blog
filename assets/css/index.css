@@ -12,15 +12,16 @@ main {
 }
 
 .sitetitle {
-    font-size: 3.5rem;
-}
-
-.sitedesc {
-    font-size: 2rem;
-    font-weight: normal;
+    font-size: 7.5vh;
     text-align: center;
 }
 
+.sitedesc {
+    font-size: 5vh;
+    font-weight: normal;
+    text-align: justify;
+}
+
 .siteicon {
-    height: 15rem;
+    height: 25vh;
 }
