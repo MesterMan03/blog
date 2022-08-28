@@ -10,6 +10,8 @@ removePathAccents: true
 summaryLength: 64
 disableKinds: [taxonomy, term, section]
 disableHugoGeneratorInject: true
+minify:
+  minifyOutput: true
 
 # Meta
 title: Infinitely Random
@@ -43,7 +45,3 @@ privacy:
 
 # Dev
 disableLiveReload: true
-
-# Minify
-minify:
-  minifyOutput: true
