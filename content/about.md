@@ -10,7 +10,7 @@ This blog is about pretty much any topic I find interesting at the moment. I've 
 I don't have a strict upload schedule, but on average I post about once a month, though don't quote me on that (I've gone like 3 months without posting before.). I try to write as frequently as I can, but I get distracted easily and I procrastinate a lot, so you might go a few weeks or sometimes months without any new posts, so sorry about that.
 
 ## How can I keep up with updates/new posts?
-You can subscribe to the [RSS Feed](/index.xml). Another option is to subscribe to the GitHub Releases Atom feed for this, since I'll create a new release when I make a new post or a big change / set of changes to the website.
+You can subscribe to the [RSS feed](/index.xml). Another option is to subscribe to the GitHub Releases Atom feed for this, since I'll create a new release when I make a new post or a big change / set of changes to the website.
 
 A popular method is to set up a newsletter type thing, but I don't want to give out my real email address to the newsletter provider, and I don't want you to either, so that's not an option that's too attractive for me at the moment.
 
