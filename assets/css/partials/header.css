@@ -39,28 +39,11 @@ header a:hover {
     padding: 0.5rem 0;
     position: relative;
     font-size: 1.125rem;
-}
-
-.title::before {
-    content: '';
-    -webkit-mask: url('/svg/favicon.svg') no-repeat 50% 50%;
-    mask: url('/svg/favicon.svg') no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    background-color: var(--text);
-    height: 1.25rem;
-    width: 1.25rem;
-    display: inline-block;
-    vertical-align: -12.5%;
-    margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 a.brand .title:hover {
     color: var(--link);
-}
-
-a.brand .title:hover::before {
-    background-color: var(--link);
 }
 
 /* Nav */
