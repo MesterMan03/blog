@@ -14,7 +14,7 @@ minify:
   minifyOutput: true
 
 # Meta
-title: Infinitely Random
+title: ZeroBlog
 author:
   name: noClaps
 baseURL: https://blog.zerolimits.dev

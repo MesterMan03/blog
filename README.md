@@ -1,6 +1,6 @@
-# Infinitely Random
+# ZeroBlog
 
-This is the source code for [Infinitely Random](https://blog.zerolimits.dev).
+This is the source code for [ZeroBlog](https://blog.zerolimits.dev).
 
 Have a look around. If you find any bugs, you can open an issue or PR and I'll probably have a look and update the pages with the correct information.
 
