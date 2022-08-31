@@ -1,0 +1,254 @@
+---
+import Sidebar from "./Sidebar.astro";
+---
+
+<header>
+    <div class="titleblock">
+        <a href="/" class="brand">The Blog of Random</a>
+        <button
+            class="dark"
+            onclick="document.dispatchEvent(new CustomEvent('set-theme', { detail: 'dark' }))"
+            title="Switch to dark mode"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                ><path
+                    fill-rule="evenodd"
+                    d="M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z"
+                ></path>
+            </svg>
+        </button>
+        <button
+            class="light"
+            onclick="document.dispatchEvent(new CustomEvent('set-theme', { detail: 'Light' }))"
+            title="Switch to light mode"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                ><path
+                    fill-rule="evenodd"
+                    d="M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z"
+                ></path>
+            </svg>
+        </button>
+    </div>
+
+    <nav>
+        <a href="/about">About</a>
+        <div class="vl"></div>
+        <div class="header-nav-menu">
+            <button type="button">Science</button>
+            <menu>
+                <a href="/science/chaos-theory/">Chaos Theory</a>
+                <a href="/science/collatz-conjecture/">Collatz Conjecture</a>
+            </menu>
+        </div>
+        <div class="header-nav-menu">
+            <button type="button">History</button>
+            <menu>
+                <a href="/history/history-of-toilet-paper/"
+                    >History of Toilet Paper</a
+                >
+                <a href="/history/the-phalanx-formation/"
+                    >The Phalanx Formation</a
+                >
+            </menu>
+        </div>
+        <div class="header-nav-menu">
+            <button type="button">Tech</button>
+            <menu>
+                <b>Priv/Sec/Anon</b>
+                <a href="/tech/psa/intro/">Intro</a>
+                <a href="/tech/psa/messengers">Messengers</a>
+                <hr />
+                <a href="/tech/google/">Google</a>
+            </menu>
+        </div>
+        <div class="vl"></div>
+        <a
+            href="https://gallery.zerolimits.dev"
+            class="gallery"
+            target="_blank"
+            title="Aperturic Focus"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path
+                    fill-rule="evenodd"
+                    d="M15 3H7c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM6 5H2V4h4v1zm4.5 7C8.56 12 7 10.44 7 8.5S8.56 5 10.5 5 14 6.56 14 8.5 12.44 12 10.5 12zM13 8.5c0 1.38-1.13 2.5-2.5 2.5S8 9.87 8 8.5 9.13 6 10.5 6 13 7.13 13 8.5z"
+                >
+                </path>
+            </svg>
+        </a>
+    </nav>
+
+    <Sidebar />
+</header>
+
+<style lang="scss">
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg);
+        top: 0;
+
+        a,
+        button {
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.25s;
+        }
+
+        a:hover {
+            color: var(--link);
+        }
+    }
+
+    // Brand
+    .brand {
+        padding: 1rem 0.5em;
+        text-decoration: none;
+        color: var(--text);
+        position: relative;
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
+    // Nav
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1vh 1vw;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        a,
+        b {
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.25s;
+            color: var(--text);
+        }
+    }
+
+    // Gallery
+    .gallery svg {
+        height: 1.25rem;
+        vertical-align: -15%;
+        transition: all 0.25s;
+        fill: var(--text);
+
+        &:hover {
+            fill: var(--link);
+        }
+    }
+
+    // Nav.Menu
+    .header-nav-menu {
+        background-color: transparent;
+        position: relative;
+    }
+
+    // Nav.Menu.Title
+    button {
+        color: var(--text);
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:not(.light, .dark)::after {
+            content: "";
+            -webkit-mask: url("/svg/dropdown-arrow.svg");
+            mask: url("/svg/dropdown-arrow.svg");
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color: var(--text);
+            height: 1rem;
+            width: 1rem;
+            display: inline-block;
+            vertical-align: -15%;
+            transition: all 0.25s;
+        }
+
+        &:hover {
+            color: var(--link);
+
+            &::after {
+                background-color: var(--link);
+            }
+        }
+    }
+
+    // Nav.Menu.Menu
+    menu {
+        left: 50%;
+        transform: translate(-50%, -10%);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        background-color: var(--bg);
+        color: var(--text);
+        box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 0.75rem;
+        transition: all 0.25s;
+
+        a {
+            display: block;
+            white-space: nowrap;
+
+            &:hover {
+                color: var(--primary-text);
+                background-color: var(--primary-bg);
+            }
+        }
+    }
+
+    .header-nav-menu:hover menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+    }
+
+    .vl {
+        border-left: 1px solid var(--variant);
+        height: 1.5rem;
+    }
+
+    .titleblock {
+        margin: 1vw 1vh;
+    }
+
+    // Theme buttons
+    .light svg,
+    .dark svg {
+        fill: var(--text);
+        height: 1.25rem;
+        transition: all 0.25s;
+        vertical-align: -15%;
+
+        &:hover {
+            fill: var(--link);
+        }
+    }
+
+    .light {
+        display: none;
+    }
+
+    html[data-theme="dark"] {
+        .dark {
+            display: none;
+        }
+
+        .light {
+            display: inline-block;
+        }
+    }
+</style>

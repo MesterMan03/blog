@@ -1,0 +1,45 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+
+import "../styles/post.scss";
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <Head />
+        <title>{frontmatter.title}</title>
+        <meta name="description" content={frontmatter.description} />
+        
+        {
+            frontmatter.math && (
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+            )
+        }
+    </head>
+    <body>
+        <Header />
+        <main>
+            <div>
+                {
+                    frontmatter.lastmod ? (
+                        <p class="date">{frontmatter.lastmod}</p>
+                    ) : (
+                        <p class="date">{frontmatter.date}</p>
+                    )
+                }
+                <h1>{frontmatter.title}</h1>
+                <div class="description">{frontmatter.description}</div>
+                <p class="author">Written by {frontmatter.author}</p>
+            </div>
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>

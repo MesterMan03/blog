@@ -1,6 +1,6 @@
-# ZeroBlog
+# The Blog of Random
 
-This is the source code for [ZeroBlog](https://blog.zerolimits.dev).
+This is the source code for [The Blog of Random](https://blog.zerolimits.dev).
 
 Have a look around. If you find any bugs, you can open an issue or PR and I'll probably have a look and update the pages with the correct information.
 
@@ -13,19 +13,21 @@ Enjoy!
     ```
 
 2.  ```bash
-    hugo server -D
+    npm install
+    npm run dev
     ```
-    Run this in the root directory (`blog/` if you followed the instructions above), and open `localhost:1313` in your desired browser to see the preview. You'll have to refresh the page every time to see updates, though you can change that if you set `disableLiveReload` to `false` in `config.yaml`. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
+    Run this in the root directory (`blog/` if you followed the instructions above), and open `localhost:3000` in your desired browser to see the preview. Make sure to keep this repository and your dependencies up-to-date, especially if you plan to contribute.
 
 3. ```bash
-   hugo
+   npm run build
    ```
-   This builds the site (excluding any draft posts, to include them add `-D` to the end of the command) and places the files in the `public/` directory.
+   This builds the site (excluding any draft posts, to include them add `--drafts` to the end of the command) and places the files in the `dist/` directory.
     
 
 ## Licenses
+The licenses of all NPM dependencies are in their respective folders in `node_modules/` when you install them with `npm install`.
 
-[Hugo](https://gohugo.io), the static site generator used to generate this website, is licensed under the [Apache-2.0 license](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+[Astro](https://astro.build), the static site generator used to generate this website, is licensed under the [MIT license](https://github.com/withastro/astro/blob/main/LICENSE).
 
 The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT license](static/svg/LICENSE).
 

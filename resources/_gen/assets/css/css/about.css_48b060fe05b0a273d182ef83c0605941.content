@@ -1,1 +1,0 @@
-article{margin:0 auto}article h1,article h2{scroll-margin-top:12vh}article h1{font-size:2rem}article h2{border-top:solid .125rem var(--variant);padding-top:1rem}.posttitle{margin:1rem 0;text-align:center;font-weight:700}

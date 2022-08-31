@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="warning">
+    <b>{title}</b>
+    <slot />
+</div>
+
+<style lang="scss">
+    .warning {
+        display: grid;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--warning-bg);
+        color: var(--warning-text);
+        margin: 0.5rem 0;
+        box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+
+        :global(a) {
+            color: var(--warning-text);
+            text-decoration: underline;
+        }
+
+        :global(*)::selection {
+            background-color: var(--warning-text);
+            color: var(--warning-bg);
+        }
+
+        :global(*)::-moz-selection {
+            background-color: var(--warning-text);
+            color: var(--warning-bg);
+        }
+    }
+</style>

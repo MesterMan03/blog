@@ -1,1 +1,0 @@
-main{display:flex;flex-direction:column;justify-content:center;align-items:center}.sitetitle,.sitedesc{word-spacing:.2rem}.sitetitle{font-size:3.5rem;text-align:center}.sitedesc{font-size:1.8rem;font-weight:400;text-align:center}.siteicon{height:8rem}

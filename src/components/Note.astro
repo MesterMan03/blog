@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="note">
+    <b>{title}</b>
+    <slot />
+</div>
+
+<style lang="scss">
+    .note {
+        display: grid;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--note-bg);
+        color: var(--note-text);
+        margin: 0.5rem 0;
+        box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+
+        :global(a) {
+            color: var(--note-text);
+            text-decoration: underline;
+        }
+
+        :global(*)::selection {
+            background-color: var(--note-text);
+            color: var(--note-bg);
+        }
+
+        :global(*)::-moz-selection {
+            background-color: var(--note-text);
+            color: var(--note-bg);
+        }
+    }
+</style>

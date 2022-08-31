@@ -1,0 +1,43 @@
+---
+const { name, link } = Astro.props;
+---
+
+<blockquote>
+    {
+        link ? (
+            <b>
+                <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>
+            </b>
+        ) : (
+            <b>{name}</b>
+        )
+    }
+    <slot />
+</blockquote>
+
+<style lang="scss">
+    blockquote {
+        display: grid;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--primary-bg);
+        color: var(--primary-text);
+        margin: 0.5rem 0;
+        box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
+
+        :global(a) {
+            color: var(--primary-text);
+            text-decoration: underline;
+        }
+
+        :global(*)::selection {
+            background-color: var(--primary-text);
+            color: var(--primary-bg);
+        }
+
+        :global(*)::-moz-selection {
+            background-color: var(--primary-text);
+            color: var(--primary-bg);
+        }
+    }
+</style>

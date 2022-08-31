@@ -1,0 +1,38 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+    <head>
+        <Head />
+        <title>404 - The Blog of Random</title>
+        <meta name="description" content="Error 404" />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>404</h1>
+            <p>
+                This page does not exist.<br /><br />How did you even get here?<br
+                /><br />This doesn't make any sense.<br /><br />You have to
+                leave. Quickly.<br /><br />You have to get out of here before it
+                finds you.<br /><br /><a href="/">Go back home.</a><br /><br
+                />And never come back.<br /><br />
+            </p>
+        </main>
+        <Footer />
+        <style lang="scss">
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.25rem;
+                text-align: center !important;
+            }
+        </style>
+    </body>
+</html>

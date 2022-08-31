@@ -1,18 +1,18 @@
 * text=auto
 
-.git* text
-*.txt text
+*.json text
 *.svg text
-*.{yml,yaml} text
+*.py text
+*.txt text
+*.js text
+*.ts text
+.git* text
+.npmrc text
+*.mjs text
+*.md text
 
-*.py text -linguist-detectable
+*.astro text linguist-detectable
+*.mdx text linguist-detectable
+*.scss text linguist-detectable
 
-*.md text linguist-detectable
-*.html text linguist-detectable
-*.css text linguist-detectable
-*.js text linguist-detectable
-
-*.ttf binary
-*.woff binary
-*.woff2 binary
 *.ico binary

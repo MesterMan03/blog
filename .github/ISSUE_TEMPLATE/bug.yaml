@@ -46,7 +46,7 @@ body:
   attributes:
     label: Suggested fix
     description: How do you think I can fix this?
-    placeholder: Before you share your suggestion, however, make sure you've gone through the Hugo docs and issue tracker to make sure the feature is supported or if the bug has been reported there.
+    placeholder: Before you share your suggestion, however, make sure you've gone through the Astro docs and issue tracker to make sure the feature is supported or if the bug has been reported there.
   validations:
     required: false
 
