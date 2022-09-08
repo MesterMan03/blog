@@ -2,7 +2,6 @@
 
 // Fonts
 @import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@700&display=swap");
 
 html,
 button {
@@ -14,16 +13,9 @@ button {
 }
 
 // Root
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
     background-color: var(--bg);
     color: var(--text);
 
@@ -52,7 +44,6 @@ main {
 }
 
 p {
-    margin: 1.25rem 0;
     line-height: 1.5rem;
     text-align: justify;
 }
@@ -71,5 +62,4 @@ p {
 hr {
     border: none;
     border-top: solid 0.125rem var(--variant);
-    width: 100%;
 }
