@@ -49,7 +49,6 @@ import Sidebar from "./Sidebar.astro";
         a,
         button {
             text-decoration: none;
-            padding: 0.5rem;
             border-radius: 0.5rem;
             transition: all 0.25s;
         }
@@ -72,7 +71,7 @@ import Sidebar from "./Sidebar.astro";
 
     // Brand
     .brand {
-        padding: 1rem 0.5em;
+        padding-right: 0.5rem;
         text-decoration: none;
         color: var(--text);
     }
@@ -84,15 +83,10 @@ import Sidebar from "./Sidebar.astro";
         justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
-        margin: 1vh 1vw;
 
         @media (max-width: 768px) {
             display: none;
         }
-    }
-
-    .titleblock {
-        margin: 1vw 1vh;
     }
 
     // Theme buttons
