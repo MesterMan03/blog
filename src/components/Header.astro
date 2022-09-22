@@ -45,6 +45,7 @@ import Sidebar from "./Sidebar.astro";
         align-items: center;
         background-color: var(--bg);
         top: 0;
+        margin: 2vh 1vw;
 
         a,
         button {
@@ -75,6 +76,11 @@ import Sidebar from "./Sidebar.astro";
         padding: 1rem 0.5em;
         text-decoration: none;
         color: var(--text);
+        font-size: 95%;
+    }
+
+    .titleblock {
+        margin: 0;
     }
 
     // Nav
@@ -84,15 +90,10 @@ import Sidebar from "./Sidebar.astro";
         justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
-        margin: 1vh 1vw;
 
         @media (max-width: 768px) {
             display: none;
         }
-    }
-
-    .titleblock {
-        margin: 1vw 1vh;
     }
 
     // Theme buttons

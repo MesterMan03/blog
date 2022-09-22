@@ -1,21 +1,21 @@
 <a href="/about">About</a>
 <div class="divider"></div>
 <div class="nav-menu">
-    <button type="button">Science</button>
+    <p>Science</p>
     <menu>
         <a href="/science/chaos-theory/">Chaos Theory</a>
         <a href="/science/collatz-conjecture/">Collatz Conjecture</a>
     </menu>
 </div>
 <div class="nav-menu">
-    <button type="button">History</button>
+    <p>History</p>
     <menu>
         <a href="/history/history-of-toilet-paper/">History of Toilet Paper</a>
         <a href="/history/the-phalanx-formation/">The Phalanx Formation</a>
     </menu>
 </div>
 <div class="nav-menu">
-    <button type="button">Tech</button>
+    <p>Tech</p>
     <menu>
         <b>Priv/Sec/Anon</b>
         <a href="/tech/psa/intro/">Intro</a>
@@ -49,6 +49,12 @@
         color: var(--text);
     }
 
+    a,
+    p {
+        font-weight: 550;
+        font-size: 95%;
+    }
+
     a:hover {
         color: var(--link);
     }
@@ -75,13 +81,14 @@
         }
     }
 
-    button {
+    p {
         color: var(--text);
         background-color: transparent;
         border: none;
-        font-size: 1rem;
         cursor: pointer;
         transition: all 0.25s;
+        padding: 0 0.25rem;
+        margin: 0.5rem 0;
 
         &::after {
             content: "";
@@ -131,7 +138,7 @@
         background-color: var(--bg);
         color: var(--text);
         box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
-        margin: 0.5rem 0;
+        margin: 0;
         padding: 0.5rem;
         border-radius: 0.75rem;
         transition: all 0.25s;
