@@ -10,6 +10,8 @@ html {
     // Accents
     --primary-bg: #def;
     --primary-text: #013;
+    --selection-bg: #048;
+    --selection-text: #def;
 
     // Details
     --details-bg: #9fb;
@@ -36,6 +38,8 @@ html {
     // Accents
     --primary-bg: #048;
     --primary-text: #def;
+    --selection-bg: #def;
+    --selection-text: #013;
 
     // Details
     --details-bg: #053;
@@ -51,11 +55,11 @@ html {
 }
 
 ::selection {
-    background-color: var(--primary-bg);
-    color: var(--primary-text);
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
 }
 
 ::-moz-selection {
-    background-color: var(--primary-bg);
-    color: var(--primary-text);
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
 }
