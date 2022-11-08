@@ -2,7 +2,7 @@
 layout: ../../layouts/Post.astro
 title: Collatz Conjecture
 description: The simplest hardest problem in math history
-date: "2021-12-14"
+date: "2022-11-08"
 author: noClaps
 math: true
 ---
@@ -106,19 +106,18 @@ Follow these few easy steps and you'll be on your way to solving this problem in
 
 3. Make a new Python program and type in the following code:
 
-```py
-def collatz(n): # make collatz function
-    while n != 1: # tell code to keep running until it reaches 1
-        if n % 2: # if number is odd, multiply by 3 and add 1
-            n = n*3 + 1
-        else: # else, if number is even, halve it
-            n = n / 2
-        print(n) # output number onto screen
+    ```py
+    def collatz(n:int): # make collatz function
+        while n != 1: # tell code to keep running until it reaches 1
+            if n % 2: # if number is odd, multiply by 3 and add 1
+                n = n*3 + 1
+            else: # else, if number is even, halve it
+                n //= 2
+            print(n) # output number onto screen
 
-num = int(input("Enter a number to test: ")) # ask user for number to test
-collatz(num) # run the collatz function with the number you type in
-input() # Press enter to exit
-```
+    num = int(input("Enter a number to test: ")) # ask user for number to test
+    collatz(num) # run the collatz function with the number you type in
+    ```
 
 Alternatively, you can <a href="/python/collatz-conjecture.py" download="collatz-conjecture.py">download the code here</a>.
 
@@ -128,10 +127,6 @@ Alternatively, you can <a href="/python/collatz-conjecture.py" download="collatz
 
 6. Wait until the output reaches 1.
 
-7. Realise you've wasted possibly hours of your day setting everything up, and writing and rewriting the code, trying to make everything work properly, only to realise that the program only goes up to 2<sup>1024</sup> because there's something wrong with the code, since Python 3 isn't supposed to have an integer limit and even though everything had `int()` around it, it was still working in floats for whatever reason, until you finally remove all the `int()`s and succumb to the limit that the system has forced upon you.
-
-8. Question the choices you made that brought you to this point in your life.
-
 Seems simple enough, wouldn't you say?
 
 ### The Reality
@@ -139,7 +134,7 @@ As you can probably tell, that didn't end up going too well. No matter what numb
 
 As for my code, I'm sure there's a much better way to do this than what I've written. You can find those online, but I made this program myself, and I'm (kinda) happy with it. There's probably also a way to automate this so that it tests all the numbers for you, but I liked the idea of being able to try your own numbers to see if they work or not.
 
-But, if the idea of taking a year off to try every single number up to 2<sup>1024</sup> manually in this program sounds appealing to you, then you really need something exciting in your life, buddy. But other than that, go ahead, give this problem a try. Maybe if you try for long enough, you might find yourself an answer.
+But, if the idea of spending your lifetime trying bajillions of numbers manually in this program sounds appealing to you, then you really need something exciting in your life, buddy. But other than that, go ahead, give this problem a try. Maybe if you try for long enough, you might find yourself an answer.
 
 ### The "Solution"
 So far, there's been no solutions. That's not really a conclusion since it can't be proven that there's no solution. Just like how it can't be proven that there _is_ a solution.
