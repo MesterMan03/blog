@@ -65,24 +65,25 @@ code:not(.astro-code code) {
     input {
         margin-left: -1.25rem;
         visibility: hidden;
-    
+
         &[type=checkbox]::before {
-        position: absolute;
-        height: 1rem;
-        width: 1rem;
-        content: '';
-        -webkit-mask: url('/svg/unchecked.svg');
-        mask: url('/svg/unchecked.svg');
-        background-color: var(--text);
-        visibility: visible;
+            position: absolute;
+            height: 1rem;
+            width: 1rem;
+            content: '';
+            -webkit-mask: url('/svg/unchecked.svg');
+            mask: url('/svg/unchecked.svg');
+            background-color: var(--text);
+            visibility: visible;
         }
 
         &[type=checkbox][checked]::before {
-        -webkit-mask: url('/svg/checked.svg');
-        mask: url('/svg/checked.svg');
+            -webkit-mask: url('/svg/checked.svg');
+            mask: url('/svg/checked.svg');
         }
     }
-}}
+}
+
 // Scroll to top button
 #scrollToTop {
     display: flex;
