@@ -3,6 +3,7 @@
 // Fonts
 @import url("https://rsms.me/inter/inter.css");
 @import url('https://fonts.googleapis.com/css2?family=Patua%20One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains%20Mono&display=swap');
 
 html,
 button {
@@ -21,6 +22,10 @@ h5,
 h6 {
     font-family: "Patua One", sans-serif;
     font-weight: normal;
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
 }
 
 // Root
