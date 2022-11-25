@@ -33,6 +33,6 @@ The favicon and icons come from [Octicons](https://primer.style/octicons) and ar
 
 [KaTeX](https://katex.org) is licensed under the [MIT license](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
 
-The [Inter](https://rsms.me/inter/) font is licensed under the [OFL-1.1 license](https://github.com/rsms/inter/blob/master/LICENSE.txt).
+The [Inter](https://rsms.me/inter/) and [Patua One](https://fonts.google.com/specimen/Patua+One) fonts are licensed under the [OFL-1.1 license](https://github.com/rsms/inter/blob/master/LICENSE.txt).
 
 All of the remaining content in this repository is licensed under the [BSD Zero Clause license](LICENSE).
