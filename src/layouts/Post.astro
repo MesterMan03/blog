@@ -39,7 +39,22 @@ const { frontmatter } = Astro.props;
                 <p class="author">Written by {frontmatter.author}</p>
             </div>
             <slot />
+            <button id="scrollToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});" title="Go to top">
+                <p>Back to top</p>
+            </button>
         </main>
         <Footer />
+
+        <script>
+            let button = document.getElementById("scrollToTop");
+
+            window.onscroll = function() {
+                if (window.scrollY > 64) {
+                    button.style.opacity = "1";
+                } else {
+                    button.style.opacity = "0";
+                }
+            }
+        </script>
     </body>
 </html>
