@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "astro-robots-txt": "^0.3.10",
-    "astro-themes": "^0.2.3",
     "sass": "^1.56.1"
   }
 }

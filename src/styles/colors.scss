@@ -1,4 +1,4 @@
-html {
+body {
     // Main
     --bg: #fff;
     --text: #111;
@@ -25,7 +25,7 @@ html {
     --note-text: #212;
 }
 
-[data-theme="dark"] {
+.dark {
     // Main
     --bg: #111;
     --text: #eee;
