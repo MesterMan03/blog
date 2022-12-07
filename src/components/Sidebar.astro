@@ -3,7 +3,11 @@ import Nav from "./Nav.astro";
 ---
 
 <aside>
-    <button onclick="dropdown()" title="Sidebar">
+    <button
+        onclick="document.getElementById('sidebar').classList.toggle('open');"
+        title="Sidebar"
+        type="button"
+    >
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -59,22 +63,27 @@ import Nav from "./Nav.astro";
         white-space: nowrap;
         margin-right: 1rem;
         margin-top: 0.5rem;
-        transform: translateY(-10%);
         transition: all 0.25s;
-        opacity: 0;
-        visibility: hidden;
         flex-direction: column;
         gap: 0.5rem;
+
+        &.open {
+            visibility: visible;
+            transform: translateY(10%);
+        }
+
+        &:not(nav.open) {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10%);
+        }
     }
 </style>
 
-<script>
-    function dropdown() {
-        var sidebar = document.getElementById("sidebar");
-        if (sidebar.style.visibility == "hidden") {
-            sidebar.style.visibility = "visible";
-        } else {
-            sidebar.style.visibility = "hidden";
-        }
-    }
+<script defer>
+    document.addEventListener("click", function (event) {
+        if (event.target.closest("button") || event.target.closest("nav"))
+            return;
+        document.getElementById("sidebar").classList.remove("open");
+    });
 </script>
