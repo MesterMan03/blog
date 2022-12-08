@@ -32,6 +32,8 @@ code {
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
