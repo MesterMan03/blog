@@ -8,35 +8,86 @@ import Header from "../components/Header.astro";
     <head>
         <Head />
         <title>Sitemap - The Blog of Random</title>
-        <meta name="description" content="Sitemap">
+        <meta name="description" content="Sitemap" />
     </head>
     <body>
         <Header />
         <main>
+            <h1>Sitemap</h1>
             <ul>
                 <li><a href="/about">About</a></li>
                 <li>Science</li>
-                <ul>
-                    <li><a href="/science/chaos-theory">Chaos Theory</a></li>
-                    <li><a href="/science/collatz-conjecture">Collatz Conjecture</a></li>
-                </ul>
-                <li>History</li>
-                <ul>
-                    <li><a href="/history/history-of-toilet-paper">History of Toilet Paper</a></li>
-                    <li><a href="/history/the-phalanx-formation">The Phalanx Formation</a></li>
-                </ul>
-                <li>Tech</li>
-                <ul>
-                    <li>Privacy, Security and Anonymity</li>
+                <li>
                     <ul>
-                        <li><a href="/tech/psa/intro">Intro to Privacy, Security and Anonymity</a></li>
-                        <li><a href="/tech/psa/messengers">Messengers</a></li>
+                        <li>
+                            <a href="/science/chaos-theory">Chaos Theory</a>
+                        </li>
+                        <li>
+                            <a href="/science/collatz-conjecture"
+                                >Collatz Conjecture</a
+                            >
+                        </li>
                     </ul>
-                    <li><a href="/tech/google">Google: A Misunderstood Evil</a></li>
-                    <li><a href="/tech/be-social">Be Social</a></li>
-                </ul>
+                </li>
+                <li>History</li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="/history/history-of-toilet-paper"
+                                >History of Toilet Paper</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/history/the-phalanx-formation"
+                                >The Phalanx Formation</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>Tech</li>
+                <li>
+                    <ul>
+                        <li>Privacy, Security and Anonymity</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/tech/psa/intro"
+                                        >Intro to Privacy, Security and
+                                        Anonymity</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/tech/psa/messengers">Messengers</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/tech/google"
+                                >Google: A Misunderstood Evil</a
+                            >
+                        </li>
+                        <li><a href="/tech/be-social">Be Social</a></li>
+                    </ul>
+                </li>
             </ul>
         </main>
         <Footer />
+        <style lang="scss">
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                li a {
+                    white-space: nowrap;
+                }
+
+                li:has(ul) {
+                    list-style-type: none;
+                }
+            }
+        </style>
     </body>
 </html>
