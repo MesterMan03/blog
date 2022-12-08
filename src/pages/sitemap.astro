@@ -1,0 +1,42 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+    <head>
+        <Head />
+        <title>Sitemap - The Blog of Random</title>
+        <meta name="description" content="Sitemap">
+    </head>
+    <body>
+        <Header />
+        <main>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li>Science</li>
+                <ul>
+                    <li><a href="/science/chaos-theory">Chaos Theory</a></li>
+                    <li><a href="/science/collatz-conjecture">Collatz Conjecture</a></li>
+                </ul>
+                <li>History</li>
+                <ul>
+                    <li><a href="/history/history-of-toilet-paper">History of Toilet Paper</a></li>
+                    <li><a href="/history/the-phalanx-formation">The Phalanx Formation</a></li>
+                </ul>
+                <li>Tech</li>
+                <ul>
+                    <li>Privacy, Security and Anonymity</li>
+                    <ul>
+                        <li><a href="/tech/psa/intro">Intro to Privacy, Security and Anonymity</a></li>
+                        <li><a href="/tech/psa/messengers">Messengers</a></li>
+                    </ul>
+                    <li><a href="/tech/google">Google: A Misunderstood Evil</a></li>
+                    <li><a href="/tech/be-social">Be Social</a></li>
+                </ul>
+            </ul>
+        </main>
+        <Footer />
+    </body>
+</html>
