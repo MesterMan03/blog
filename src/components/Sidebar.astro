@@ -82,7 +82,10 @@ import Nav from "./Nav.astro";
 
 <script>
     document.addEventListener("click", function (event) {
-        if ((event.target as HTMLElement).closest("button") || (event.target as HTMLElement).closest("nav"))
+        if (
+            (event.target as HTMLElement).closest("button") ||
+            (event.target as HTMLElement).closest("nav")
+        )
             return;
         document.getElementById("sidebar").classList.remove("open");
     });
