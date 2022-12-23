@@ -99,7 +99,6 @@ code:not(.astro-code code) {
     background-color: var(--primary-bg);
     border: none;
     cursor: pointer;
-    box-shadow: 0 0.125rem 0.5rem 0.125rem var(--shadow);
 
     &:hover {
         background-color: var(--link);
