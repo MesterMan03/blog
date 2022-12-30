@@ -13,15 +13,6 @@ const { frontmatter } = Astro.props;
         <Head />
         <title>{frontmatter.title}</title>
         <meta name="description" content={frontmatter.description} />
-        
-        {
-            frontmatter.math && (
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" crossorigin="anonymous">
-            <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js" crossorigin="anonymous"></script>
-            <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-                onload="renderMathInElement(document.body);"></script>
-            )
-        }
     </head>
     <body>
         <Header />
