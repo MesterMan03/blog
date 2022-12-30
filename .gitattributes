@@ -16,3 +16,5 @@
 *.scss text linguist-detectable
 
 *.ico binary
+*.woff2 binary
+*.ttf binary
