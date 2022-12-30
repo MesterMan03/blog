@@ -3,16 +3,6 @@
 // Fonts
 @import url("https://rsms.me/inter/inter.css");
 
-@font-face {
-    font-family: "Patua One";
-    src: url("/fonts/PatuaOne/PatuaOne-Regular.ttf");
-}
-
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url("/fonts/JetbrainsMono/JetBrainsMono-Regular.woff2");
-}
-
 html,
 button {
     font-family: "Inter", sans-serif;
@@ -34,6 +24,10 @@ h6 {
 
 code {
     font-family: "JetBrains Mono", monospace;
+
+    @supports (font-variation-settings: normal) {
+        font-family: "JetBrains MonoVariable", monospace;
+    }
 }
 
 // Root
