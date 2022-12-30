@@ -2,8 +2,16 @@
 
 // Fonts
 @import url("https://rsms.me/inter/inter.css");
-@import url('https://fonts.googleapis.com/css2?family=Patua%20One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains%20Mono&display=swap');
+
+@font-face {
+    font-family: "Patua One";
+    src: url("/fonts/PatuaOne/PatuaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/JetbrainsMono/JetBrainsMono-Regular.woff2");
+}
 
 html,
 button {
