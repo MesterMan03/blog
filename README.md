@@ -25,7 +25,7 @@ Enjoy!
     
 
 ## Licenses
-The licenses of all NPM dependencies are in their respective folders in `node_modules/` when you install them with `npm install`.
+The licenses of all npm dependencies are in their respective folders in `node_modules/` when you install them with `npm install`.
 
 [Astro](https://astro.build), the static site generator used to generate this website, is licensed under the [MIT license](https://github.com/withastro/astro/blob/main/LICENSE).
 
