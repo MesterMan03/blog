@@ -1,59 +1,44 @@
 ---
-import Footer from "../components/Footer.astro";
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
-
-import "../styles/post.scss";
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/post.scss"
 
 const { frontmatter } = Astro.props;
 ---
 
-<html lang="en">
-    <head>
-        <Head />
-        <title>{frontmatter.title}</title>
-        <meta name="description" content={frontmatter.description} />
-    </head>
-    <body>
-        <Header />
-        <main>
-            <div>
-                {
-                    frontmatter.lastmod ? (
-                        <p class="date">{frontmatter.lastmod}</p>
-                    ) : (
-                        <p class="date">{frontmatter.date}</p>
-                    )
-                }
-                <h1>{frontmatter.title}</h1>
-                <div class="description">{frontmatter.description}</div>
-                <p class="author">Written by {frontmatter.author}</p>
-            </div>
-            <slot />
-            <button id="scrollToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});" title="Go to top">
-                <p>Back to top</p>
-            </button>
-        </main>
-        <Footer />
-
-        <script>
-            let button = document.getElementById("scrollToTop");
-
-            window.onscroll = function() {
-                if (window.scrollY > 64) {
-                    button.style.opacity = "1";
-                } else {
-                    button.style.opacity = "0";
-                }
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+    <main>
+        <div>
+            {
+                frontmatter.lastmod ? (
+                    <p class="date">{frontmatter.lastmod}</p>
+                ) : (
+                    <p class="date">{frontmatter.date}</p>
+                )
             }
-        </script>
+            <h1>{frontmatter.title}</h1>
+            <div class="description">{frontmatter.description}</div>
+            <p class="author">Written by {frontmatter.author}</p>
+        </div>
+        <slot />
+        <button
+            type="button"
+            id="scrollToTop"
+            onclick="window.scrollTo({top:0, behavior:'smooth'});"
+            title="Go to top"
+        >
+            <p>Back to top</p>
+        </button>
+    </main>
+    <script>
+        let button = document.getElementById("scrollToTop");
 
-        <noscript>
-            <style lang="scss">
-                #scrollToTop {
-                    display: none;
-                }    
-            </style>
-        </noscript>
-    </body>
-</html>
+        button.style.display = "flex"
+        window.onscroll = function () {
+            if (window.scrollY > 64) {
+                button.style.opacity = "1";
+            } else {
+                button.style.opacity = "0";
+            }
+        };
+    </script>
+</BaseLayout>

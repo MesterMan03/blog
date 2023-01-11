@@ -1,31 +1,20 @@
 ---
-import Footer from "../components/Footer.astro";
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-    <head>
-        <Head />
-        <title>404 - The Blog of Random</title>
-        <meta name="description" content="Error 404" />
-    </head>
-    <body>
-        <Header />
-        <main>
-            <h1>This content is not available in your country.</h1>
-        </main>
-        <Footer />
-        <style lang="scss">
-            main {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<BaseLayout title="404" description="Error 404">
+    <main>
+        <h1>This content is not available in your country.</h1>
+    </main>
+    <style lang="scss">
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                h1 {
-                    text-align: center;
-                }
+            h1 {
+                text-align: center;
             }
-        </style>
-    </body>
-</html>
+        }
+    </style>
+</BaseLayout>
