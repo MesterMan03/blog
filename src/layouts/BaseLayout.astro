@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Head from "../components/Head.astro";
 
 import "@fontsource/patua-one";
 import "@fontsource/jetbrains-mono";
@@ -12,6 +13,7 @@ const { title, description } = Astro.props;
 
 <html lang="en">
     <head>
+        <Head />
         <title>{title}</title>
         <meta
             name="description"
