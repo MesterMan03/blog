@@ -1,6 +1,7 @@
 <button
     title="Theme toggle"
     type="button"
+    id="themeToggle"
     onclick="document.body.classList.toggle('dark')"
 >
     <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
@@ -18,21 +19,15 @@
 </button>
 
 <script>
+    document.getElementById('themeToggle').style.display = 'initial'
     if (window.matchMedia("(prefers-color-scheme: dark)").matches === true) {
         document.body.classList.add("dark");
     }
 </script>
 
-<noscript>
-    <style lang="scss">
-        button {
-            display: none;
-        }
-    </style>
-</noscript>
-
 <style lang="scss">
     button {
+        display: none;
         text-decoration: none;
         padding: 0.5rem;
         border-radius: 0.5rem;

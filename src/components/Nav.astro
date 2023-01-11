@@ -41,22 +41,18 @@
     </svg>
 </a>
 <style lang="scss">
-    a,
-    b {
+    a {
         text-decoration: none;
         padding: 0.5rem;
         border-radius: 0.5rem;
         transition: all 0.25s;
         color: var(--text);
-    }
 
-    a,
-    p {
         font-weight: 550;
-    }
 
-    a:hover {
-        color: var(--link);
+        &:hover {
+            color: var(--link);
+        }
     }
 
     .nav-menu {
@@ -68,6 +64,7 @@
         }
 
         p {
+            font-weight: 550;
             color: var(--text);
             background-color: transparent;
             border: none;
@@ -111,6 +108,14 @@
             transition: all 0.25s;
             opacity: 0;
             visibility: hidden;
+
+            b {
+                display: block;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                transition: all 0.25s;
+                color: var(--text);
+            }
 
             @media (max-width: 768px) {
                 transform: translate(-90%, -50%);
@@ -204,8 +209,8 @@
 
                 navMenus.forEach((navMenu) => {
                     navMenu.removeAttribute("open");
-                })
-            })
+                });
+            });
         }
     });
 </script>

@@ -5,8 +5,8 @@ import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header>
-    <h3 class="titleblock">
-        <a href="/" class="brand">The Blog of Random</a>
+    <h3>
+        <a href="/">The Blog of Random</a>
         <ThemeToggle />
     </h3>
     <nav>
@@ -25,39 +25,33 @@ import ThemeToggle from "./ThemeToggle.astro";
         top: 0;
         margin: 2vh 1vw;
 
-        a {
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            transition: all 0.25s;
+        h3 {
+            margin: 0;
 
-            &:hover {
-                color: var(--link);
+            a {
+                text-decoration: none;
+                padding: 1rem 0.5rem;
+                border-radius: 0.5rem;
+                transition: all 0.25s;
+                color: var(--text);
+
+                &:hover {
+                    color: var(--link);
+                }
             }
         }
-    }
 
-    // Brand
-    .brand {
-        padding: 1rem 0.5em;
-        text-decoration: none;
-        color: var(--text);
-    }
+        // Nav
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
 
-    .titleblock {
-        margin: 0;
-    }
-
-    // Nav
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.5rem;
-
-        @media (max-width: 768px) {
-            display: none;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 </style>
