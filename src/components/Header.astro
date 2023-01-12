@@ -9,7 +9,7 @@ import ThemeToggle from "./ThemeToggle.astro";
         <a href="/">The Blog of Random</a>
         <ThemeToggle />
     </h3>
-    <nav>
+    <nav id="nav">
         <Nav />
     </nav>
     <Sidebar />
@@ -43,7 +43,7 @@ import ThemeToggle from "./ThemeToggle.astro";
 
         // Nav
         nav {
-            display: flex;
+            display: none;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -55,3 +55,7 @@ import ThemeToggle from "./ThemeToggle.astro";
         }
     }
 </style>
+
+<script>
+    document.getElementById("nav").style.display = 'flex'
+</script>

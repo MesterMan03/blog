@@ -2,7 +2,7 @@
 import Nav from "./Nav.astro";
 ---
 
-<aside>
+<aside id="aside">
     <button
         onclick="document.getElementById('sidebar').classList.toggle('open');"
         title="Sidebar"
@@ -29,12 +29,9 @@ import Nav from "./Nav.astro";
 
 <style lang="scss">
     aside {
+        display: none;
         z-index: 999;
         position: relative;
-
-        @media (min-width: 769px) {
-            display: none;
-        }
 
         &:hover nav {
             opacity: 1;
@@ -68,7 +65,6 @@ import Nav from "./Nav.astro";
 
             &.open {
                 visibility: visible;
-                transform: translateY(10%);
             }
 
             &:not(nav.open) {
@@ -81,6 +77,10 @@ import Nav from "./Nav.astro";
 </style>
 
 <script>
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        document.getElementById("aside").style.display = "initial"
+    }
+    
     document.addEventListener("click", function (event) {
         if (
             (event.target as HTMLElement).closest("button") ||
