@@ -20,8 +20,8 @@
 
 <script>
     document.getElementById('themeToggle').style.display = 'initial'
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches === true) {
-        document.body.classList.add("dark");
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches === false) {
+        document.body.classList.remove("dark");
     }
 </script>
 
