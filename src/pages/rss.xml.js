@@ -12,5 +12,6 @@ export const get = () => rss({
     title: post.frontmatter.title,
     pubDate: post.frontmatter.date,
     description: post.frontmatter.description
-  }))
+  })),
+  stylesheet: '/rss.xsl'
 });
