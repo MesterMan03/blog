@@ -48,14 +48,12 @@ import ThemeToggle from "./ThemeToggle.astro";
             justify-content: space-between;
             align-items: center;
             gap: 0.5rem;
-
-            @media (max-width: 768px) {
-                display: none;
-            }
         }
     }
 </style>
 
 <script>
-    document.getElementById("nav").style.display = 'flex'
+    if (window.matchMedia("(min-width: 769px)").matches) {
+        document.getElementById("nav").style.display = 'flex'
+    }
 </script>
