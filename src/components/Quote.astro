@@ -17,7 +17,7 @@ const { name, link } = Astro.props;
                     <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>
                 </b>
             ) : (
-                <b>{name}</b>
+                <b>{name ? name : "QUOTE"}</b>
             )
         }
     </p>
