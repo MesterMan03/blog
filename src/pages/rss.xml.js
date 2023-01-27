@@ -1,12 +1,13 @@
 import rss from '@astrojs/rss';
 
+export function get(context) {
 const postImportResult = import.meta.glob('./**/*.mdx', { eager: true });
 const posts = Object.values(postImportResult);
 
-export const get = () => rss({
+return rss({
   title: 'The Blog of Random',
   description: "A blog about the most random things you can think of, brought to you by the most interesting boring person you've ever met.",
-  site: import.meta.env.SITE,
+  site: context.site,
   items: posts.map((post) => ({
     link: post.url,
     title: post.frontmatter.title,
@@ -15,3 +16,4 @@ export const get = () => rss({
   })),
   stylesheet: '/rss.xsl'
 });
+}
