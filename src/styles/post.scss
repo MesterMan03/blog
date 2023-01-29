@@ -25,23 +25,32 @@ li {
 }
 
 // Post Header
-h1,
-.date,
-.description {
-    margin: 1rem 0;
-    text-align: center;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    time,
+    .description {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    time,
+    .description {
+        font-weight: bold;
+    }
+
+    // Author
+    .author {
+        align-self: end;
+        font-style: italic;
+    }
 }
 
-.date,
-.description {
-    font-weight: bold;
-}
 
-// Author
-.author {
-    text-align: right;
-    font-style: italic;
-}
 
 // Code
 .astro-code {

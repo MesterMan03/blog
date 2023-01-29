@@ -1,22 +1,22 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import "../styles/post.scss"
+import "../styles/post.scss";
 
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title} description={frontmatter.description}>
     <main>
-        <div>
+        <div class="header">
             {
                 frontmatter.lastmod ? (
-                    <p class="date">{frontmatter.lastmod}</p>
+                    <time datetime={frontmatter.lastmod}>{frontmatter.lastmod}</time>
                 ) : (
-                    <p class="date">{frontmatter.date}</p>
+                    <time datetime={frontmatter.date}>{frontmatter.date}</time>
                 )
             }
             <h1>{frontmatter.title}</h1>
-            <div class="description">{frontmatter.description}</div>
+            <p class="description">{frontmatter.description}</p>
             <p class="author">Written by {frontmatter.author}</p>
         </div>
         <slot />
@@ -32,7 +32,7 @@ const { frontmatter } = Astro.props;
     <script>
         let button = document.getElementById("scrollToTop");
 
-        button.style.display = "flex"
+        button.style.display = "flex";
         window.onscroll = function () {
             if (window.scrollY > 64) {
                 button.style.opacity = "1";
