@@ -1,5 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const history = await getCollection("history");
+const science = await getCollection("science");
+const psa = await getCollection("psa");
+const tech = await getCollection("tech");
 ---
 
 <BaseLayout title="Sitemap" description="Sitemap">
@@ -10,29 +16,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li>Science</li>
             <li>
                 <ul>
-                    <li>
-                        <a href="/science/chaos-theory">Chaos Theory</a>
-                    </li>
-                    <li>
-                        <a href="/science/collatz-conjecture"
-                            >Collatz Conjecture</a
-                        >
-                    </li>
+                    {
+                        science.map((post) => (
+                            <li>
+                                <a href={`/science/${post.slug}`}>
+                                    {post.data.title}
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </li>
             <li>History</li>
             <li>
                 <ul>
-                    <li>
-                        <a href="/history/history-of-toilet-paper"
-                            >History of Toilet Paper</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/history/the-phalanx-formation"
-                            >The Phalanx Formation</a
-                        >
-                    </li>
+                    {
+                        history.map((post) => (
+                            <li>
+                                <a href={`/history/${post.slug}`}>
+                                    {post.data.title}
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </li>
             <li>Tech</li>
@@ -41,23 +47,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     <li>Privacy, Security and Anonymity</li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="/tech/psa/intro"
-                                    >Intro to Privacy, Security and Anonymity</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/tech/psa/messengers">Messengers</a>
-                            </li>
-                            <li>
-                                <a href="/tech/psa/threat-modelling">Threat Modelling</a>
-                            </li>
+                            {
+                                psa.map((post) => (
+                                    <li>
+                                        <a href={`/tech/psa/${post.slug}`}>
+                                            {post.data.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </li>
-                    <li>
-                        <a href="/tech/google">Google: A Misunderstood Evil</a>
-                    </li>
-                    <li><a href="/tech/be-social">Be Social</a></li>
+                    {
+                        tech.map((post) => (
+                            <li>
+                                <a href={`/tech/${post.slug}`}>
+                                    {post.data.title}
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </li>
         </ul>

@@ -1,29 +1,49 @@
+---
+import { getCollection } from "astro:content";
+
+const history = await getCollection("history");
+const science = await getCollection("science");
+const psa = await getCollection("psa");
+const tech = await getCollection("tech");
+---
+
 <a href="/about">About</a>
 <div class="divider"></div>
 <div class="nav-menu">
     <p>Science</p>
     <menu>
-        <a href="/science/chaos-theory/">Chaos Theory</a>
-        <a href="/science/collatz-conjecture/">Collatz Conjecture</a>
+        {
+            science.map((post) => (
+                <a href={`/science/${post.slug}`}>{post.data.title}</a>
+            ))
+        }
     </menu>
 </div>
 <div class="nav-menu">
     <p>History</p>
     <menu>
-        <a href="/history/history-of-toilet-paper/">History of Toilet Paper</a>
-        <a href="/history/the-phalanx-formation/">The Phalanx Formation</a>
+        {
+            history.map((post) => (
+                <a href={`/history/${post.slug}`}>{post.data.title}</a>
+            ))
+        }
     </menu>
 </div>
 <div class="nav-menu">
     <p>Tech</p>
     <menu>
         <b>Priv/Sec/Anon</b>
-        <a href="/tech/psa/intro/">Intro</a>
-        <a href="/tech/psa/messengers">Messengers</a>
-        <a href="/tech/psa/threat-modelling">Threat Modelling</a>
+        {
+            psa.map((post) => (
+                <a href={`/tech/psa/${post.slug}`}>{post.data.shortTitle ? post.data.shortTitle : post.data.title}</a>
+            ))
+        }
         <hr />
-        <a href="/tech/google/">Google</a>
-        <a href="/tech/be-social">Be Social</a>
+        {
+            tech.map((post) => (
+                <a href={`/tech/${post.slug}`}>{post.data.shortTitle ? post.data.shortTitle : post.data.title}</a>
+            ))
+        }
     </menu>
 </div>
 <div class="divider"></div>
@@ -35,6 +55,7 @@
 >
     <img src="https://zerolimits.dev/icon/favicon.svg" alt="Favicon" />
 </a>
+
 <style lang="scss">
     a {
         text-decoration: none;

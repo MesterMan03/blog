@@ -2,22 +2,22 @@
 import BaseLayout from "./BaseLayout.astro";
 import "../styles/post.scss";
 
-const { frontmatter } = Astro.props;
+const { title, description, author, date, lastmod } = Astro.props;
 ---
 
-<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+<BaseLayout title={title} description={description}>
     <main>
         <div class="header">
             {
-                frontmatter.lastmod ? (
-                    <time datetime={frontmatter.lastmod}>{frontmatter.lastmod}</time>
+                lastmod ? (
+                    <time datetime={lastmod.toISOString()}>{lastmod.toDateString()}</time>
                 ) : (
-                    <time datetime={frontmatter.date}>{frontmatter.date}</time>
+                    <time datetime={date.toISOString()}>{date.toDateString()}</time>
                 )
             }
-            <h1>{frontmatter.title}</h1>
-            <p class="description">{frontmatter.description}</p>
-            <p class="author">Written by {frontmatter.author}</p>
+            <h1>{title}</h1>
+            <p class="description">{description}</p>
+            <p class="author">Written by {author}</p>
         </div>
         <slot />
         <button
@@ -29,7 +29,7 @@ const { frontmatter } = Astro.props;
             <p>Back to top</p>
         </button>
     </main>
-    <script>
+    <script is:inline>
         let button = document.getElementById("scrollToTop");
 
         button.style.display = "flex";
