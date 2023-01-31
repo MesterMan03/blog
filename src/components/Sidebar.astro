@@ -78,15 +78,15 @@ import Nav from "./Nav.astro";
 
 <script>
     if (window.matchMedia("(max-width: 768px)").matches) {
-        document.getElementById("aside").style.display = "initial"
+        document.getElementById("aside")!.style.display = "initial";
     }
-    
+
     document.addEventListener("click", function (event) {
         if (
             (event.target as HTMLElement).closest("button") ||
             (event.target as HTMLElement).closest("nav")
         )
             return;
-        document.getElementById("sidebar").classList.remove("open");
+        document.getElementById("sidebar")!.classList.remove("open");
     });
 </script>

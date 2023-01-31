@@ -52,8 +52,8 @@ import ThemeToggle from "./ThemeToggle.astro";
     }
 </style>
 
-<script is:inline>
+<script>
     if (window.matchMedia("(min-width: 769px)").matches) {
-        document.getElementById("nav").style.display = "flex";
+        document.getElementById("nav")!.style.display = "flex";
     }
 </script>

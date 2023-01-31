@@ -10,9 +10,13 @@ const { title, description, author, date, lastmod } = Astro.props;
         <div class="header">
             {
                 lastmod ? (
-                    <time datetime={lastmod.toISOString()}>{lastmod.toDateString()}</time>
+                    <time datetime={lastmod.toISOString()}>
+                        {lastmod.toDateString()}
+                    </time>
                 ) : (
-                    <time datetime={date.toISOString()}>{date.toDateString()}</time>
+                    <time datetime={date.toISOString()}>
+                        {date.toDateString()}
+                    </time>
                 )
             }
             <h1>{title}</h1>
@@ -29,15 +33,15 @@ const { title, description, author, date, lastmod } = Astro.props;
             <p>Back to top</p>
         </button>
     </main>
-    <script is:inline>
+    <script>
         let button = document.getElementById("scrollToTop");
 
-        button.style.display = "flex";
+        button!.style.display = "flex";
         window.onscroll = function () {
             if (window.scrollY > 64) {
-                button.style.opacity = "1";
+                button!.style.opacity = "1";
             } else {
-                button.style.opacity = "0";
+                button!.style.opacity = "0";
             }
         };
     </script>

@@ -35,13 +35,21 @@ const tech = await getCollection("tech");
         <b>Priv/Sec/Anon</b>
         {
             psa.map((post) => (
-                <a href={`/tech/psa/${post.slug}`}>{post.data.shortTitle ? post.data.shortTitle : post.data.title}</a>
+                <a href={`/tech/psa/${post.slug}`}>
+                    {post.data.shortTitle
+                        ? post.data.shortTitle
+                        : post.data.title}
+                </a>
             ))
         }
         <hr />
         {
             tech.map((post) => (
-                <a href={`/tech/${post.slug}`}>{post.data.shortTitle ? post.data.shortTitle : post.data.title}</a>
+                <a href={`/tech/${post.slug}`}>
+                    {post.data.shortTitle
+                        ? post.data.shortTitle
+                        : post.data.title}
+                </a>
             ))
         }
     </menu>
@@ -63,7 +71,6 @@ const tech = await getCollection("tech");
         border-radius: 0.5rem;
         transition: all 0.25s;
         color: var(--text);
-
         font-weight: 550;
 
         &:hover {
