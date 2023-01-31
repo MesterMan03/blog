@@ -7,8 +7,5 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.zerolimits.dev",
-  experimental: {
-    integrations: true
-  },
   integrations: [mdx(), sitemap(), critters(), compress()]
 });
