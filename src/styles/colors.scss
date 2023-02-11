@@ -52,13 +52,15 @@
 
 
 body {
-    @include light-theme;
-
     @media (prefers-color-scheme: dark) {
         @include dark-theme;
     }
 
     @media (prefers-color-scheme: light) {
+        @include light-theme;
+    }
+
+    &.light {
         @include light-theme;
     }
 

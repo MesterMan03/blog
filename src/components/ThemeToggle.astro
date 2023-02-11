@@ -20,11 +20,8 @@
 
 <script>
     document.getElementById("themeToggle")!.style.display = "initial";
-    if (
-        !window.matchMedia("(prefers-color-scheme: dark)").matches ||
-        sessionStorage.getItem("theme") == "light"
-    ) {
-        document.body.classList.remove("dark");
+    if (sessionStorage.getItem("theme") == "light") {
+        document.body.classList.add("light");
     } else {
         document.body.classList.add("dark");
     }
@@ -32,12 +29,14 @@
 
 <script is:inline>
     function themeToggle() {
-        document.body.classList.toggle("dark");
-
         if (document.body.classList.contains("dark")) {
-            sessionStorage.setItem("theme", "dark");
-        } else {
             sessionStorage.setItem("theme", "light");
+            document.body.classList.add("light");
+            document.body.classList.remove("dark");
+        } else {
+            sessionStorage.setItem("theme", "dark");
+            document.body.classList.add("dark");
+            document.body.classList.remove("light");
         }
     }
 </script>
