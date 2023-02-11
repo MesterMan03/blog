@@ -21,7 +21,7 @@
 <script>
     document.getElementById("themeToggle")!.style.display = "initial";
     if (
-        window.matchMedia("(prefers-color-scheme: dark)").matches === false ||
+        !window.matchMedia("(prefers-color-scheme: dark)").matches ||
         sessionStorage.getItem("theme") == "light"
     ) {
         document.body.classList.remove("dark");

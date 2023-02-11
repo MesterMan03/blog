@@ -1,4 +1,4 @@
-body {
+@mixin light-theme {
     // Main
     --bg: #fff;
     --text: #111;
@@ -24,7 +24,7 @@ body {
     --note-text: #212;
 }
 
-.dark {
+@mixin dark-theme {
     // Main
     --bg: #111;
     --text: #eee;
@@ -48,6 +48,23 @@ body {
     // Note
     --note-bg: #535;
     --note-text: #fdf;
+}
+
+
+body {
+    @include light-theme;
+
+    @media (prefers-color-scheme: dark) {
+        @include dark-theme;
+    }
+
+    @media (prefers-color-scheme: light) {
+        @include light-theme;
+    }
+
+    &.dark {
+        @include dark-theme;
+    }
 }
 
 ::selection {
