@@ -27,7 +27,7 @@
     "@fontsource/jetbrains-mono": "^4.5.11",
     "@fontsource/patua-one": "^4.5.9",
     "astro": "^2.0.11",
-    "astro-compress": "^1.1.32",
+    "astro-compress": "^1.1.33",
     "katex": "^0.16.4"
   },
   "devDependencies": {
