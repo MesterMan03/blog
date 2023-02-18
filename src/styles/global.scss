@@ -65,9 +65,11 @@ main {
     }
 }
 
-p {
+p,
+li {
     line-height: 1.5rem;
     text-align: justify;
+    opacity: 0.95;
 }
 
 // Scrollbar

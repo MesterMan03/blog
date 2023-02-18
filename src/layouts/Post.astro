@@ -20,8 +20,8 @@ const { title, description, author, date, lastmod } = Astro.props;
                 )
             }
             <h1>{title}</h1>
-            <p class="description">{description}</p>
-            <p class="author">Written by {author}</p>
+            <h3>{description}</h3>
+            <p>Written by {author}</p>
         </div>
         <slot />
         <button
