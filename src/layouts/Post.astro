@@ -23,7 +23,9 @@ const { title, description, author, date, lastmod } = Astro.props;
             <h3>{description}</h3>
             <p>Written by {author}</p>
         </div>
-        <slot />
+        <article>
+            <slot />
+        </article>
         <button
             type="button"
             id="scrollToTop"
@@ -46,11 +48,11 @@ const { title, description, author, date, lastmod } = Astro.props;
         };
     </script>
     <script>
-        var headings = document.querySelectorAll(
+        const headings = document.querySelectorAll(
             "h2, h3:not(.header h3), h4, h5, h6"
         );
-        for (var heading of headings) {
+        headings.forEach((heading) => {
             heading.innerHTML = `<a href="#${heading.id}">${heading.innerHTML}</a>`;
-        }
+        });
     </script>
 </BaseLayout>
