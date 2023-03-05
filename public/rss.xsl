@@ -152,15 +152,15 @@
                     }
                     }
 
-                    .gallery {
+                    .homepage {
                     transition-duration: 0.25s;
                     }
 
-                    .gallery:hover {
+                    .homepage:hover {
                     filter: brightness(75%);
                     }
 
-                    .gallery img {
+                    .homepage img {
                     height: 1.25rem;
                     vertical-align: -15%;
                     }
@@ -298,12 +298,12 @@
                         </button>
                     </h3>
                     <a
-                        href="https://gallery.zerolimits.dev"
-                        class="gallery"
+                        href="https://zerolimits.dev"
+                        class="homepage"
                         target="_blank"
-                        title="Aperturic Focus"
+                        title="ZeroLimits.dev"
                     >
-                        <img src="https://gallery.zerolimits.dev/icon/favicon.svg" alt="Favicon" />
+                        <img src="https://zerolimits.dev/icon/favicon.svg" alt="Favicon" />
                     </a>
                 </header>
                 <main>
@@ -333,7 +333,7 @@
                     </div>
                 </main>
                 <footer>
-                    <a href="https://matrix.to/#/@turbulent:arcticfoxes.net" title="Matrix">
+                    <a href="https://matrix.to/#/@turbulent:matrix.org" title="Matrix">
                         <svg
                             role="img"
                             viewBox="0 0 24 24"
