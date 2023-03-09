@@ -35,7 +35,8 @@ code {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     justify-content: space-between;
     background-color: var(--bg);
     color: var(--text);
@@ -44,6 +45,10 @@ body {
     @supports (scroll-behavior: smooth) {
         scroll-behavior: smooth;
     }
+}
+
+html {
+    height: -webkit-fill-available;
 }
 
 main {
