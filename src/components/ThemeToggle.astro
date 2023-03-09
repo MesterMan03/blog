@@ -22,7 +22,7 @@
     document.getElementById("themeToggle")!.style.display = "initial";
     if (sessionStorage.getItem("theme") == "light") {
         document.body.classList.add("light");
-    } else {
+    } else if (sessionStorage.getItem("theme") == "dark") {
         document.body.classList.add("dark");
     }
 </script>
@@ -67,20 +67,6 @@
 
         &:hover {
             fill: var(--link);
-        }
-    }
-
-    .sun {
-        display: none;
-    }
-
-    :global(.dark) {
-        .moon {
-            display: none;
-        }
-
-        .sun {
-            display: inline-block;
         }
     }
 </style>

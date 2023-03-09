@@ -54,18 +54,42 @@
 body {
     @media (prefers-color-scheme: dark) {
         @include dark-theme;
+
+        .moon {
+            display: none;
+        }
+
+        .sun {
+            display: inline-block;
+        }
     }
 
     @media (prefers-color-scheme: light) {
         @include light-theme;
+
+        .sun {
+            display: none;
+        }
     }
 
     &.light {
         @include light-theme;
+
+        .sun {
+            display: none;
+        }
     }
 
     &.dark {
         @include dark-theme;
+
+        .moon {
+            display: none;
+        }
+
+        .sun {
+            display: inline-block;
+        }
     }
 }
 
