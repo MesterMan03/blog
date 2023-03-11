@@ -75,6 +75,10 @@ body {
     &.light {
         @include light-theme;
 
+        .moon {
+            display: inline-block;
+        }
+        
         .sun {
             display: none;
         }

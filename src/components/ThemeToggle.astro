@@ -29,7 +29,15 @@
 
 <script is:inline>
     function themeToggle() {
-        if (document.body.classList.contains("dark")) {
+        if (document.body.classList.length == 0) {
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                sessionStorage.setItem("theme", "light");
+                document.body.classList.add("light");
+            } else {
+                sessionStorage.setItem("theme", "dark");
+                document.body.classList.add("dark");
+            }
+        } else if (document.body.classList.contains("dark")) {
             sessionStorage.setItem("theme", "light");
             document.body.classList.add("light");
             document.body.classList.remove("dark");
