@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/noClaps/blog#readme",
   "dependencies": {
-    "@astrojs/mdx": "^0.18.1",
+    "@astrojs/mdx": "^0.18.2",
     "@astrojs/rss": "^2.3.0",
     "@astrojs/sitemap": "^1.2.1",
     "@fontsource/jetbrains-mono": "^4.5.11",
