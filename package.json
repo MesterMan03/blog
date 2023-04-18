@@ -28,7 +28,7 @@
     "@fontsource/patua-one": "^4.5.9",
     "astro": "^2.3.0",
     "astro-compress": "^1.1.35",
-    "katex": "^0.16.4"
+    "katex": "^0.16.6"
   },
   "devDependencies": {
     "sass": "^1.62.0"
