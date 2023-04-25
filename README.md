@@ -31,8 +31,6 @@ The licenses of all npm dependencies are in their respective folders in `node_mo
 
 The favicon and icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT license](public/svg/LICENSE). The [Matrix](https://matrix.org) icon comes from [Simple Icons](https://simpleicons.org/).
 
-[KaTeX](https://katex.org) is licensed under the [MIT license](https://github.com/KaTeX/KaTeX/blob/main/LICENSE).
-
 The [Inter](https://rsms.me/inter/), [Patua One](https://fonts.google.com/specimen/Patua+One) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) fonts are licensed under the [OFL-1.1 license](https://github.com/rsms/inter/blob/master/LICENSE.txt).
 
 All of the remaining content in this repository is licensed under the [BSD Zero Clause license](LICENSE).

@@ -10,7 +10,7 @@ import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 export default defineConfig({
   site: "https://blog.zerolimits.dev",
   markdown: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [[remarkMath, {singleDollarTextMath: false}]],
     rehypePlugins: [rehypeHeadingIds, rehypeMathJax, [rehypeAutolinkHeadings, {behavior: "wrap"}]]
   },
   integrations: [mdx(), sitemap()]
