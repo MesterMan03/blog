@@ -47,12 +47,4 @@ const { title, description, author, date, lastmod } = Astro.props;
             }
         };
     </script>
-    <script>
-        const headings = document.querySelectorAll(
-            "h2, h3:not(.header h3), h4, h5, h6"
-        );
-        headings.forEach((heading) => {
-            heading.innerHTML = `<a href="#${heading.id}">${heading.innerHTML}</a>`;
-        });
-    </script>
 </BaseLayout>
