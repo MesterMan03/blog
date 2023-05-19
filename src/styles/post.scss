@@ -152,6 +152,8 @@ article {
     p {
         font-size: 1rem;
         margin: 0;
+        display: inline-flex;
+        align-items: center;
 
         &::before {
             content: "";
@@ -162,8 +164,6 @@ article {
             background-color: var(--primary-text);
             height: 1rem;
             width: 1rem;
-            display: inline-block;
-            vertical-align: -10%;
             transition: all 0.25s;
             margin-right: 0.25rem;
         }

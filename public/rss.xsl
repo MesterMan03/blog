@@ -154,6 +154,8 @@
 
                     .homepage {
                     transition-duration: 0.25s;
+                    display: inline-flex;
+                    align-items: center;
                     }
 
                     .homepage:hover {
@@ -162,7 +164,6 @@
 
                     .homepage img {
                     height: 1.25rem;
-                    vertical-align: -15%;
                     }
                 </style>
                 <!-- Footer -->
@@ -218,7 +219,7 @@
                     fill: var(--text);
                     height: 1.25rem;
                     transition: all 0.25s;
-                    vertical-align: -22.5%;
+                    align-self: center;
                     }
 
                     svg:hover {
