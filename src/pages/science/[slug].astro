@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { CollectionEntry, getCollection, getEntry } from "astro:content";
 import Post from "../../layouts/Post.astro";
 
 export async function getStaticPaths() {
@@ -22,7 +22,7 @@ const { Content } = await post.render();
 <Post
     title={post.data.title}
     description={post.data.description}
-    author={post.data.author}
+    author={await getEntry(post.data.author)}
     date={post.data.date}
     lastmod={post.data.lastmod}
 >
