@@ -24,15 +24,20 @@
         opacity: 0.75;
     }
 
-    // Author
-    p {
-        align-self: end;
-        font-style: italic;
-        opacity: 0.75;
-    }
+    .post-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-    a {
-        color: var(--text);
+        // Author and reading time
+        p {
+            font-style: italic;
+            opacity: 0.75;
+        }
+
+        a {
+            color: var(--text);
+        }
     }
 }
 
