@@ -1,40 +1,6 @@
 import { z, defineCollection, reference } from 'astro:content';
 
-const history = defineCollection({
-    type: "content",
-    schema: z.object({
-        title: z.string(),
-        description: z.string(),
-        date: z.date(),
-        lastmod: z.date().optional(),
-        author: reference("authors")
-    })
-})
-
-const science = defineCollection({
-    type: "content",
-    schema: z.object({
-        title: z.string(),
-        description: z.string(),
-        date: z.date(),
-        lastmod: z.date().optional(),
-        author: reference("authors")
-    })
-})
-
-const tech = defineCollection({
-    type: "content",
-    schema: z.object({
-        shortTitle: z.string().optional(),
-        title: z.string(),
-        description: z.string(),
-        date: z.date(),
-        lastmod: z.date().optional(),
-        author: reference("authors")
-    })
-})
-
-const psa = defineCollection({
+const posts = defineCollection({
     type: "content",
     schema: z.object({
         shortTitle: z.string().optional(),
@@ -55,9 +21,6 @@ const authors = defineCollection({
 })
 
 export const collections = {
-    "history": history,
-    "science": science,
-    "tech": tech,
-    "psa": psa,
+    "posts": posts,
     "authors": authors
 }

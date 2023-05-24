@@ -2,10 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const history = await getCollection("history");
-const science = await getCollection("science");
-const psa = await getCollection("psa");
-const tech = await getCollection("tech");
+const posts = await getCollection("posts");
 ---
 
 <BaseLayout title="Sitemap" description="Sitemap">
@@ -17,13 +14,16 @@ const tech = await getCollection("tech");
             <li>
                 <ul>
                     {
-                        science.map((post) => (
-                            <li>
-                                <a href={`/science/${post.slug}`}>
-                                    {post.data.title}
-                                </a>
-                            </li>
-                        ))
+                        posts.map(
+                            (post) =>
+                                post.slug.startsWith("science/") && (
+                                    <li>
+                                        <a href={`/${post.slug}`}>
+                                            {post.data.title}
+                                        </a>
+                                    </li>
+                                )
+                        )
                     }
                 </ul>
             </li>
@@ -31,13 +31,16 @@ const tech = await getCollection("tech");
             <li>
                 <ul>
                     {
-                        history.map((post) => (
-                            <li>
-                                <a href={`/history/${post.slug}`}>
-                                    {post.data.title}
-                                </a>
-                            </li>
-                        ))
+                        posts.map(
+                            (post) =>
+                                post.slug.startsWith("history/") && (
+                                    <li>
+                                        <a href={`/${post.slug}`}>
+                                            {post.data.title}
+                                        </a>
+                                    </li>
+                                )
+                        )
                     }
                 </ul>
             </li>
@@ -48,24 +51,31 @@ const tech = await getCollection("tech");
                     <li>
                         <ul>
                             {
-                                psa.map((post) => (
-                                    <li>
-                                        <a href={`/tech/psa/${post.slug}`}>
-                                            {post.data.title}
-                                        </a>
-                                    </li>
-                                ))
+                                posts.map(
+                                    (post) =>
+                                        post.slug.startsWith("tech/psa/") && (
+                                            <li>
+                                                <a href={`/${post.slug}`}>
+                                                    {post.data.title}
+                                                </a>
+                                            </li>
+                                        )
+                                )
                             }
                         </ul>
                     </li>
                     {
-                        tech.map((post) => (
-                            <li>
-                                <a href={`/tech/${post.slug}`}>
-                                    {post.data.title}
-                                </a>
-                            </li>
-                        ))
+                        posts.map(
+                            (post) =>
+                                post.slug.startsWith("tech/") &&
+                                !post.slug.startsWith("tech/psa/") && (
+                                    <li>
+                                        <a href={`/${post.slug}`}>
+                                            {post.data.title}
+                                        </a>
+                                    </li>
+                                )
+                        )
                     }
                 </ul>
             </li>

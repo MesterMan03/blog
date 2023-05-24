@@ -1,10 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-const history = await getCollection("history");
-const science = await getCollection("science");
-const psa = await getCollection("psa");
-const tech = await getCollection("tech");
+const posts = await getCollection("posts");
 ---
 
 <a href="/about">About</a>
@@ -13,9 +10,12 @@ const tech = await getCollection("tech");
     <p>Science</p>
     <menu>
         {
-            science.map((post) => (
-                <a href={`/science/${post.slug}`}>{post.data.title}</a>
-            ))
+            posts.map(
+                (post) =>
+                    post.slug.startsWith("science/") && (
+                        <a href={`/${post.slug}`}>{post.data.title}</a>
+                    )
+            )
         }
     </menu>
 </div>
@@ -23,9 +23,12 @@ const tech = await getCollection("tech");
     <p>History</p>
     <menu>
         {
-            history.map((post) => (
-                <a href={`/history/${post.slug}`}>{post.data.title}</a>
-            ))
+            posts.map(
+                (post) =>
+                    post.slug.startsWith("history/") && (
+                        <a href={`/${post.slug}`}>{post.data.title}</a>
+                    )
+            )
         }
     </menu>
 </div>
@@ -34,23 +37,30 @@ const tech = await getCollection("tech");
     <menu>
         <b>Priv/Sec/Anon</b>
         {
-            psa.map((post) => (
-                <a href={`/tech/psa/${post.slug}`}>
-                    {post.data.shortTitle
-                        ? post.data.shortTitle
-                        : post.data.title}
-                </a>
-            ))
+            posts.map(
+                (post) =>
+                    post.slug.startsWith("tech/psa/") && (
+                        <a href={`/${post.slug}`}>
+                            {post.data.shortTitle
+                                ? post.data.shortTitle
+                                : post.data.title}
+                        </a>
+                    )
+            )
         }
         <hr />
         {
-            tech.map((post) => (
-                <a href={`/tech/${post.slug}`}>
-                    {post.data.shortTitle
-                        ? post.data.shortTitle
-                        : post.data.title}
-                </a>
-            ))
+            posts.map(
+                (post) =>
+                    post.slug.startsWith("tech/") &&
+                    !post.slug.startsWith("tech/psa/") && (
+                        <a href={`/${post.slug}`}>
+                            {post.data.shortTitle
+                                ? post.data.shortTitle
+                                : post.data.title}
+                        </a>
+                    )
+            )
         }
     </menu>
 </div>
