@@ -11,7 +11,7 @@ import { remarkReadingTime } from './remark-reading-time.mjs';
 export default defineConfig({
   site: "https://blog.zerolimits.dev",
   markdown: {
-    remarkPlugins: [[remarkMath, { singleDollarTextMath: false }], remarkReadingTime],
+    remarkPlugins: [remarkMath, remarkReadingTime],
     rehypePlugins: [rehypeHeadingIds, rehypeMathJax, [rehypeAutolinkHeadings, { behavior: "wrap" }]]
   },
   integrations: [mdx(), sitemap()],
