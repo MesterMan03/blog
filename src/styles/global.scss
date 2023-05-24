@@ -25,6 +25,7 @@ h6 {
 
 code {
     font-family: "JetBrains Mono", monospace;
+    overflow-wrap: break-word;
 
     @supports (font-variation-settings: normal) {
         font-family: "JetBrains Mono Variable", monospace;
