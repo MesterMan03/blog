@@ -14,7 +14,9 @@ const { name, link } = Astro.props;
         {
             link ? (
                 <b>
-                    <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        {name}
+                    </a>
                 </b>
             ) : (
                 <b>{name ? name : "QUOTE"}</b>
@@ -35,12 +37,15 @@ const { name, link } = Astro.props;
 
         p {
             margin: 0;
-            display: inline-flex;
-            align-items: center;
 
             svg {
+                vertical-align: middle;
                 height: 1rem;
                 margin-right: 0.5rem;
+            }
+
+            b {
+                vertical-align: middle;
             }
         }
 
