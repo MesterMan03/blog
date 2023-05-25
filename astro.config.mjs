@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import remarkMath from 'remark-math';
+import remarkToc from "remark-toc";
 import rehypeMathJax from 'rehype-mathjax';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
@@ -11,7 +12,7 @@ import { remarkReadingTime } from './remark-reading-time.mjs';
 export default defineConfig({
   site: "https://blog.zerolimits.dev",
   markdown: {
-    remarkPlugins: [remarkMath, remarkReadingTime],
+    remarkPlugins: [remarkMath, remarkReadingTime, remarkToc],
     rehypePlugins: [rehypeHeadingIds, rehypeMathJax, [rehypeAutolinkHeadings, { behavior: "wrap" }]]
   },
   integrations: [mdx(), sitemap()],

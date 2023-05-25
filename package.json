@@ -31,7 +31,8 @@
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-mathjax": "^4.0.2",
-    "remark-math": "^5.1.1"
+    "remark-math": "^5.1.1",
+    "remark-toc": "^8.0.1"
   },
   "devDependencies": {
     "sass": "^1.62.1"

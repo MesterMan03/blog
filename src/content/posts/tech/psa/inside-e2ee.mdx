@@ -7,10 +7,11 @@ author: Mester
 
 <Warning>This post is still in development, and it's not finished yet!</Warning>
 
-
 ## Welcome
 
 Dear Readers, I welcome you all to my Inside of E2EE post. As you can guess from the title, it's going to be about E2EE and how, why, and where it's used. If you're developing your new web app in JS, you're in luck! The post will also include a bunch of example JS code that uses browser native APIs, so you can pretty much implement E2EE anywhere you want.
+
+## Table of contents
 
 <Note>The example codes are actually going to be in TypeScript, but it's not trivial to turn it into pure JavaScript. I only say JS because TS is not a programming language that the browser runs.</Note>
 
@@ -45,23 +46,23 @@ E2EE is basically made up of two parts: key exchange and encryption algorithm. F
 
 So let's take a look at these two parts:
 
-1. **key exchange**:
+### Key exchange
 
-    Since all encryption algorithms need some sort of secret key, you need to share it with the recipient, so they can actually understand and read your messages. There are a lot of different types of key exchange, the most secure being meeting with the recipient IRL and sharing the key that way. But alas, we're stuck on the Internet, so we'll have to figure out a way to share keys with each other while assuming that the entire world is listening to us and trying to break the communication.
-  
-    Luckily, smart people have already figured out some pretty good ways of doing that (proof: the URL of this website starts with https://), two of them we're going to discuss and implement later: [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), and Signal's [Extended Triple Diffie-Hellman](https://www.signal.org/docs/specifications/x3dh/) key agreement protocol (X3DH), which is a beast and my personal favourite.
+Since all encryption algorithms need some sort of secret key, you need to share it with the recipient, so they can actually understand and read your messages. There are a lot of different types of key exchange, the most secure being meeting with the recipient IRL and sharing the key that way. But alas, we're stuck on the Internet, so we'll have to figure out a way to share keys with each other while assuming that the entire world is listening to us and trying to break the communication.
 
-2. **encryption algorithm**:
+Luckily, smart people have already figured out some pretty good ways of doing that (proof: the URL of this website starts with https://), two of them we're going to discuss and implement later: [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), and Signal's [Extended Triple Diffie-Hellman](https://www.signal.org/docs/specifications/x3dh/) key agreement protocol (X3DH), which is a beast and my personal favourite.
+
+### Encryption algorithm
  
-    Great, you've shared a random secret key with your recipient, time to encrypt messages! So let's just put that key into an AES algorithm, and we're don- ***NO!!!***
-  
-    See, AES is nice and all, but think about what happens if a hacker breaks the key: oops, they just got access to all past and future messages, my bad! To fix this, we can use something in cryptopgraphy called [(perfect) forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy). The name is a little misleading because forward secrecy means that even if an attacker compromises a secret key you used to encrypt a message, the past keys cannot be reverse engineered with ease (so it's not really used for future messages, as "forward" would suggest). <br/>
-    To implement this, we can use so-called "ratchet" functions. These functions work like a real [ratchet](https://en.wikipedia.org/wiki/Ratchet_(device)): they only go forward, but not backwards. If you know what [hashing](https://en.wikipedia.org/wiki/Hash_function) is, you might recognise that it is also a ratchet function: you cannot go back from a hash.
-  
-    Alright, you've updated your app so it uses a ratchet function to generate a new key for each message, and this ratchet is syncronised on your and the recipient's device (since otherwise they wouldn't be able to decrypt your messages). I think you can figure out the next problem: hackers can't read past keys, but can't they just use the ratchet to generate all future keys after compromising one? They can, you're absolutely correct. Solution: add another ratchet, 2 > 1!
-  
-    I'm serious, an encryption algorithm we're going to cover in this post comes also from Signal, and it's called (wait for it)... [The Double Ratchet Algorithm](https://signal.org/docs/specifications/doubleratchet/) (yeah, the creators weren't exactly creative with the name, but it works). The idea is that there is a main ratchet used to generate the encryption keys, and another ratchet which frequently refreshes the encryption ratchets using a DH or X3DH key exchange (so it becomes completely randomised and unpredictable), which means even if an attacker breaks one of your keys, they can only go a small amount of messages forward (depends on the implementation).
-  After your double ratchet system has been set up, you can finally use the generated encryption keys with any cypher you want. For the implementation, we're always going to use 256-bit AES-GCM.
+Great, you've shared a random secret key with your recipient, time to encrypt messages! So let's just put that key into an AES algorithm, and we're don- ***NO!!!***
+
+See, AES is nice and all, but think about what happens if a hacker breaks the key: oops, they just got access to all past and future messages, my bad! To fix this, we can use something in cryptopgraphy called [(perfect) forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy). The name is a little misleading because forward secrecy means that even if an attacker compromises a secret key you used to encrypt a message, the past keys cannot be reverse engineered with ease (so it's not really used for future messages, as "forward" would suggest). <br/>
+To implement this, we can use so-called "ratchet" functions. These functions work like a real [ratchet](https://en.wikipedia.org/wiki/Ratchet_(device)): they only go forward, but not backwards. If you know what [hashing](https://en.wikipedia.org/wiki/Hash_function) is, you might recognise that it is also a ratchet function: you cannot go back from a hash.
+
+Alright, you've updated your app so it uses a ratchet function to generate a new key for each message, and this ratchet is syncronised on your and the recipient's device (since otherwise they wouldn't be able to decrypt your messages). I think you can figure out the next problem: hackers can't read past keys, but can't they just use the ratchet to generate all future keys after compromising one? They can, you're absolutely correct. Solution: add another ratchet, 2 > 1!
+
+I'm serious, an encryption algorithm we're going to cover in this post comes also from Signal, and it's called (wait for it)... [The Double Ratchet Algorithm](https://signal.org/docs/specifications/doubleratchet/) (yeah, the creators weren't exactly creative with the name, but it works). The idea is that there is a main ratchet used to generate the encryption keys, and another ratchet which frequently refreshes the encryption ratchets using a DH or X3DH key exchange (so it becomes completely randomised and unpredictable), which means even if an attacker breaks one of your keys, they can only go a small amount of messages forward (depends on the implementation).
+After your double ratchet system has been set up, you can finally use the generated encryption keys with any cypher you want. For the implementation, we're always going to use 256-bit AES-GCM.
 
 ## Implementing DH, XD3H and Double Ratchet
 
@@ -72,14 +73,14 @@ We're finally doing it! Get ready, because this is about to get heavy.
 
 Since this section is going to mention a lot of advanced cryptographic terms, I'd like to quickly mention some.
 * [DH (Diffie-Hellman)](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange): The DH key exchange was [created in 1977](https://worldwide.espacenet.com/patent/search/family/025257633/publication/US4200770A?q=pn%3DUS4200770) by [Bailey Diffie](https://en.wikipedia.org/wiki/Whitfield_Diffie) and [Martin Hellman](https://en.wikipedia.org/wiki/Martin_Hellman), with some help from [Ralph Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle). This post is not going to get into the mathematical details, but basically DH works by mixing a random private key you generate with the public key of the person you want to perform the key exchange. They do the same, but with their private key and your public key. (Note that the public and private keys are mathetmatically linked together, they aren't all completely random)
-* [X3DH (Extended Triple Diffie-Hellman)](https://www.signal.org/docs/specifications/x3dh/): X3DH is at it's core just a bunch of DH key exchanges mashed together. It's a lot more secure than regular DH, because it uses prekeys (which get refreshed regularly) and one-time ephemeral keys, meaning that an attacker would need a more sophisticated attack in order to fully compromise a key exchange. X3DH also provides forward secrecy, which DH cannot.
+* [X3DH (Extended Triple Diffie-Hellman)](https://www.signal.org/docs/specifications/x3dh/): X3DH is at its core just a bunch of DH key exchanges mashed together. It's a lot more secure than regular DH, because it uses prekeys (which get refreshed regularly), one-time prekeys and ephemeral keys, meaning that an attacker would need a more sophisticated attack in order to fully compromise a key exchange. X3DH also provides forward secrecy, which DH cannot.
 * [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve): An elliptic curve is a mathetmatical algebraic curve, usually written in the form of $y^2 = x^3 + ax + b$, where a and b are random numbers. In cryptography, they're used for:
   * [Elliptic-curve cryptography (ECC)](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography): ECC is a type of [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) using the powers of elliptic curves. They're usually harder to break even with smaller key sizes, because of the [Elliptic Curve Discrete Logarithm Problem](https://link.springer.com/referenceworkentry/10.1007/978-1-4419-5906-5_246). If you don't understand any of this (I don't), then here is an [easy to understand video from Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE).
   * [Elliptic-curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman): ECDH is just the Diffie-Hellman key exchange, but with ellipctic curves. When the implementation mentions DH, ECDH is meant, since I'm going to use elliptic curves for everything anyway. Here, it's going to be used as part of the X3DH algorithm to perform the DH key exchanges.
   * [Ellipctic Curve Digital Signature Algorithm (ECDSA)](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm): ECDSA is - similarly to ECDH - a variant of the [Digital Signature Algorithm (DSA)](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm), using ellipctic curves. DSA is used to [digitally sign](https://en.wikipedia.org/wiki/Digital_signature) arbitary data using public and private keys ([asymetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)). I'm going to use it for the X3DH algorithm.
 * [Hashing](https://en.wikipedia.org/wiki/Hash_function): Hashing is the process of turning any arbitary data into a fixed-length block. The length is defined by the hash algorithm, and is usually 256 bits (32 bytes). Hashes are mainly used for verifying data integrity, since even the slightest change (for example, replace a dot with a comma) has drastic impacts on the derived hash.
 * [AES (sometimes called Rijndael)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard): AES (Advanced Encryption Standard) is probably the most widely used [symmetric-key encryption algorithm](https://en.wikipedia.org/wiki/Symmetric-key_algorithm) (this means that the same key decrypts and encrypts the data, unlike in [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) for example). It's a variant of the Rijndael algorithm and works with a fixed key size of 128, 192 or 256 bits (16, 24 and 32 bytes respectively) and processes 128 bits (16 bytes) of data at a time, this is also called the block size. I'll use its variant called [AES-GCM](https://en.wikipedia.org/wiki/AES-GCM-SIV) with a 256 bits long key for the actual (en/de)cryption.
-* [HKDF](https://en.wikipedia.org/wiki/HKDF): HKDF is a [key derivation function](https://en.wikipedia.org/wiki/Key_derivation_function) (which basically takes in some paramteres and returns a cryptographically secure key, other examples are [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) and [Argon2](https://en.wikipedia.org/wiki/Argon2)) with some [HMAC](https://en.wikipedia.org/wiki/HMAC) sprinkled on top of it, to ensure integry and authenticity. It's going to be the main function I'll use for the Double Ratchet implementation, since it is esentually a ratchet function.
+* [HKDF](https://en.wikipedia.org/wiki/HKDF): HKDF is a [key derivation function](https://en.wikipedia.org/wiki/Key_derivation_function) (which basically takes in some parameters and returns a cryptographically secure key, other examples are [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) and [Argon2](https://en.wikipedia.org/wiki/Argon2)) with some [HMAC](https://en.wikipedia.org/wiki/HMAC) sprinkled on top of it, to ensure integry and authenticity. It's going to be the main function I'll use for the Double Ratchet implementation, since it is esentually a ratchet function.
 
 ### Quick information
 
@@ -297,21 +298,21 @@ interface OneTimeKey {
 
 async function setupX3DH(): Promise<X3DHObject> { // everything happens on device
     const identityKeyPair = await crypto.generateKey(
-        { name: "ECDH", namedCurve: "P-256" }, true, ["deriveKey"]
+        { name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]
     );
 
     const preKeyPair = await crypto.generateKey(
-        { name: "ECDH", namedCurve: "P-256" }, true, ["deriveKey"]
+        { name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]
     );
 ```
 
-First we set up some interfaces for TypeScript, if you're implementing this in pure JavaScript, you can skip this step. The `setupX3DH` function starts off easy: we generate the identity key and prekey. They're both using the P-256 curve with key usages set to `deriveKey`. Note that `setupX3DH` is an async function, since we'll need to use `await` for `SubtleCrypto`'s functions.
+First we set up some interfaces for TypeScript, if you're implementing this in pure JavaScript, you can skip this step. The `setupX3DH` function starts off easy: we generate the identity key and prekey. They're both using the P-256 curve with key usages set to `deriveBits`, because later we're going to use them to generate a byte sequence, not a new key (if it was `deriveKey`, we could only use to generate a new AES key for example, but X3DH expects a byte sequence, not a key). Note that `setupX3DH` is an async function, since we'll need to use `await` for `SubtleCrypto`'s functions.
 
 <Warning>Indented lines are part of a function</Warning>
 
 ```typescript
     const identitySigningKey = await crypto.importKey(
-        "jwk", await crypto.exportKey("jwk", identityKeyPair.privateKey),
+        "pkcs8", await crypto.exportKey("pkcs8", identityKeyPair.privateKey),
         { name: "ECDSA", namedCurve: "P-256" }, false, ["sign"]
     );
 
@@ -321,7 +322,7 @@ First we set up some interfaces for TypeScript, if you're implementing this in p
     );
 ```
 
-This is another quirk of `SubtleCrypto`. You cannot use a key generated with `ECDH` for the `ECDSA` algorithm, even though they're completely interchangable. So we're using this hack which exports the private identity key, then re-imports it with `ECDSA`, so we can use the `sign` key usage on it. Note that the exported key format is set to [`jwk`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key), this format can be used for both public and private keys and they're basically just a JSON representation of the key.
+This is another quirk of `SubtleCrypto`. You cannot use a key generated with `ECDH` for the `ECDSA` algorithm, even though they're completely interchangable. So we're using this hack which exports the private identity key, then re-imports it with `ECDSA`, so we can use the `sign` key usage on it. Note that the exported key format is set to [`pkcs8`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#pkcs_8), since we're exporting a private key.
 
 After the private identity key has been modified that `SubtleCrypto` can accept it, it is used by `SubtleCrypto.sign()` to create a digital signature of the public prekey, which only the public identity key can verify.
 
@@ -362,26 +363,158 @@ The next step is to start a protocol run. For this we'll of course use Alice and
 
 ```typescript
 interface PrekeyBundle {
-    identityKey: CryptoKey;
-    preKey: CryptoKey;
-    preKeySignature: ArrayBuffer;
-    oneTimeKey: CryptoKey;
+    identityKey: CryptoKey; // the public identity key of the fetched user
+    preKey: CryptoKey; // the public prekey of the fetched user
+    preKeySignature: ArrayBuffer; // the signature of the prekey
+    oneTimeKey: CryptoKey; // the public one-time prekey of the fetched user
+    oneTimeID: number; // the ID of the one-time prekey
 }
 
 function getPrekeyBundle(user: X3DHObject): PrekeyBundle { // happens on server
     const oneTimeKey = user.onetimeKeys.filter(key => !key.used)?.[Math.floor(Math.random() * user.onetimeKeys.length)];
-    if(oneTimeKey) user.onetimeKeys[user.onetimeKeys.indexOf(oneTimeKey)].used = true;
+    if (oneTimeKey) user.onetimeKeys[user.onetimeKeys.indexOf(oneTimeKey)].used = true;
 
     return { // return as a response to a HTTP request or some other protocol
         identityKey: user.identityKeyPair.publicKey,
         preKey: user.preKeyPair.publicKey,
         preKeySignature: user.preKeySignature,
         oneTimeKey: oneTimeKey?.public ?? undefined,
+        oneTimeID: oneTimeKey?.id ?? undefined
     }
 }
 ```
 
 We declare another utility interface for X3DH, then create a `getPrekeyBundle` function, which takes a `X3DHObject` as parameter. Note that all of the code inside this function is performed on the server, so it's not dependent on the other party's status. As you could guess from the code, the one-time prekey might not exist, this could happen if too many users have tried to get a prekey bundle for a party, and the said party wasn't online to regenerate the one-time keys. The X3DH documention mentions that in this case the protocol may still be continued, but security will be reduced.
+
+#### Generating the secret key
+
+Great, so Alice has fetched a prekey bundle of Bob and prepared her own private keys. This is where it gets complicated.
+
+Basically, Alice first verifies that Bob's prekey is valid using the signature and his public key. If that succeedes, she creates a completely new ephemeral key, this will be used for this protocol run only (basically it's a one-time prekey, but for Alice). Then she needs to calculate 4 (3 if the one-time prekey is missing) DH exchanges:
+1. DH1 = private identity key + public prekey
+2. DH2 = private ephemeral key + public identity key
+3. DH3 = private ephemeral key + public prekey
+4. (DH4 = private ephemeral key + public one-time prekey)
+   
+Remember, all of these DH key exchanges will return a random sequence of bytes (in our implementation, they'll be 32 bytes long). To compress them into a single shared secret key, Alice concatenates all of these byte sequences together, then passes it to the HKDF algorithm.
+
+In `SubtleCrypto`, the HKDF function needs a `salt` and `info` extra parameter, both can be public. The former will be a randomly generated 32-bytes long sequence, the latter just the UTF-8 encoding of "E2EE is amazing!" (this can be anything you'd like).
+
+<Note>These extra parameters might be different if you're using a different library than SubtleCrypto.</Note>
+
+```typescript
+interface X3DHRequest {
+    identityKey: CryptoKey; // the public identity key of the user who requested a protocol run
+    ephemeralKey: CryptoKey; // the public ephemeral key of the user
+    oneTimeID: number; // the ID of the one-time key the user used
+    ciphertext: string; // the initial ciphertext
+}
+
+async function createX3DHRequest(user: X3DHObject, bundle: PrekeyBundle): Promise<X3DHRequest> { // happens on client
+    // verify the prekey signature
+    const identitySigningKey = await crypto.importKey(
+        "pkcs8", await crypto.exportKey("pkcs8", bundle.identityKey),
+        { name: "ECDSA", namedCurve: "P-256" }, false, ["verify"]
+    );
+
+    const verified = await crypto.verify(
+        { name: "ECDSA", hash: "SHA-512" }, identitySigningKey,
+        bundle.preKeySignature, await crypto.exportKey("raw", bundle.preKey)
+    );
+
+    if (!verified) throw new Error("Prekey signature invalid.");
+```
+
+We start by creating yet another interface for a X3DHRequest. This object will be used by Alice after she's derived the shared secret: she'll populate this object with the required data that Bob needs to calculate the same secret. Then, we define an async functino called `createX3DHReuqest`, which takes in the user and prekey bundle. Note that everything in this function happens on the device.
+
+We do the weird export-import hack, but this time on the public identity key (if this was real code, the keys would be transmitted with a Base64, hex etc. encoding, so you wouldn't need this SubtleCrypto mess. You only have to do this if you're trying to use an already existing `CryptoKey` object) which is then used to verify the prekey signature. If it fails, the protocol run is instantly aborted.
+
+```typescript
+    // derive the shared secret
+    const ephemeralKey = await crypto.generateKey(
+        { name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]
+    );
+
+    // generate the 4 DH values
+    const DH1 = await crypto.deriveBits(
+        { name: "ECDH", public: bundle.preKey }, user.identityKeyPair.privateKey, 256);
+    const DH2 = await crypto.deriveBits(
+        { name: "ECDH", public: bundle.identityKey }, ephemeralKey.privateKey, 256);
+    const DH3 = await crypto.deriveBits(
+        { name: "ECDH", public: bundle.preKey }, ephemeralKey.privateKey, 256);
+    const DH4 = bundle.oneTimeKey ? await crypto.deriveBits(
+        { name: "ECDH", public: bundle.oneTimeKey }, user.preKeyPair.privateKey, 256) : undefined;
+
+    // concatenate the DH values
+    const DH = new Uint8Array(bundle.oneTimeKey ? 1024 : 768);
+    DH.set(new Uint8Array(DH1), 0);
+    DH.set(new Uint8Array(DH2), 256);
+    DH.set(new Uint8Array(DH3), 512);
+    if (bundle.oneTimeKey) DH.set(new Uint8Array(DH4), 768);
+```
+
+After verifying the prekey signature, we generate a new ephemeral key (key usage set to `deriveBits` again), then perform the 4 DH key exchanges, each time setting the length to the maximal 256, to indicate we want the result to be 256 bits (32 bytes) long. `DH4` is set to undefined if the one-time prekey doesn't exist. Then, these 4 DH results are concatenated together into a single Uint8Array, which can either be 1024 or 768 bits (128 or 96 bytes) long, depending on the one-time prekey again.
+
+```typescript
+    // generate a salt for HKDF, and derive the secret key
+    const salt = window.crypto.getRandomValues(new Uint8Array(32));
+    const info = new TextEncoder().encode("E2EE is amazing!");
+
+    const secretKeyInput = await crypto.importKey(
+        "raw", DH, "HKDF", false, ["deriveKey"]
+    );
+
+    const secretKey = await crypto.deriveKey(
+        { name: "HKDF", salt, info, hash: "SHA-512" }, secretKeyInput,
+        { name: "AES-GCM", length: 256 }, true, ["encrypt", "decrypt"]
+    );
+
+    console.log(`Secret key derived: ${await crypto.digest("SHA-256", await crypto.exportKey("raw", secretKey))}`);
+```
+
+At the end, we generate the salt and info for HKDF, import our byte sequence and set its algorithm to `HKDF` and key usage to `deriveKey` (since we're going to derive a key in the next step), and finally perform `SubtleCrypto.deriveKey()` to turn our input key material into a AES key we can use. For debugging purposes, I logged the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) result to the console, but for obvious reasons do not ever do this in production code, even if it's a hash.
+
+#### Constructing the request object
+
+We're not done yet though, we'll also need to generate a request object for Bob, so he can also perform the calculations we've done earlier. Fortunately this is really simple.
+
+```typescript
+    // generate AD (concatenate the two public identity keys)
+    const AD = new Uint8Array(64);
+    AD.set(new Uint8Array(await crypto.exportKey("raw", user.identityKeyPair.publicKey)), 0);
+    AD.set(new Uint8Array(await crypto.exportKey("raw", bundle.identityKey)), 32);
+
+    // create a initial ciphertext
+    const iv = window.crypto.getRandomValues(new Uint8Array(16));
+    const message = new TextEncoder().encode(JSON.stringify({
+        identityKey: user.identityKeyPair.publicKey,
+        ephemeralKey: ephemeralKey.publicKey,
+        oneTimeID: bundle.oneTimeID
+    }));
+```
+
+First we create an AD (associated data), which is just the concatenation of the requesting user's and the requested user's public identity key. The requested user has to reconstruct this to be able to read the initial ciphertext. <br/>
+A new iv is also generated along with the plaintext of the initial ciphertext. What this message contains is completely up to the application, but my implementation has the keys transmitted in plaintext stored again, so in case the server tries to mess with the keys, the message will contain completely different ones, which can be used to verify the integrity of a X3DH request.
+
+```typescript
+    const ciphertext = await crypto.encrypt(
+        { name: "AES-GCM", iv, additionalData: AD }, secretKey, message
+    );
+
+    // the secret key is discarded after this point, but in a real implementation it may be stored
+    return {
+        identityKey: user.identityKeyPair.publicKey,
+        ephemeralKey: ephemeralKey.publicKey,
+        oneTimeID: bundle.oneTimeID ?? undefined,
+        // base64 encode the ciphertext
+        ciphertext: window.btoa(String.fromCharCode(...new Uint8Array(ciphertext)))
+    }
+}
+```
+
+Finally we use `SubtleCrypto.encrypt()` on the message (note that there is another parameter added to the AES function, namely `additionalData`) and return the request object. This object contains all the keys Bob needs for the calculation of the secret key and the ID of the one-time prekey in plaintext. The ciphertext is encoded in Base64, and the function - finally - ends. Alice can now send the request object to Bob, who does the final calculations and finally ends the X3DH run.
+
+#### Accepting the request object
 
 ### Example 3: implementing Double Ratchet for 1-on-1 communication (final boss, beware!)
 
@@ -402,4 +535,4 @@ With that out of the way, let's do this! :)
 
 This thing is complicated.
 
-# Coming soon: Matrix's ratchet for group communication (Megolm)
+## Coming soon: Matrix's ratchet for group communication (Megolm)
