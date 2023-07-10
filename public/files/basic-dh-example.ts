@@ -1,5 +1,3 @@
-//@ts-nocheck // remove this in your code
-
 const crypto = window.crypto.subtle;
 
 const alice = await crypto.generateKey(

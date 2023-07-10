@@ -1,5 +1,3 @@
-//@ts-nocheck // remove this in your code
-
 const crypto = window.crypto.subtle;
 
 interface X3DHObject {
@@ -90,7 +88,6 @@ interface X3DHRequest {
     ephemeralKey: CryptoKey; // the public ephemeral key of the user
     oneTimeID: number; // the ID of the one-time key the user used
     ciphertext: Uint8Array; // the initial ciphertext
-    salt: Uint8Array; // the salt used for HKDF
 }
 
 async function createX3DHRequest(user: X3DHObject, bundle: PrekeyBundle): Promise<X3DHRequest> { // happens on client
@@ -129,8 +126,7 @@ async function createX3DHRequest(user: X3DHObject, bundle: PrekeyBundle): Promis
     DH.set(new Uint8Array(DH3), 64);
     if (bundle.oneTimeKey) DH.set(new Uint8Array(DH4), 96);
 
-    // generate a salt for HKDF, and derive the secret key
-    const salt = window.crypto.getRandomValues(new Uint8Array(32));
+    // derive the secret key
     const info = new TextEncoder().encode("E2EE is amazing!");
 
     const secretKeyInput = await crypto.importKey(
@@ -138,7 +134,7 @@ async function createX3DHRequest(user: X3DHObject, bundle: PrekeyBundle): Promis
     );
 
     const secretKey = await crypto.deriveKey(
-        { name: "HKDF", salt, info, hash: "SHA-512" }, secretKeyInput,
+        { name: "HKDF", salt: Uint8Array([0]), info, hash: "SHA-512" }, secretKeyInput,
         { name: "AES-GCM", length: 256 }, true, ["encrypt", "decrypt"]
     );
 
@@ -171,7 +167,6 @@ async function createX3DHRequest(user: X3DHObject, bundle: PrekeyBundle): Promis
         identityKey: user.identityKeyPair.publicKey,
         ephemeralKey: ephemeralKey.publicKey,
         oneTimeID: bundle.oneTimeID ?? undefined,
-        salt,
         ciphertext
     }
 }
@@ -203,7 +198,7 @@ async function acceptX3DHRequest(user: X3DHObject, request: X3DHRequest) { // ha
     );
 
     const secretKey = await crypto.deriveKey(
-        { name: "HKDF", salt: request.salt, info, hash: "SHA-512" }, secretKeyInput,
+        { name: "HKDF", salt: new Uint8Array([0]), info, hash: "SHA-512" }, secretKeyInput,
         { name: "AES-GCM", length: 256 }, true, ["encrypt", "decrypt"]
     );
 
