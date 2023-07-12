@@ -34,7 +34,7 @@ class SymRatchet {
 }
 
 /**
- * A Diffie-Hellman ratchet used to provide forward secrecy
+ * A Diffie-Hellman ratchet used to provide future secrecy
  */
 class DHRatchet {
     #state: Uint8Array = new Uint8Array();
