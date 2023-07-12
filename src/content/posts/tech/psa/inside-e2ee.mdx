@@ -602,7 +602,7 @@ There are actually a lot of different ways to create a ratchet. After all, it re
 
 <Note>HMAC is basically a version of MAC that also uses a hash function.</Note>
 
-This single ratchet will take in an initial key as its state, and provide a function to perform a turn. When the ratchet is turned, the ratchet's state is fed into the HKDF algorithm with some constants and we get a new key. We split this key in half, the first part is going to be the new state and the second half is what we actually use for message encryption/decryption.
+This single ratchet will take in an initial key as its state, and provide a function to perform a turn. When the ratchet is turned, the ratchet's state is fed into the HKDF algorithm with some constants and we get a new key. We split this key in half, the first part is going to be the new state and the second half is what we actually use for message encryption/decryption. This is also called a symmetric ratchet, because it just keeps feeding a state into itself, there are no other parameters that would change the output. Later we'll create a DH ratchet which will no longer be symmteric, since it uses a combination of different inputs.
 
 ```typescript
 const crypto = window.crypto.subtle;
