@@ -699,9 +699,9 @@ Basically, we need to somehow create ratchets for Alice and Bob that are syncron
 3. Bob turns his receive ratchet, uses key to decrypt message.
 4. Party 🎉
 
-To manage these ratchets, Alice and Bob will both create a root ratchet using a shared secret key (which can come from the previous implemented X3DH protocol). These keys are the basic single ratchets we created earlier, but this time, their output will be used to create new ratchets instead of encrypting messages.
+To manage these ratchets, Alice and Bob will both create a root ratchet using a shared secret key (which can come from the previously implemented X3DH protocol). These keys are the basic single ratchets we created earlier, but this time, their output will be used to create new ratchets instead of encrypting messages.
 
-There is something important to remember: if Alice and Bob create their root ratchets (which will produce the same keys!), and turn them once to create their send ratchets, then the send ratchets will also be syncronised, which is not what we want. So in a real-world app, there has to be a system that decides who should use their root ratchet's first turn as their send ratchet and who should use it as their receive ratchet. In this implementation, we'll just include a boolean parameter in a class constructur, but a live code should figure it out automatically.
+There is something important to remember: if Alice and Bob create their root ratchets (which will produce the same keys!), and turn them once to create their send ratchets, then the send ratchets will be syncronised, which is not what we want. So in a real-world app, there has to be a system that decides who should use their root ratchet's first turn as their send ratchet and who should use it as their receive ratchet. In this implementation, we'll just include a boolean parameter in a class constructur, but a live code should figure it out automatically.
 
 ```typescript
 /**
