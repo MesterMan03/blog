@@ -1228,6 +1228,8 @@ I'm super excited, so let's do it!
 
 ```typescript
 class DoubleRatchet {
+    ...
+
     #skippedKeys = new Array<{ pubkey: string, N: number, key: ArrayBuffer }>();
 
     ...
@@ -1409,9 +1411,9 @@ The final code can be viewed <a href="/files/double-ratchet.ts" download="double
 Well congratulations, you've finally completed implementing the Double Ratchet algorithm, give yourself a hug or something.
 
 There are still some final stuff you could improve on:
-1. Currently, there is no limit to how many skipped message keys can be stored. The Signal document recommends creating one, since an attacker could send a bunch of fake messages that would just steal computational power. In pratice, this limit is around 1000.
+1. Currently, there is no limit to how many skipped message keys can be stored. The Signal document recommends creating one, since an attacker could send a bunch of fake messages that would just steal computational power. In practice, this limit is around 1000.
 2. In our controlled environment the messages sent between Alice and Bob are supervised, but in a real world attackers could try sending random fake messages to the parties. This won't cause problems, but the code doesn't handle decryption problems yet. This means, that if a fake (or even corrupted) message is received, it'll just throw an uncatched error.
-3. The headers are not encrypted. This could theoretically give the option for attackers (or the server itself) to modify the header, which can cause unwanted effects. Signal's document [mentions how you could encrypt the headers](https://signal.org/docs/specifications/doubleratchet/#double-ratchet-with-header-encryption), but I haven't mentioned that here, since it's already too complicated. The easiest solution is to just include a digital signature for the header anyway, although in some cases it might be required to not only prevent modification, but also reading.
+3. The headers are not encrypted. This could theoretically give the option for attackers (or the server itself) to modify the header, which can cause unwanted effects. Signal's document [mentions how you could encrypt the headers](https://signal.org/docs/specifications/doubleratchet/#double-ratchet-with-header-encryption), but I haven't mentioned that here, since the code is already too complicated. The easiest solution is to just include a digital signature for the header anyway, although in some cases it might be required to not only prevent modification, but also reading.
 
 Anyway, have fun!
 
