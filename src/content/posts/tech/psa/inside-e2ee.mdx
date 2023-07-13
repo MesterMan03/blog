@@ -22,12 +22,13 @@ E2EE stands for "End-to-End-Encryption", which gives a hint on what it does: it 
 
 "But Sir, I heard that HTTPS already encrypts my data online, so why would I need E2EE?" Great question, Pete. [HTTPS](https://en.wikipedia.org/wiki/HTTPS) is just an encrypted version of [HTTP](https://en.wikipedia.org/wiki/HTTP), which is the main protocol you use to connect with websites. It's **only used to encrypt the data between you and the website (server)**, so it [the website] can still read your plans for your next date, or see that embarassing picture your mother sent you last week. Actually, they can't just *read* the message, but **change it entirely**. Not just the message itself, but the recipient too for example. So in short, if you use a messaging app which only uses HTTPS for encryption, you're trusting the server to do exactly what you say. With E2EE, control is entirely in your hands.
 
-E2EE solves this issue by **encrypting the data before sending it to the server**, which then delivers it to the chosen recipient(s) (or not, depends on the server), who can then decrypt it. This design makes sure that the server has no access to the plain-text (in other words, unencrypted) data, only you and your recipient(s) do. This also means that any form of "E2EE" which does the encryption on the server and not in the client is **NOT** E2EE.
+E2EE solves this issue by encrypting the data before sending it to the server **in a way the server cannot access the plain-text (in other words, unencrypted) data**. This design makes sure that only you and your recipient(s) have access to the data. This also means that any form of "E2EE" which does the encryption on the server and not in the client is **NOT** E2EE.
 
 ## So is HTTPS unsecure?
 
-No, not at all. In fact, HTTPS can be more secure than the E2EE in an app you use, depending on the implementation. But it [HTTPS] only prevents third parties from reading your communication between the server. <br/>
-Here is an analogy: there is a very high-tech post office that uses letters which self-destruct if anybody touches them, and only the post office can open them safely (that's HTTPS). You send "Hi, please tell Alexa I love her" to this post office. Neither the post deliver guy or that creepy neighbour can read it, but the post office can process it and execute the instruction. 5 years later, you're married. Now, you send a message again, but this time it's "Hi, please tell Alexa eyAiY29udGVudCI6ICJJIGxvdmUgeW91IOKdpO+4jyIgfQ==". The post office has no idea what you're trying to tell her, but they'll forward this letter to her anyway who can actually read it, because she owns a device you gave her as a gift (the E2EE app). This is the difference between HTTPS and E2EE.
+No, not at all. In fact, HTTPS can be more secure than the E2EE in an app you use, depending on the implementation. But it [HTTPS] only prevents third parties from reading your communication between the server.
+
+Here is an analogy: there is a very high-tech post office that uses letters which self-destruct if anybody touches them, and only the post office can open them safely (that's HTTPS). You send "Hi, please tell Alexa I love her" to this post office. Neither the post deliver guy or that creepy neighbour can read it, but the post office can process it and execute the instruction. 5 years later, you're married. Now, you send a message again, but this time it's "Hi, please tell Alexa `eyAiY29udGVudCI6ICJJIGxvdmUgeW91IOKdpO+4jyIgfQ==`". The post office has no idea what you're trying to tell her, but they'll forward this letter to her anyway who can actually read it, because she owns a device you gave her as a gift (the E2EE app). This is the difference between HTTPS and E2EE.
 
 ## Do I need it?
 
@@ -37,7 +38,8 @@ Oh, you'd like to have an extra layer of security and make sure nobody except yo
 
 ## Where is it used?
 
-E2EE is used mainly in messaging apps that are designed to be, well... secure. Examples are [Matrix](https://matrix.org/) (DMs are always E2EE, group chats are only if you enable it), [Session](https://getsession.org/), [Signal](https://signal.org/), even Apple's [iMessage](https://www.apple.com/privacy/features#imessage) (the iCloud **backups** of your messages are [not E2EE](https://support.apple.com/en-gb/HT202303), unless you enable [Advanced Data Protection](https://support.apple.com/en-us/HT212520), otherwise it's completely E2EE between devices, meaning Apple cannot read them), but of course it's used for basically anything that requires very secure data storage. <br/>
+E2EE is used mainly in messaging apps that are designed to be, well... secure. Examples are [Matrix](https://matrix.org/) (DMs are always E2EE, group chats are only if you enable it), [Session](https://getsession.org/), [Signal](https://signal.org/), even Apple's [iMessage](https://www.apple.com/privacy/features#imessage) if you have [Advanced Data Protection](https://support.apple.com/en-us/HT212520) enabled, because the iCloud **backups** of your messages are [not E2EE](https://support.apple.com/en-gb/HT202303) without it. With ADP, only your devices can decrypt your conversations, not even Apple.
+
 Continuing with the Apple example, with Advanced Data Protection almost all of your iCloud data is stored using E2EE, so only you can access it. Point is: E2EE is not just for messages, it's just a way of encrypting any arbitary data, even if it's just for a single recipient (you).
 
 # Cryptographic terms
@@ -46,7 +48,7 @@ Since this section is going to mention a lot of advanced cryptographic terms, I'
 * [DH (Diffie-Hellman)](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange): The DH key exchange was [created in 1977](https://worldwide.espacenet.com/patent/search/family/025257633/publication/US4200770A?q=pn%3DUS4200770) by [Bailey Diffie](https://en.wikipedia.org/wiki/Whitfield_Diffie) and [Martin Hellman](https://en.wikipedia.org/wiki/Martin_Hellman), with some help from [Ralph Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle). This post is not going to get into the mathematical details, but basically DH works by mixing a random private key you generate with the public key of the person you want to perform the key exchange. They do the same, but with their private key and your public key. (Note that the public and private keys are mathematically linked together, they aren't completely random)
 * [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve): An elliptic curve is a mathematical algebraic curve, usually written in the form of $y^2 = x^3 + ax + b$, where a and b are random numbers. In cryptography, they're used for:
   * [Elliptic-curve cryptography (ECC)](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography): ECC is a type of [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) using the powers of elliptic curves. They're usually harder to break even with smaller key sizes, because of the [Elliptic Curve Discrete Logarithm Problem](https://link.springer.com/referenceworkentry/10.1007/978-1-4419-5906-5_246). If you don't understand any of this (I don't), then here is an [easy to understand video from Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE).
-  * [Elliptic-curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman): ECDH is just the Diffie-Hellman key exchange, but with ellipctic curves. When the implementation mentions DH, ECDH is meant, since I'm going to use elliptic curves for everything anyway. Here, it's going to be used as part of the X3DH algorithm to perform the DH key exchanges.
+  * [Elliptic-curve Diffie-Hellman (ECDH)](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman): ECDH is just the Diffie-Hellman key exchange, but with elliptic curves. When the implementation mentions DH, ECDH is meant, since I'm going to use elliptic curves for everything anyway. Here, it's going to be used as part of the X3DH algorithm to perform the DH key exchanges.
   * [Elliptic Curve Digital Signature Algorithm (ECDSA)](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm): ECDSA is - similar to ECDH - a variant of the [Digital Signature Algorithm (DSA)](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm), using ellipctic curves. DSA is used to [digitally sign](https://en.wikipedia.org/wiki/Digital_signature) arbitary data using public and private keys ([asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)). I'm going to use it for the X3DH algorithm.
 * [Hashing](https://en.wikipedia.org/wiki/Hash_function): Hashing is the process of turning any arbitary data into a fixed-length block. The length is defined by the hash algorithm, and is usually 256 bits (32 bytes). Hashes are mainly used for verifying data integrity, since even the slightest change (for example, replace a dot with a comma) has drastic impacts on the derived hash.
 * [AES (sometimes called Rijndael)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard): AES (Advanced Encryption Standard) is probably the most widely used [symmetric-key encryption algorithm](https://en.wikipedia.org/wiki/Symmetric-key_algorithm) (this means that the same key decrypts and encrypts the data, unlike in [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) for example). It's a variant of the Rijndael algorithm and works with a fixed key size of 128, 192 or 256 bits (16, 24 and 32 bytes respectively) and processes 128 bits (16 bytes) of data at a time, this is also called the block size. I'll use its variant called [AES-GCM](https://en.wikipedia.org/wiki/AES-GCM-SIV) with a 256 bits long key for the actual (en/de)cryption.
@@ -70,10 +72,11 @@ Luckily, smart people have already figured out some pretty good ways of doing th
  
 Great, you've shared a random secret key with your recipient, time to encrypt messages! So let's just put that key into an AES algorithm, and we're don- ***NO!!!***
 
-See, AES is nice and all, but think about what happens if a hacker breaks the key: oops, they just got access to all past and future messages, my bad! This is where forward secrecy comes in handy, something I've already mentioned previously.<br/>
+See, AES is nice and all, but think about what happens if a hacker breaks the key: oops, they just got access to all past and future messages, my bad! This is where forward secrecy comes in handy, something I've already [mentioned previously](#cryptographic-terms).
+
 To implement this, we can use "ratchet" functions. These functions work like a real [ratchet](https://en.wikipedia.org/wiki/Ratchet_(device)): they only go forward, but not backwards. If you know what [hashing](https://en.wikipedia.org/wiki/Hash_function) is, you might recognise that it is also a ratchet function: you cannot revert a hash to get the original input data.
 
-Alright, you've updated your app so it uses a ratchet function to generate a new key for each message, and this ratchet is syncronised on the recipient's and your devices (since otherwise they wouldn't be able to decrypt your messages). I think you can figure out the next problem: if hackers can't read past keys, can't they just use the ratchet to generate all future keys after compromising one? They can, you're absolutely correct. Solution: add another ratchet, 2 > 1!
+Alright, you've updated your app so it uses a ratchet function to generate a new key for each message, and this ratchet is synchronised on the recipient's and your devices (since otherwise they wouldn't be able to decrypt your messages). I think you can figure out the next problem: if hackers can't read past keys, can't they just use the ratchet to generate all future keys after compromising one? They can, you're absolutely correct. Solution: add another ratchet, 2 > 1!
 
 I'm serious, an encryption algorithm we're going to cover in this post also comes from Signal, and it's called (wait for it...): [The Double Ratchet Algorithm](https://signal.org/docs/specifications/doubleratchet/). Yeah, the creators weren't exactly creative with the name, but it works. The idea is that there is a main ratchet used to generate the encryption keys, and another ratchet which frequently refreshes the encryption ratchets using a DH or X3DH key exchange (so it becomes completely randomised and unpredictable), which means even if an attacker breaks one of your keys, they can only see a few more messages (depending on the implementation) before the encryption ratchet is refreshed again.
 After your double ratchet system has been set up, you can finally use the generated encryption keys with any cipher you want. For the implementation, we're always going to use 256-bit AES-GCM.
@@ -85,7 +88,8 @@ We're finally doing it! Get ready, because this is about to get heavy.
 
 ## Quick information
 
-Before doing anything crazy, you should know some important stuff (you can change anything mentioned here, but these are what I'm going to make the example codes with).<br/>
+Before doing anything crazy, you should know some important stuff (you can change anything mentioned here, but these are what I'm going to make the example codes with).
+
 For anything cryptography related, I'm going to use a browser API called [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API). This API contains a bunch of useful cryptographical functions that can be used to implement cryptographical stuff. (Logic Lv. 9999).
 
 Unfortunately it has some caveats:
@@ -94,13 +98,13 @@ Unfortunately it has some caveats:
 
 So let's start!!!
 
-## Implementing a basic DH key exchange
+# Implementing a basic DH key exchange
 
-### Generating the keypairs
+## Generating the keypairs
 
 For a DH key exchange to happen, we need 2 things: Alice's and Bob's keypair. We can then mix the recipient's public key with our private key and get a shared secret.
 
-<Warning>Make sure the following code is served from a server with https, because the Web Crypto API only works in secure contexts!</Warning>
+<Warning>Make sure the following code is served from a server with HTTPS, because the Web Crypto API only works in secure contexts!</Warning>
 
 ```typescript
 const crypto = window.crypto.subtle;
@@ -134,7 +138,7 @@ console.log(`Bob's private key: ${toHex(await crypto.exportKey("pkcs8", bob.priv
 
 This is a bit more complicated. First, we define a new function called `toHex`, which takes in an [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) object and turns it into its hex representation. We need this because right after it we're going to display the generated keys using [`SubtleCrypto.exportKey()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/exportKey), which returns an [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) object that we cannot just `console.log()`. So we first define a utility function that makes the keys human-readable. And then we actually export the keys and display them to the console. Notice how with private keys the type is set to `pkcs8`, while public keys use `raw`. This is just a [quirk of SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#supported_formats), you cannot use the raw format on private keys and the pkcs8 format on public and AES secret keys.
 
-### Deriving the secret key
+## Deriving the secret key
 
 Time to do a DH key exchange!
 
@@ -150,8 +154,7 @@ const bobSecret = await crypto.deriveKey(
 );
 ```
 
-Because we've previously set the key usage to `deriveKey`, we can use [`SubtleCrypto.deriveKey()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey) on the keypairs. First we define the algorithm, in this case "ECDH" with the public component, our private key, the type of key we want to generate (we'll use 256 bits long AES-GCM), and finally the already known export and key usage values. `encrypt` and `decrypt` mean exactly what you think: only keys with these usages are accepted in [`SubtleCrypto.encrypt()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) and [`SubtleCrypto.decrypt()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/decrypt). <br/>
-Notice how Alice uses Bob's public key and her private key, while Bob does the exact opposite. If all turns out fine, we should get the same exact keys, so let's check!
+Because we've previously set the key usage to `deriveKey`, we can use [`SubtleCrypto.deriveKey()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey) on the keypairs. First we define the algorithm, in this case "ECDH" with the public component, our private key, the type of key we want to generate (we'll use 256 bits long AES-GCM), and finally the already known export and key usage values. `encrypt` and `decrypt` mean exactly what you think: only keys with these usages are accepted in [`SubtleCrypto.encrypt()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) and [`SubtleCrypto.decrypt()`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/decrypt). Notice how Alice uses Bob's public key and her private key, while Bob does the exact opposite. If all turns out fine, we should get the same exact keys, so let's check!
 
 ```typescript
 console.log("Derived shared secrets!");
@@ -173,7 +176,7 @@ Bob's secret: a49977f16b7ca79faedb98eac5abebabed687da2ccc4a27e63480afefb213a4c
 
 They match, which means we've done a great job! We could now theoretically use this key to perform symmetric AES encryption, but I've already explained why a single key is a bad idea, so let's not do that yet.
 
-### Actually, can I test some encryption?
+## Actually, can I test some encryption?
 
 For the third time, do not **ever** use a single key for encryption, but just to see how it works in `SubtleCrypto`, I'll show you how to use the generated secret from earlier to encrypt a simple "Hello World" message.
 
@@ -220,17 +223,17 @@ Congratulations, you just learned how to perform a basic DH key exchange between
 
 Download the entire code for this example <a href="/files/double-ratchet.ts" download="double-ratchet.ts">here</a>.
 
-### Hold up, wait a minute...
+## Hold up, wait a minute...
 
 If you look really closely at this code, and I mean extremely closely, you might realise something: these keypairs are generated locally on the same exact device, in the same JS script. Obviously that makes no sense for an E2EE app, and you're right, you're supposed to transmit the public keys via the Internet, which raises a problem: how can I make sure the server is not messing with the public keys?
 
 If you've ever used a platform like Matrix or Signal, you might have noticed that both have a verification system (Matrix uses emojis, Signal uses "safety numbers"). The verification panel also says that you're supposed to verify via a safe channel (so basically not the same app you want to verify in) that the same exact emojis/numbers are shown on both devices. This verification solves the problem described earlier: it verifies that the server is not trying to perform a [MITM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attack. Matrix uses [SAS (Short Authentication String)](https://matrix.org/docs/guides/implementing-more-advanced-e-2-ee-features-such-as-cross-signing#1-implement-emoji-verification-sas), which performs a DH key exchange described above, applies HKDF to the derived secret and converts the result into an emoji or number. That way, if the emojis don't match on both devices, you know that the server has **modified** at least one of the public keys during transit. The secret is then authenticated with [MAC](https://en.wikipedia.org/wiki/Message_authentication_code) (another type of digital signature, but it uses a single key instead of private and public keys), verified on both devices and the process ends. Signal on the other hand just generates a [safety number](https://signal.org/blog/safety-number-updates/) using your and the recipient's public key. The idea is the same: if the numbers don't match on both devices, the server is doing shady stuff.
 
-## Implementing X3DH
+# Implementing X3DH
 
 DH is cool, but X3DH has X in its name, which makes it even cooler. So how about we upgrade our DH key exchange to its cooler brother?
 
-### Initial setup
+## Initial setup
 
 X3DH needs a bunch of [other keypairs](https://www.signal.org/docs/specifications/x3dh#keys) to work (we're going to use the P-256 curve for all of them). These key(pair)s include: identity key (this never changes), prekey (this can change depending on the implementation to provide forward-secrecy, we're not going to implement that here) and a list of one-time prekeys (these should all be discarded after they're used, and refreshed when their amount falls below a certain threshold, for this example we're going to generate 20 random keys and just choose one during the protocol run). The public prekey is signed with ECDSA, with the signing key being the private identity key (this means that the recipient can verify the digital signature with the public identity key).
 
@@ -271,7 +274,7 @@ async function setupX3DH(): Promise<X3DHObject> { // everything happens on devic
 
 First we set up some interfaces for TypeScript. If you're implementing this in pure JavaScript, you can skip this step. Then we create the `toHex` function, which we've already used earlier. The `setupX3DH` function starts off easy: we generate the identity key and prekey. They're both using the P-256 curve with key usages set to `deriveBits`, because later we're going to use them to generate a byte sequence, not a new key (if it was `deriveKey`, we could only use to generate a new AES key for example, but X3DH expects a byte sequence, not a key). Note that `setupX3DH` is an async function, since we'll need to use `await` for `SubtleCrypto`'s functions.
 
-<Warning>Indented lines are part of a function</Warning>
+<Note>Indented lines are part of a function</Note>
 
 ```typescript
     // setupX3DH
@@ -322,7 +325,7 @@ Next we'll set up 20 random one-time prekeys.
 
 We create a new array called `onetimeKeys`, which we instantly populate with 20 completely random P-256 keys. The `id` can be a completely random number, but to avoid collisions, I just used a linearly increasing number, so they're all unique. Initially, `used` is set to `false`, this will change when a party initiates a protocol run. Finally, we finish the key generation by returning the identity key, prekey, the prekey signature and an array of 20 one-time prekeys.
 
-### Fetching a prekey bundle
+## Fetching a prekey bundle
 
 The next step is to start a protocol run. For this we'll of course use Alice and Bob. Assume that they've both already generated a X3DH object, and uploaded them to the server with the safety precautions mentioned earlier. Now let's see how would it look like if Alice wanted to create a shared secret with Bob using X3DH.
 
@@ -351,7 +354,7 @@ function getPrekeyBundle(user: X3DHObject): PrekeyBundle { // happens on server
 
 We declare another utility interface for X3DH, then create a `getPrekeyBundle` function, which takes a `X3DHObject` as parameter. Note that all of the code inside this function is performed on the server, so it's not dependent on the other party's online status. As you could guess from the code, the one-time prekey might not exist, this could happen if too many users have tried to get a prekey bundle for a party, and the said party wasn't online to regenerate the one-time keys. The X3DH documention mentions that in this case the protocol may still be continued, but security will be reduced.
 
-### Generating the secret key
+## Generating the secret key
 
 Great, so Alice has fetched a prekey bundle of Bob and prepared her own private keys. This is where it gets complicated.
 
@@ -438,7 +441,7 @@ After verifying the prekey signature, we generate a new ephemeral key (key usage
 
 At the end, we import our byte sequence and set its algorithm to `HKDF` and key usage to `deriveKey` (since we're going to derive a key in the next step), and finally perform `SubtleCrypto.deriveKey()` to turn our input key material into a AES key we can use. The salt is just a single 0 byte, which fortunately doesn't compromise security. For debugging purposes, I logged the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) result to the console, but for obvious reasons do not ever do this in production code, even if it's a hash.
 
-### Constructing the request object
+## Constructing the request object
 
 We're not done yet though, we'll also need to generate a request object for Bob, so he can also perform the calculations we've done earlier. Fortunately this is really simple.
 
@@ -458,8 +461,7 @@ We're not done yet though, we'll also need to generate a request object for Bob,
     }));
 ```
 
-First we create an AD (associated data) by hashing the requesting user's public key and the requested user's public key and concatenating them together (we use their hash to make sure they're exactly 32 bytes long). The requested user has to reconstruct this to be able to read the initial ciphertext. <br/>
-A new IV is also generated along with the plaintext of the initial ciphertext. What this message contains is completely up to the application, but my implementation has the keys transmitted in plaintext stored here too, so in case the server tries to mess with the keys, the message will contain completely different ones, which can be used to verify the integrity of a X3DH request.
+First we create an AD (associated data) by hashing the requesting user's public key and the requested user's public key and concatenating them together (we use their hash to make sure they're exactly 32 bytes long). The requested user has to reconstruct this to be able to read the initial ciphertext. A new IV is also generated along with the plaintext of the initial ciphertext. What this message contains is completely up to the application, but my implementation has the keys transmitted in plaintext stored here too, so in case the server tries to mess with the keys, the message will contain completely different ones, which can be used to verify the integrity of a X3DH request.
 
 ```typescript
     // createX3DHRequest
@@ -484,7 +486,7 @@ A new IV is also generated along with the plaintext of the initial ciphertext. W
 
 Finally we use `SubtleCrypto.encrypt()` on the message (note that there is another parameter added to the AES function, namely `additionalData`), create a new variable called `ciphertext` which is a concatenation of the iv and the encrypted message, then return the request object. This object contains all the keys Bob needs for the calculation of the secret key: the public ephemeral key, public identity key and the ID of the one-time prekey, all in plaintext (!). The ciphertext is encoded in Base64, and the function returns. Alice can now send the request object to Bob, who does the final calculations and finally ends the X3DH run.
 
-### Accepting the request object
+## Accepting the request object
 
 So now Alice has uploaded her request object to the server, which (hopefully) forwarded it to the now online Bob. Let's see what he has to do.
 
@@ -591,12 +593,13 @@ Congratulations, you've successfully learned how to implement the X3DH key excha
 
 The code for this example can be downloaded <a href="/files/x3dh-example.ts" download="x3dh-example.ts">here</a>.
 
-## Implementing Double Ratchet for 1-on-1 communication (final boss, beware!)
+# Implementing Double Ratchet for 1-on-1 communication (final boss, beware!)
 
-You've finally reached this. Well, this is the point of no return, if you decide to continue, you can never go back. <br/>
+You've finally reached this. Well, this is the point of no return, if you decide to continue, you can never go back.
+
 With that out of the way, let's do this! :)
 
-### Creating a single ratchet
+## Creating a single ratchet
 
 Obviously if you want to have a *double* ratchet, you'll logically need a *single* ratchet first.
 
@@ -604,7 +607,7 @@ There are actually a lot of different ways to create a ratchet. After all, it re
 
 <Note>HMAC is basically a version of MAC that also uses a hash function.</Note>
 
-This single ratchet will take in an initial key as its state, and provide a function to perform a turn. When the ratchet is turned, the ratchet's state is fed into the HKDF algorithm with some constants and we get a new key. We split this key in half, the first part is going to be the new state and the second half is what we actually use for message encryption/decryption. This is also called a symmetric ratchet, because it just keeps feeding a state into itself, there are no other parameters that would change the output. Later we'll create a DH ratchet which will no longer be symmteric, since it uses a combination of different inputs.
+This single ratchet will take in an initial key as its state, and provide a function to perform a turn. When the ratchet is turned, the ratchet's state is fed into the HKDF algorithm with some constants and we get a new key. We split this key in half, the first part is going to be the new state and the second half is what we actually use for message encryption/decryption. This is also called a symmetric ratchet, because it just keeps feeding a state into itself, there are no other parameters that would change the output. Later we'll create a DH ratchet which will no longer be symmetric, since it uses a combination of different inputs.
 
 ```typescript
 const crypto = window.crypto.subtle;
@@ -659,7 +662,7 @@ Because only the first 32 bytes are used to perform a next turn, the data the `t
 
 To test if it works, let's set up two ratchets, but with different starting seeds.
 
-#### Example 1
+### Example 1
 ```typescript
 const ratchet = new SymRatchet(new Uint8Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]));
 for(let i = 0; i < 5; i ++) console.log(toHex(await ratchet.turn()));
@@ -674,7 +677,7 @@ ba98c268b3518dddb107d080f6e98963b71d28c1191ae6fbc7e21ebcd2b6bccc
 685fe809a71a210a18bb01347607d639b747a742736ecd62bad7d1eeab22c2a0
 ```
 
-#### Example 2
+### Example 2
 ```typescript
 const ratchet = new SymRatchet(new Uint8Array([31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]));
 for (let i = 0; i < 5; i++) console.log(toHex(await ratchet.turn()));
@@ -691,11 +694,11 @@ af5a2f888e74a3c614816b677744d902cebbc3ba0e32e851c44cdaf7fa388c97
 
 As you can see, a relatively minor change of the seed (just reversing it) had huge impacts on the output keys. Yay, encryption!
 
-### Creating the double ratchet
+## Creating the double ratchet
 
 Great, now let's put two of these together to create a double ratchet. But wait... how exactly do we use these message keys?
 
-Basically, we need to somehow create ratchets for Alice and Bob that are syncronised with each other (= their seed are the same). That way, if Alice encrypts a message, Bob will be able to read it, because he can generate the same exact key Alice used to encrypt a message. So both of them will get a send and receive ratchet: Alice's send ratchet is the same as Bob's receive ratchet and vice versa. So sending a message would look like this:
+Basically, we need to somehow create ratchets for Alice and Bob that are synchronised with each other (= their seed are the same). That way, if Alice encrypts a message, Bob will be able to read it, because he can generate the same exact key Alice used to encrypt a message. So both of them will get a send and receive ratchet: Alice's send ratchet is the same as Bob's receive ratchet and vice versa. So sending a message would look like this:
 1. Alice turns her send ratchet, uses key to encrypt message.
 2. Sends message to Bob.
 3. Bob turns his receive ratchet, uses key to decrypt message.
@@ -703,7 +706,8 @@ Basically, we need to somehow create ratchets for Alice and Bob that are syncron
 
 To manage these ratchets, Alice and Bob will both create a root ratchet using a shared secret key (which can come from the previously implemented X3DH protocol). These keys are the basic single ratchets we created earlier, but this time, their output will be used to create new ratchets instead of encrypting messages.
 
-There is something important to remember: if Alice and Bob create their root ratchets (which will produce the same keys!), and turn them once to create their send ratchets, then the send ratchets will be syncronised, which is not what we want. So in a real-world app, there has to be a system that decides who should use their root ratchet's first turn as their send ratchet and who should use it as their receive ratchet. In this implementation, we'll just include a boolean parameter in a class constructur, but a live code should figure it out automatically.
+There is something important to remember: if Alice and Bob create their root ratchets (which will produce the same keys!), and turn them once to create their send ratchets, then the send ratchets will be synchronised, which is not what we want. So in a real-world app, there has to be a system that decides who should use their root ratchet's first turn as their send ratchet and who should use it as their receive ratchet. In this implementation, we'll just include a boolean parameter in a class constructor, but a live code should figure it out automatically.
+
 
 ```typescript
 /**
@@ -798,7 +802,7 @@ Bob sends: 195567797a43afcb9aab6039 e44970b853800a74004da171d26ccf93527883a8662f
 Alice receives: Hello, Alice!
 ```
 
-### Updating the double ratchet
+## Updating the double ratchet
 
 If you've read everything in this post carefully, you might realise something: the ratchets as of right now don't provide future secrecy. Sure, the message keys cannot be used to break in, but what if someone cracks a ratchet state key? Then the attacker can (and probably will) use that state key to get all future keys. Fortunately they cannot go backwards, but even if a 2 days-old key is cracked, all the messages that are younger than 2 days are cracked too, and that is bad - don't forget the attacker can just keep turning his own compromised ratchet, so it might take you months or years to figure out you've been spied on all the time.
 
@@ -812,7 +816,7 @@ Let's say Alice wants to chat with Bob. She generates a DH keypair and sends a m
 
 When Alice sees Bob has accepted the message request and provided his own public ratchet, she can do a root ratchet turn too: because we know Bob has used the public key of Alice's first DH keychain, Alice can use his private key and Bob's public key to generate the same DH output for her symmetric ratchet. This output will be used to create Alice's receive ratchet which will be equal to Bob's send ratchet (she can read Bob's messages that he sent earlier with it). She now needs a send ratchet, so she generates a new DH keychain (discarding the old one) and uses the same public key she got from Bob to generate her send ratchet. Then she sends it to Bob.
 
-Now, if Bob gets Alice's public key, the whole cycle repeats: Bob generates a receive ratchet, and a send ratchet with a new DH keypair, then sends his public key to Alice. Here, it's important to note: **A party can only turn their root ratchet, if they have received a new public key from the other party.** In other words, after Alice generates her receive and send ratchet, she cannot generate a new send ratchet again, because Bob has not yet received her public key and returned a new public key of his own. This is important to keep in mind, otherwise it could lead to desyncronisation of the root ratchets. Also, after the initial setup (which happens when Bob receives Alice's message request), every time a party turns their root ratchet, they must do it twice to generate a new send and receive ratchet.
+Now, if Bob gets Alice's public key, the whole cycle repeats: Bob generates a receive ratchet, and a send ratchet with a new DH keypair, then sends his public key to Alice. Here, it's important to note: **A party can only turn their root ratchet, if they have received a new public key from the other party.** In other words, after Alice generates her receive and send ratchet, she cannot generate a new send ratchet again, because Bob has not yet received her public key and returned a new public key of his own. This is important to keep in mind, otherwise it could lead to desynchronisation of the root ratchets. Also, after the initial setup (which happens when Bob receives Alice's message request), every time a party turns their root ratchet, they must do it twice to generate a new send and receive ratchet.
 
 <Note>Every message contains the party's public key (this will be used later for out-of-order messages), so the other party must decide if that key is new or not. This is not needed in the examples below, since we control the root turning manually, but in an actual application, this check should be automated.</Note>
 
@@ -832,11 +836,6 @@ class DHRatchet {
         if (seed.byteLength !== 32) throw new Error("Invalid seed length");
         this.#state = seed;
 
-        // generate a key pair
-        this.#keyChain = await crypto.generateKey({ name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]);
-    }
-
-    async init() {
         // generate a key pair
         this.#keyChain = await crypto.generateKey({ name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]);
     }
@@ -914,7 +913,7 @@ class DoubleRatchet {
 ```
 
 This is what has changed:
-1. The root ratchet is not a private member anymore, so its functions are more easily accessbile (this does not compromise security, since the keychain of the root ratchet is still private).
+1. The root ratchet is not a private member anymore, so its functions are more easily accessible (this does not compromise security, since the keychain of the root ratchet is still private).
 2. firstSend has been removed.
 3. The constructor doesn't need a seed anymore and the root ratchet has been replaced by a DH ratchet.
 4. Replacing the `init` function, a new `setup` function has been added, which needs the ratchet you're setting up (from the perspective of the root ratchet) and the rest of the parameters of the DH ratchet's `turn` function.
@@ -922,7 +921,7 @@ This is what has changed:
 
 So can we use it? Sure!
 
-#### Alice and Bob send 1 message after each other
+### Alice and Bob send 1 message after each other
 
 ```typescript
 const seed = window.crypto.getRandomValues(new Uint8Array(32));
@@ -978,7 +977,7 @@ Alice receives: Hello Alice!
 
 So that's basically how it works: the messages contain the party's public key which the other party can use to turn their root ratchet. 
 
-#### Alice sends 2 messages
+### Alice sends 2 messages
 
 In the previous example, Alice and Bob both sent one message after each other, but that's not usually a case. Let's see what happens when Alice wants to send 2 messages.
 
@@ -1018,7 +1017,7 @@ Bob receives: Come on Bob, reply!
 Because Alice has already used Bob's public key for turning her root ratchet, she cannot do that again with the same public key, therefore Alice must wait until Bob sends her his new public key. But that's no problem, because Alice can just turn her send ratchet to encrypt another message, and when Bob receives both messages, he turns his root ratchet to generate a new receive ratchet and can then decrypt both messages.
 
 
-#### Bob sends a message first
+### Bob sends a message first
 
 In our examples, Alice was always the first to send a message, but obviously that might not always be the case. The code still works of course if Bob sends a message first, it's even simpler in that case!
 
@@ -1061,13 +1060,13 @@ Bob receives: second
 ```
 Awesome, we've mastered Double Ratchet. There is just one last thing we need to solve: internet problems.
 
-### Error correction
+## Error correction
 
 Imagine this situation: Alice sends 2 messages after each other really fast. Her internet is a bit unstable, and message 1 takes 2 seconds to reach Bob, but message 2 takes only 1 second. So now Bob has got message 2 before message 1, he turns his receive ratchet and... error. Because message 2 requires 2 turns, but Bob doesn't know that, he only turns his receive ratchet once, which generates the key for message 1. Then, Bob receives message 1, turns his receive ratchet and gets the key for message 2. Complete madness, which has its own name: out-of-order messages.
 
 So how do we fix that?
 
-#### Setting up message headers
+### Setting up message headers
 
 For the send and receive ratchets, we track the number of messages (starting from 0), call it N. So the first message will be message 0, the second message will be message 1 etc. We'll also store the number of messages in the previous ratchet (the ratchet before a root turn), call it PN. This will also be transmitted with the message in a so called message header. Speaking of message headers, let's implement that too, so we can automate the root ratchet's turning.
 
@@ -1211,7 +1210,7 @@ Object
 Alice receives: Hello Alice!
 ```
 
-### Automating message processing
+## Automating message processing
 
 So let's talk about how we can use these N and PN parameters. Let's say Bob sends us 4 messages, message 1 arrives correctly, but message 2 and 3 get skipped and we only get message 4. If we take a look at the headers, this is what we should see: message 1 has a `N` of 0, but message 4 has a `N` of 3. Don't forget that every time we receive a message, we also increase `RN` by one. So when receiving message 4, `RN` is 1. Based on Signal's document, there are 2 possible options here:
 1. A root ratchet turn was NOT triggered (= both messages come from the same send ratchet, PN is irrelevant): the count of messages skipped = `N` - `RN` = 3 - 1 = 2. This is true: we've skipped 2 messages: message 2 and 3.
@@ -1294,7 +1293,7 @@ class DoubleRatchet {
 
 Functions `decrypt` and `turn` have become a private function and `decrypt` no longer turns the receive ratchet manually, it requires the correct message key. The `processMessage` function is basically just what the pseudocode says, but as actual code. Note that `RN` has to be set to the message's `N` value + 1 (it's basically `RN` = `N` -> decrypt -> `RN++` simplied). There is also a new `skippedKeys` property which is an array that holds all the skipped keys (I had to use an array, because the JavaScript Map doesn't like keys that are objects and not a primitive).
 
-#### Basic example
+### Basic example
 
 Sending messages now becomes stupidly simple.
 
@@ -1315,13 +1314,13 @@ console.log("Alice receives:", new TextDecoder().decode(decrypted));
 
 All the root turning and stuff we had to do previously is now compressed into a single function.
 
-Output (first try actually lmao):
+Output:
 ```
 Bob sends: {"header":{"N":0,"PN":0,"pubkey":"044d9223578506aaf81ea3963227f98bf4ac3a18e98491ea39dac98ce88594648179a40d8a2d00eea74fb2078251f79b2d160d2fa3e86d07374f9907d7f5740472"},"rawMessage":{"iv":"619774accecaed2a4a619d11","ciphertext":"b826eac99309d27dfef772c185b6af36cc82bed3ba354a814fa1e10e"}}
 Alice receives: Hello Alice!
 ```
 
-#### Skipping messages
+### Skipping messages
 
 Now obviously, we've come this far to handle out-of-order messages. So let's do that! We will skip message 2 and 3 without a root turn.
 
@@ -1412,7 +1411,7 @@ Alice receives: Hello Alice, this is message 4!
 
 The final code can be viewed <a href="/files/double-ratchet.ts" download="double-ratchet.ts">here</a>.
 
-### Extra notes
+## Extra notes
 
 Well congratulations, you've finally completed implementing the Double Ratchet algorithm, give yourself a hug or something.
 
@@ -1427,4 +1426,9 @@ Anyway, have fun!
 
 This thing is complicated.
 
-# Coming soon: Matrix's ratchet for group communication: Megolm
+# Coming soon
+
+1. Matrix's Megolm algorithm for group communication
+2. Signal's Sesame algorithm for managing sessions between multiple devices
+
+Check back later!
