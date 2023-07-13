@@ -119,7 +119,7 @@ class DoubleRatchet {
     #SN: number = 0;
     #RN: number = 0;
     #SPN: number = 0;
-    #RPN: number = 0; // never actually used, so you can ignore this
+    #RPN: number = 0;
 
     #skippedKeys = new Array<{ pubkey: string, N: number, key: ArrayBuffer }>();
 
@@ -127,7 +127,7 @@ class DoubleRatchet {
         this.root = new DHRatchet();
     }
 
-    async turn(pubkey: ArrayBuffer) {
+    async #turn(pubkey: ArrayBuffer) {
         this.#RK = toHex(pubkey);
 
         // create a receive ratchet
@@ -192,7 +192,7 @@ class DoubleRatchet {
         }
 
         // do a turn if needed
-        if (doTurn) await this.turn(message.header.pubkey);
+        if (doTurn) await this.#turn(message.header.pubkey);
 
         // calculate the number of skipped messages in the current ratchet
         const skipped = doTurn ? message.header.N : message.header.N - this.#RN;

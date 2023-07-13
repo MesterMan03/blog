@@ -1236,6 +1236,10 @@ class DoubleRatchet {
 
     ...
 
+    async #turn(pubkey: ArrayBuffer) {
+        ...
+    }
+
     async #decrypt(rawMessage: RawMessage, messageKey: CryptoKey) {
         const { iv, ciphertext } = rawMessage;
 
@@ -1266,7 +1270,7 @@ class DoubleRatchet {
         }
 
         // do a turn if needed
-        if (doTurn) await this.turn(message.header.pubkey);
+        if (doTurn) await this.#turn(message.header.pubkey);
 
         // calculate the number of skipped messages in the current ratchet
         const skipped = doTurn ? message.header.N : message.header.N - this.#RN;
@@ -1288,7 +1292,7 @@ class DoubleRatchet {
 }
 ```
 
-As you can see, `decrypt` has become a private function and it no longer turns the receive ratchet manually, it requires the correct message key now. The `processMessage` function is basically just what the pseudocode says, but as actual code. Note that `RN` has to be set to the message's `N` value + 1 (it's basically `RN` = `N` -> decrypt -> `RN++` simplied). There is also a new `skippedKeys` property which is an array that holds all the skipped keys (I had to use an array, because the JavaScript Map doesn't like keys that are objects and not a primitive).
+Functions `decrypt` and `turn` have become a private function and `decrypt` no longer turns the receive ratchet manually, it requires the correct message key. The `processMessage` function is basically just what the pseudocode says, but as actual code. Note that `RN` has to be set to the message's `N` value + 1 (it's basically `RN` = `N` -> decrypt -> `RN++` simplied). There is also a new `skippedKeys` property which is an array that holds all the skipped keys (I had to use an array, because the JavaScript Map doesn't like keys that are objects and not a primitive).
 
 #### Basic example
 
